@@ -3,7 +3,7 @@
 <head>
 
   @@include("source/html/base/head.html")
-  <title>ProjectName — Главная</title>
+  <title>FRAM — Главная</title>
 
 </head>
 <body>
@@ -18,9 +18,110 @@
     })
 
     <main>
+
+      <section class="main-fram">
+        <div class="container">
+          <h1><span>Перевозка</span> крупногабаритных и длинномерных грузов</h1>
+          <p>По России и всему миру</p>
+
+          <div class="main-fram__wrapper">
+
+            <form class="form" action="#" method="POST">
+              <h2><span>Быстрый</span> запрос на <span>расчет</span></h2>
+
+              <div class="form__field form__field-start">
+                <label class="visually-hidden" for="start">Откуда</label>
+                <input id="start" type="text" name="start" placeholder="Откуда" required="">
+              </div>
+
+              <div class="form__field form__field-finish">
+                <label class="visually-hidden" for="finish">Куда</label>
+                <input id="finish" type="text" name="finish" placeholder="Куда" required="">
+              </div>
+
+              <div class="form__field form__field-name">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required="">
+                <span>Некорректное имя</span>
+              </div>
+
+              <div class="form__field form__field-phone">
+                <label class="visually-hidden" for="phone">Номер телефона</label>
+                <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required="">
+                <span>Некорректный номер телефона</span>
+              </div>
+
+              <div class="form__textarea">
+                <label class="visually-hidden" for="message">Описание груза и задач</label>
+                <textarea name="message" id="message" placeholder="Описание груза и задач" required=""></textarea>
+              </div>
+
+              <div class="form__btn">
+                <button class="btn" type="submit" aria-label="Узнать стоимость">
+                  <span>Узнать стоимость</span>
+                </button>
+              </div>
+
+              <div class="form__field form__field-check">
+                <input class="form__checkbox" id="check" type="checkbox" name="check" required="" checked>
+                <label for="check">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <span>Политикой конфиденциальности</span></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Осуществляем любые виды грузоперевозок</h2>
+      </section>
+
+      <section class="oversized-cargo">
+        <h2>Перевозка негабаритных грузов</h2>
+      </section>
+
+      <section class="additional-services">
+        <h2>Дополнительные услуги нашей компании</h2>
+      </section>
+
+      <section class="company-scheme">
+        <h2>Схема работы</h2>
+      </section>
+
+      <section class="oversized-cargo-cost">
+        <h2>Стоимость перевозки негабаритных грузов</h2>
+      </section>
+
+      <section class="industry-solutions">
+        <h2>Отраслевые решения</h2>
+      </section>
+
+      <section class="call-to-action">
+        <h2>Позвоните прямо сейчас</h2>
+      </section>
+
+      <section class="partners">
+        <h2>Наши партнеры</h2>
+      </section>
+
+      <section class="reviews">
+        <h2>Отзывы</h2>
+      </section>
+
+      <section class="associated-trawls">
+        <h2>Попутные траллы</h2>
+      </section>
+
+      <section class="shipping-cost">
+        <h2>Стоимость перевозки</h2>
+      </section>
+
+      <section class="about-company">
+        <h2>О компании</h2>
+      </section>
+
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+        <!-- <p><a href="#" data-modal="feedback">modal--feedback link</a></p> -->
+        <!-- <p><a href="#" data-modal="success">modal--success link</a></p> -->
       </div>
     </main>
 
