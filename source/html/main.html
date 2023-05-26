@@ -655,7 +655,7 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-1" class="associated-trawls__map-1"></div>
+              <div id="map-2" class="associated-trawls__map-1"></div>
             </div>
 
             <div class="associated-trawls__description">
@@ -701,7 +701,7 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-1" class="associated-trawls__map-1"></div>
+              <div id="map-3" class="associated-trawls__map-1"></div>
             </div>
 
             <div class="associated-trawls__description">
@@ -747,7 +747,7 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-1" class="associated-trawls__map-1"></div>
+              <div id="map-4" class="associated-trawls__map-1"></div>
             </div>
 
             <div class="associated-trawls__description">
@@ -794,7 +794,92 @@
       </section>
 
       <section class="shipping-cost">
-        <h2>Стоимость перевозки</h2>
+        <div class="shipping-cost__wrapper">
+          <h2 class="visually-hidden">Параметры груза</h2>
+
+          <div class="shipping-cost__width">
+            <h3>Ширина (м)</h3>
+            <div class="shipping-cost__width-wrap">
+              <div class="range-slider"></div>
+              <input class="range-slider__input" type="number">
+            </div>
+          </div>
+
+          <div class="shipping-cost__height">
+            <h3>Высота (м)</h3>
+            <div class="shipping-cost__height-wrap">
+              <div class="range-slider"></div>
+              <input class="range-slider__input" type="number">
+            </div>
+          </div>
+
+          <div class="shipping-cost__length">
+            <h3>Длина (м)</h3>
+            <div class="shipping-cost__length-wrap">
+              <div class="range-slider"></div>
+              <input class="range-slider__input" type="number">
+            </div>
+          </div>
+
+          <div class="shipping-cost__weight">
+            <h3>Масса (тф)</h3>
+            <div class="shipping-cost__weight-wrap">
+              <div class="range-slider"></div>
+              <input class="range-slider__input" type="number">
+            </div>
+          </div>
+        </div>
+
+        <div class="shipping-cost__wrap">
+          <form class="form" action="#" method="POST">
+            <h2>Стоимость перевозки</h2>
+            <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
+
+            <div class="form__wrapper">
+              <div class="form__field form__field-start">
+                <label class="visually-hidden" for="start">Откуда</label>
+                <input id="start" type="text" name="start" placeholder="Откуда" required="">
+              </div>
+
+              <div class="form__field form__field-finish">
+                <label class="visually-hidden" for="finish">Куда</label>
+                <input id="finish" type="text" name="finish" placeholder="Куда" required="">
+              </div>
+            </div>
+
+            <div class="form__textarea">
+              <label class="visually-hidden" for="message">Описание груза и задач</label>
+              <textarea name="message" id="message" placeholder="Описание груза и задач" required=""></textarea>
+            </div>
+
+            <div class="form__wrap">
+              <div class="form__field form__field-name">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required="">
+                <span>Некорректное имя</span>
+              </div>
+
+              <div class="form__field form__field-phone">
+                <label class="visually-hidden" for="phone">Номер телефона</label>
+                <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required="">
+                <span>Некорректный номер телефона</span>
+              </div>
+            </div>
+
+            <div class="form__btn-wrap">
+              <div class="form__btn">
+                <button class="btn" type="submit" aria-label="Узнать стоимость">
+                  <span>Узнать стоимость</span>
+                </button>
+              </div>
+
+              <div class="form__field form__field-check">
+                <input class="form__checkbox" id="check" type="checkbox" name="check" required="" checked>
+                <label for="check">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="about-company">
