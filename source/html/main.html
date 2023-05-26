@@ -793,7 +793,7 @@
         </ul>
       </section>
 
-      <section class="shipping-cost">
+      <section class="shipping-cost container">
         <div class="shipping-cost__wrapper">
           <h2 class="visually-hidden">Параметры груза</h2>
 
@@ -837,31 +837,31 @@
 
             <div class="form__wrapper">
               <div class="form__field form__field-start">
-                <label class="visually-hidden" for="start">Откуда</label>
-                <input id="start" type="text" name="start" placeholder="Откуда" required="">
+                <label class="visually-hidden" for="start-cost">Откуда</label>
+                <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
               </div>
 
               <div class="form__field form__field-finish">
-                <label class="visually-hidden" for="finish">Куда</label>
-                <input id="finish" type="text" name="finish" placeholder="Куда" required="">
+                <label class="visually-hidden" for="finish-cost">Куда</label>
+                <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
               </div>
             </div>
 
             <div class="form__textarea">
-              <label class="visually-hidden" for="message">Описание груза и задач</label>
-              <textarea name="message" id="message" placeholder="Описание груза и задач" required=""></textarea>
+              <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
+              <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
             </div>
 
             <div class="form__wrap">
               <div class="form__field form__field-name">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" required="">
+                <label class="visually-hidden" for="name-cost">Имя</label>
+                <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
                 <span>Некорректное имя</span>
               </div>
 
               <div class="form__field form__field-phone">
-                <label class="visually-hidden" for="phone">Номер телефона</label>
-                <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required="">
+                <label class="visually-hidden" for="phone-cost">Номер телефона</label>
+                <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
                 <span>Некорректный номер телефона</span>
               </div>
             </div>
@@ -874,15 +874,15 @@
               </div>
 
               <div class="form__field form__field-check">
-                <input class="form__checkbox" id="check" type="checkbox" name="check" required="" checked>
-                <label for="check">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                <input class="form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
+                <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
               </div>
             </div>
           </form>
         </div>
       </section>
 
-      <section class="about-company">
+      <section class="about-company container">
         <h2>О компании</h2>
 
         <div class="about-company__text">
@@ -917,7 +917,11 @@
       </div>
     </main>
 
-    @@include("source/html/base/footer.html")
+    <!-- @@include("source/html/base/footer.html") -->
+
+    @@include("source/html/base/footer.html", {
+      "main": true
+    })
 
     @@include("source/html/base/modal.html", {
       "name": "feedback"
