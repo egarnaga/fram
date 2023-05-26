@@ -1,0 +1,43 @@
+.company-scheme {
+  background-color: $color-title;
+}
+
+.company-scheme h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-default-white;
+}
+
+.company-scheme__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.company-scheme__list span {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 70px;
+  leading-trim: both;
+  text-edge: cap;
+  color: #EFBA00;
+}
+
+.company-scheme__list h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.company-scheme__list p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-decor;
+}

@@ -1,0 +1,56 @@
+.oversized-cargo {
+  background-color: $color-title;
+}
+
+.oversized-cargo h2 {
+  max-width: 390px;
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-default-white;
+}
+
+.oversized-cargo__text p {
+  margin: 0;
+
+  line-height: 22px;
+  color: $color-grey-decor;
+}
+
+.oversized-cargo__text p:nth-child(2n) {
+  font-weight: 700;
+}
+
+.oversized-cargo__list {
+  margin: 0;
+  padding: 0;
+
+  line-height: 22px;
+  color: $color-grey-decor;
+
+  list-style: none;
+}
+
+.oversized-cargo__list-items {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.oversized-cargo__list-items h3 {
+  margin: 0;
+
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.oversized-cargo__list-items p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-decor;
+}

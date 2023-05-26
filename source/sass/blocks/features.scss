@@ -1,0 +1,51 @@
+.features h2 {
+  max-width: 450px;
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+
+  color: $color-grey-1;
+}
+
+
+
+.features h2 span {
+  color: $color-general;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item h3 {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+}
+
+.features__back {
+  background-color: $color-general;
+}
+
+.features__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: $color-default-white;
+}
+
+.features__item span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $color-default-white;
+}

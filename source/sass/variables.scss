@@ -15,14 +15,13 @@ $color-main:                       #EFBA00;
 $color-general:                    #E52421;
 $color-white-red:                  #FCE9E9;
 
+$color-grey-1:                     #333333;
 $color-title:                      #313438;
 $color-text:                       #525252;
 $color-grey-text:                  #888A96;
 $color-grey-non-active:            #C0C2CC;
 $color-grey-decor:                 #DDDFE7;
 $color-grey-background:            #F5F6FA;
-
-//$color-background:                 #F5F5F5;
 
 
 
@@ -46,10 +45,8 @@ $modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 // Viewports
 //---------------------------------
 
-$viewport--sm:                      320px;
+$viewport--sm:                      540px;
 $viewport--md:                      768px;
-$viewport--lg:                      1024px;
-$viewport--xl:                      1440px;
 $viewport--xxl:                     1920px;
 
 // Retina

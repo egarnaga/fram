@@ -1,0 +1,50 @@
+.oversized-cargo-cost__wrapper h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.oversized-cargo-cost__wrapper h2 span {
+  color: $color-general;
+}
+
+.oversized-cargo-cost__table th {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+
+.oversized-cargo-cost__table th span {
+  color: $color-general;
+}
+
+.oversized-cargo-cost__table td p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+.oversized-cargo-cost__table td p:nth-child(2n) {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.oversized-cargo-cost__note {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.oversized-cargo-cost__wrap {
+  max-width: 390px;
+}

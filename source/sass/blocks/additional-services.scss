@@ -1,0 +1,27 @@
+.additional-services h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-grey-1;
+}
+
+.additional-services h2 span {
+  color: $color-general;
+}
+
+.additional-services__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.additional-services__list h3 {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+}
