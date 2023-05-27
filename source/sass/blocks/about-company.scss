@@ -1,0 +1,43 @@
+.about-company h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.about-company__text p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+.about-company__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-company__list li span {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 134px;
+  leading-trim: both;
+  text-edge: cap;
+  color: $color-default-white;
+
+  text-shadow: -1px 0 $color-general, 0 1px $color-general, 1px 0 $color-general, 0 -1px $color-general;
+}
+
+.about-company__list li p {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+}

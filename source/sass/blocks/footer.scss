@@ -4,3 +4,80 @@
 
   background-color: $color-title;
 }
+
+.footer__link a {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-default-white;
+
+  opacity: 0.7;
+}
+
+.footer__lists h2 {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-white;
+}
+
+.footer__company ul,
+.footer__services ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer__company a,
+.footer__services a {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  opacity: 0.7;
+}
+
+.footer__phone {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-default-white;
+}
+
+.footer__email {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-white;
+
+  opacity: 0.7;
+}
+
+.footer__schedule h2,
+.footer__address h2 {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.footer__schedule p,
+.footer__address p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.footer__wrap p,
+.footer__wrap span,
+.footer__wrap a {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 17px;
+  color: $color-grey-text;
+}

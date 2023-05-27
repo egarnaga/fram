@@ -1,0 +1,69 @@
+.associated-trawls h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.associated-trawls p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-title;
+}
+
+.associated-trawls__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.associated-trawls__trawl-and-date {
+  margin: 0;
+}
+
+.associated-trawls__trawl-and-date dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.associated-trawls__trawl-and-date dd {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-title;
+}
+
+.associated-trawls__description p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text;
+}
+
+.associated-trawls__description-list {
+  margin: 0;
+}
+
+.associated-trawls__description-list dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.associated-trawls__description-list dd {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}

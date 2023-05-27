@@ -664,6 +664,7 @@ button,
   color: #E52421; }
 
 .btn {
+  display: block;
   width: 100%;
   padding: 0;
   padding-top: 15px;
@@ -680,6 +681,12 @@ button,
   background-color: #E52421;
   -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
           box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
+.btn--transparent {
+  background-color: transparent;
+  border: 1px solid #525252;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .features h2 {
   max-width: 450px;
@@ -903,10 +910,209 @@ button,
   line-height: 29px;
   color: #C0C2CC; }
 
+.partners h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.partners__slider-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.reviews__slider-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__card-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.reviews__card-text h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313438; }
+
+.reviews__card-text span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.associated-trawls h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.associated-trawls p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #313438; }
+
+.associated-trawls__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.associated-trawls__trawl-and-date {
+  margin: 0; }
+
+.associated-trawls__trawl-and-date dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.associated-trawls__trawl-and-date dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313438; }
+
+.associated-trawls__description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252; }
+
+.associated-trawls__description-list {
+  margin: 0; }
+
+.associated-trawls__description-list dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.associated-trawls__description-list dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.shipping-cost__wrapper h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.shipping-cost__wrap form {
+  max-width: 600px; }
+
+.about-company h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.about-company__text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.about-company__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.about-company__list li span {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 134px;
+  leading-trim: both;
+  text-edge: cap;
+  color: #ffffff;
+  text-shadow: -1px 0 #E52421, 0 1px #E52421, 1px 0 #E52421, 0 -1px #E52421; }
+
+.about-company__list li p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #313438; }
+
 .footer {
   min-height: 100px;
   padding: 0 60px;
   background-color: #313438; }
+
+.footer__link a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7; }
+
+.footer__lists h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff; }
+
+.footer__company ul,
+.footer__services ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer__company a,
+.footer__services a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7; }
+
+.footer__phone {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff; }
+
+.footer__email {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7; }
+
+.footer__schedule h2,
+.footer__address h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.footer__schedule p,
+.footer__address p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff; }
+
+.footer__wrap p,
+.footer__wrap span,
+.footer__wrap a {
+  margin: 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #888A96; }
 
 .modal {
   position: fixed;
