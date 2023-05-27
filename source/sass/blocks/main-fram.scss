@@ -13,6 +13,13 @@
   color: $color-default-white;
 }
 
+@media  screen and (max-width: $viewport--sm) {
+  .main-fram h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
 .main-fram h1 span {
   color: $color-main;
 }

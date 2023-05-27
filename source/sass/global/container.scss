@@ -6,12 +6,12 @@
 
 
 
-  @include viewport--sm {
+  @include viewport--xs {
     padding: 0 20px;
   }
 
   &--no-padding {
-    @include viewport--sm {
+    @include viewport--xs {
       padding: 0;
     }
   }

@@ -531,10 +531,10 @@ button,
   max-width: 1365px;
   margin: 0 auto;
   padding: 0 45px; }
-  @media (max-width: 767px) {
+  @media (max-width: 541px) {
     .container {
       padding: 0 20px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 541px) {
     .container--no-padding {
       padding: 0; } }
 
@@ -583,6 +583,11 @@ button,
   line-height: 40px;
   text-transform: uppercase;
   color: #ffffff; }
+
+@media screen and (max-width: 541px) {
+  .main-fram h1 {
+    font-size: 30px;
+    line-height: 33px; } }
 
 .main-fram h1 span {
   color: #EFBA00; }
@@ -718,6 +723,10 @@ button,
   font-size: 14px;
   line-height: 20px;
   color: #ffffff; }
+
+@media screen and (max-width: 769px) {
+  .features__item p {
+    color: #525252; } }
 
 .features__item span {
   font-weight: 700;
@@ -904,11 +913,22 @@ button,
   line-height: 35px;
   color: #EFBA00; }
 
+@media screen and (max-width: 769px) {
+  .call-to-action h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px; } }
+
 .call-to-action__wrapper a {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #C0C2CC; }
+
+@media screen and (max-width: 541px) {
+  .call-to-action__wrapper a {
+    font-size: 20px;
+    line-height: 24px; } }
 
 .partners h2 {
   margin: 0;
@@ -1036,8 +1056,8 @@ button,
   font-weight: 700;
   font-size: 96px;
   line-height: 134px;
-  leading-trim: both;
-  text-edge: cap;
+  /* leading-trim: both;
+  text-edge: cap; */
   color: #ffffff;
   text-shadow: -1px 0 #E52421, 0 1px #E52421, 1px 0 #E52421, 0 -1px #E52421; }
 
@@ -1159,7 +1179,7 @@ button,
     width: 100%;
     min-height: 100%;
     padding: 60px 40px; }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       .modal__wrapper {
         padding: 60px 16px; } }
   .modal__overlay {
@@ -1174,7 +1194,7 @@ button,
     width: 600px;
     padding: 40px;
     background-color: #ffffff; }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       .modal__content {
         width: 100%;
         padding: 20px; } }
@@ -1186,7 +1206,7 @@ button,
     width: 100%; }
   .modal--fit-content .modal__content {
     width: auto; }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       .modal--fit-content .modal__content {
         width: 100%; } }
   .modal--no-scale {

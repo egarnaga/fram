@@ -26,8 +26,8 @@
   font-weight: 700;
   font-size: 96px;
   line-height: 134px;
-  leading-trim: both;
-  text-edge: cap;
+  /* leading-trim: both;
+  text-edge: cap; */
   color: $color-default-white;
 
   text-shadow: -1px 0 $color-general, 0 1px $color-general, 1px 0 $color-general, 0 -1px $color-general;
