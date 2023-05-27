@@ -1,0 +1,42 @@
+.industry-solutions h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.industry-solutions__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.industry-solutions__front h3 {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-white;
+
+  background-color: $color-title;
+}
+
+.industry-solutions__back {
+  background-color: $color-title;
+  opacity: 0.9;
+}
+
+.industry-solutions__back ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+
+  list-style: none;
+  opacity: 0.8;
+}

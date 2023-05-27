@@ -855,6 +855,54 @@ button,
 .oversized-cargo-cost__wrap {
   max-width: 390px; }
 
+.industry-solutions h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.industry-solutions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.industry-solutions__front h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #313438; }
+
+.industry-solutions__back {
+  background-color: #313438;
+  opacity: 0.9; }
+
+.industry-solutions__back ul {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  list-style: none;
+  opacity: 0.8; }
+
+.call-to-action {
+  background-color: #313438; }
+
+.call-to-action h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #EFBA00; }
+
+.call-to-action__wrapper a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #C0C2CC; }
+
 .footer {
   min-height: 100px;
   padding: 0 60px;

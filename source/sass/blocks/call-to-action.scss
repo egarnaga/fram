@@ -1,0 +1,19 @@
+.call-to-action {
+  background-color: $color-title;
+}
+
+.call-to-action h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-main;
+}
+
+.call-to-action__wrapper a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-grey-non-active;
+}
