@@ -1,10 +1,14 @@
 .main-fram {
+  padding-top: 40px;
+  padding-bottom: 74px;
+
   background-color: $color-title;
 }
 
 .main-fram h1 {
   max-width: 637px;
   margin: 0;
+  margin-bottom: 16px;
 
   font-weight: 800;
   font-size: 36px;
@@ -27,6 +31,7 @@
 .main-fram p {
   display: inline-block;
   margin: 0;
+  margin-bottom: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;

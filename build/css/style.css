@@ -545,7 +545,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100px;
+  min-height: 149px;
   padding: 0 40px;
   background-color: #313438; }
   .header__wrapper {
@@ -573,11 +573,14 @@ button,
     display: none; }
 
 .main-fram {
+  padding-top: 40px;
+  padding-bottom: 74px;
   background-color: #313438; }
 
 .main-fram h1 {
   max-width: 637px;
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 800;
   font-size: 36px;
   line-height: 40px;
@@ -595,6 +598,7 @@ button,
 .main-fram p {
   display: inline-block;
   margin: 0;
+  margin-bottom: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -609,6 +613,10 @@ button,
   max-width: 390px; }
 
 .form {
+  padding-top: 50px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #23262D; }
 
 .form--light {
@@ -616,6 +624,7 @@ button,
 
 .form h2 {
   margin: 0;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 29px;
   color: #ffffff; }
@@ -637,36 +646,154 @@ button,
 .form--light p {
   color: #525252; }
 
+.form__field {
+  margin-bottom: 16px; }
+
 .form__field input {
+  display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
-  border: none; }
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #525252;
+  background-color: #23262D; }
 
-/* .form__field input::placeholder {
-  color: red;
-}
+.form__field input:focus {
+  outline: none;
+  border-bottom: 1px solid #EFBA00; }
 
-.form--light .form__field input::placeholder {
-  color: red;
-} */
+.form__field--error input {
+  outline: none;
+  border-bottom: 1px solid #E52421; }
+
 .form__field span {
+  padding-left: 20px;
   font-size: 12px;
   line-height: 17px;
   color: #E52421; }
 
+.form__textarea {
+  position: relative; }
+
+.form__textarea::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/svg/textarea-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.form__textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #525252;
+  background-color: #23262D; }
+
+.form__textarea textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #EFBA00; }
+
+.form__field--error textarea {
+  outline: none;
+  border-bottom: 1px solid #E52421; }
+
+.form__inputs--hidden {
+  display: none; }
+
+.form__inputs--show {
+  display: block; }
+
+.form__btn {
+  margin-top: 32px; }
+
+.form__field-check input {
+  display: inline-block;
+  padding: 0;
+  width: auto; }
+
 .form__field-check label {
+  position: relative;
+  display: block;
+  max-width: 284px;
+  margin-top: 16px;
+  padding-left: 24px;
   font-size: 12px;
   line-height: 17px;
-  color: #ffffff; }
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.form__checkbox:checked + label::before {
+  background-image: none; }
+
+.form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.form--light .form__checkbox + label::before {
+  background-image: url("../img/svg/checkbox-off-light.svg"); }
+
+.form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/svg/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.form--light .form__checkbox:checked + label::after {
+  background-image: url(../img/svg/checkbox-on-light.svg); }
 
 .form--light .form__field-check label {
   color: #888A96; }
 
 .form__field-check label span {
+  padding: 0;
   color: #EFBA00; }
 
 .form--light .form__field-check label span {
   color: #E52421; }
+
+.form__error {
+  display: none; }
+
+.form__error--show {
+  display: block; }
 
 .btn {
   display: block;
@@ -686,6 +813,10 @@ button,
   background-color: #E52421;
   -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
           box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
+.btn:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08))), #E52421;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #E52421; }
 
 .btn--transparent {
   background-color: transparent;
