@@ -11,7 +11,7 @@
   color: $color-main;
 }
 
-@media  screen and (max-width: $viewport--md) {
+@media  screen and (max-width: 768px) {
   .call-to-action h2 {
     font-weight: 700;
     font-size: 24px;
@@ -26,7 +26,7 @@
   color: $color-grey-non-active;
 }
 
-@media  screen and (max-width: $viewport--sm) {
+@media  screen and (max-width: 540px) {
   .call-to-action__wrapper a {
     font-size: 20px;
     line-height: 24px;

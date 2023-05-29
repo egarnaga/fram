@@ -38,9 +38,6 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include viewport--sm {
-      padding: 60px 16px;
-    }
   }
 
   &__overlay {
@@ -62,10 +59,6 @@
 
     background-color: $color-default-white;
 
-    @include viewport--sm {
-      width: 100%;
-      padding: 20px;
-    }
   }
 
   &__close-btn {
@@ -83,10 +76,6 @@
   &--fit-content {
     .modal__content {
       width: auto;
-
-      @include viewport--sm {
-        width: 100%;
-      }
     }
   }
 

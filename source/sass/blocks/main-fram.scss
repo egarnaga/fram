@@ -5,6 +5,18 @@
   background-color: $color-title;
 }
 
+@media  screen and (max-width: 768px) {
+  .main-fram {
+    padding-bottom: 41px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-fram {
+    padding-bottom: 0;
+  }
+}
+
 .main-fram h1 {
   max-width: 637px;
   margin: 0;
@@ -17,7 +29,7 @@
   color: $color-default-white;
 }
 
-@media  screen and (max-width: $viewport--sm) {
+@media  screen and (max-width: 540px) {
   .main-fram h1 {
     font-size: 30px;
     line-height: 33px;
@@ -44,6 +56,112 @@
   background-color: $color-text;
 }
 
+@media screen and (max-width: 670px) {
+  .main-fram p {
+    margin-bottom: 297px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-fram__wrap {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
 .main-fram__wrapper {
+  position: relative;
   max-width: 390px;
+}
+
+@media  screen and (max-width: 768px) {
+  .main-fram__wrapper {
+    max-width: 324px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-fram__wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.main-fram__wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  top: -150px;
+  left: 400px;
+
+  width: 886px;
+  height: 594px;
+
+  background-image: url(../img/bg/illustration.svg);
+  background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 1200px) {
+  .main-fram__wrapper::before {
+    top: 0;
+    left: 500px;
+
+    width: 443px;
+    height: 297px;
+  }
+}
+
+@media  screen and (max-width: 1050px) {
+  .main-fram__wrapper::before {
+    left: 400px;
+  }
+}
+
+@media  screen and (max-width: 900px) {
+  .main-fram__wrapper::before {
+    left: 430px;
+
+    width: 353px;
+    height: 236px;
+  }
+}
+
+
+@media  screen and (max-width: 820px) {
+  .main-fram__wrapper::before {
+    left: 400px;
+
+    width: 326px;
+    height: 211px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .main-fram__wrapper::before {
+    left: 325px;
+
+    width: 353px;
+    height: 236px;
+  }
+}
+
+@media  screen and (max-width: 670px) {
+  .main-fram__wrapper::before {
+    top: -260px;
+    left: -15px;
+
+    width: 353px;
+    height: 236px;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .main-fram__wrapper::before {
+    top: -275px;
+    left: 0;
+
+    width: 375px;
+    height: 249px;
+  }
 }

@@ -42,7 +42,7 @@
   color: $color-default-white;
 }
 
-@media  screen and (max-width: $viewport--md) {
+@media  screen and (max-width: 768px) {
   .features__item p {
     color: $color-text;
   }
