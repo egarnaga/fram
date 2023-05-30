@@ -922,7 +922,7 @@ button,
 .features {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 121px; }
+  padding-bottom: 120px; }
 
 .features::before {
   content: "";
@@ -933,6 +933,41 @@ button,
   height: 45px;
   background-image: url(../img/svg/bg-features.svg);
   background-repeat: no-repeat; }
+
+@media screen and (max-width: 1170px) {
+  .features::before {
+    right: -20px;
+    background-size: 70%; } }
+
+@media screen and (max-width: 950px) {
+  .features::before {
+    right: -220px;
+    background-size: 60%; } }
+
+@media screen and (max-width: 768px) {
+  .features::before {
+    right: 65px;
+    top: 135px;
+    width: 317px;
+    height: 53px;
+    background-size: 100%;
+    background-image: url(../img/svg/bg-features-2.svg); } }
+
+@media screen and (max-width: 700px) {
+  .features::before {
+    right: -70px;
+    top: 150px;
+    background-size: 70%; } }
+
+@media screen and (max-width: 540px) {
+  .features::before {
+    left: 20px;
+    top: 168px;
+    background-size: 100%; } }
+
+@media screen and (max-width: 478px) {
+  .features::before {
+    top: 203px; } }
 
 .features h2 {
   max-width: 450px;
@@ -946,6 +981,10 @@ button,
 .features h2 span {
   color: #E52421; }
 
+@media screen and (max-width: 1000px) {
+  .features__slider {
+    width: 100%; } }
+
 .features__slider-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,9 +995,37 @@ button,
   padding: 0;
   list-style: none; }
 
+@media screen and (max-width: 1000px) {
+  .features__slider-wrapper {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+
 .features__card {
   position: relative;
   width: 25%; }
+
+@media screen and (max-width: 1300px) {
+  .features__card {
+    width: 33.33333%; } }
+
+@media screen and (max-width: 1000px) {
+  .features__card {
+    width: 300px;
+    max-width: 300px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; } }
+
+@media screen and (max-width: 768px) {
+  .features__card {
+    width: 300px;
+    max-width: 300px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border: 1px solid #DDDFE7;
+    background-color: #F5F6FA; } }
 
 .features__card:hover .features__back {
   opacity: 1; }
@@ -971,9 +1038,25 @@ button,
   padding-left: 30px;
   padding-right: 15px; }
 
+@media screen and (max-width: 768px) {
+  .features__front {
+    min-height: auto;
+    padding-bottom: 30px;
+    padding-right: 30px; } }
+
+.features__front img {
+  width: 255px;
+  height: 136px; }
+
 .features__title {
   position: absolute;
   bottom: 26px; }
+
+@media screen and (max-width: 768px) {
+  .features__title {
+    position: static;
+    margin-top: 24px;
+    margin-bottom: 24px; } }
 
 .features__card h3 {
   margin: 0;
@@ -1008,6 +1091,14 @@ button,
   transition: .5s ease;
   background-color: #E52421; }
 
+@media screen and (max-width: 768px) {
+  .features__back {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: #F5F6FA;
+    opacity: 1; } }
+
 .features__back-wrap {
   position: relative;
   width: 100%;
@@ -1016,6 +1107,11 @@ button,
   padding-bottom: 26px;
   padding-left: 30px;
   padding-right: 30px; }
+
+@media screen and (max-width: 768px) {
+  .features__back-wrap {
+    padding-top: 16px;
+    padding-bottom: 30px; } }
 
 .features__back-wrap::before {
   content: "";
@@ -1027,6 +1123,10 @@ button,
   background-image: url(../img/svg/vector.svg);
   background-repeat: no-repeat; }
 
+@media screen and (max-width: 768px) {
+  .features__back-wrap::before {
+    background-image: none; } }
+
 .features__card p {
   margin: 0;
   font-size: 14px;
@@ -1035,7 +1135,17 @@ button,
 
 @media screen and (max-width: 768px) {
   .features__card p {
+    position: relative;
     color: #525252; } }
+
+@media screen and (max-width: 768px) {
+  .features__card p::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    height: 1px;
+    width: 100%;
+    background-color: #DDDFE7; } }
 
 .features__card span {
   font-weight: 700;
@@ -1046,6 +1156,10 @@ button,
 .features__back-title {
   position: absolute;
   bottom: 26px; }
+
+@media screen and (max-width: 768px) {
+  .features__back-title {
+    display: none; } }
 
 .features__back-title span {
   display: block;

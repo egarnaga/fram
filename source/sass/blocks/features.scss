@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 120px;
-  padding-bottom: 121px;
+  padding-bottom: 120px;
 }
 
 .features::before {
@@ -20,6 +20,60 @@
   background-repeat: no-repeat;
 }
 
+@media  screen and (max-width: 1170px) {
+  .features::before {
+    right: -20px;
+
+    background-size: 70%;
+  }
+}
+
+@media  screen and (max-width: 950px) {
+  .features::before {
+    right: -220px;
+
+    background-size: 60%;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .features::before {
+    right: 65px;
+    top: 135px;
+
+    width: 317px;
+    height: 53px;
+
+    background-size: 100%;
+
+    background-image: url(../img/svg/bg-features-2.svg);
+  }
+}
+
+@media  screen and (max-width: 700px) {
+  .features::before {
+    right: -70px;
+    top: 150px;
+
+    background-size: 70%;
+  }
+}
+
+@media  screen and (max-width: 540px) {
+  .features::before {
+    left: 20px;
+    top: 168px;
+
+    background-size: 100%;
+  }
+}
+
+@media  screen and (max-width: 478px) {
+  .features::before {
+    top: 203px;
+  }
+}
+
 .features h2 {
   max-width: 450px;
   margin: 0;
@@ -32,10 +86,14 @@
   color: $color-grey-1;
 }
 
-
-
 .features h2 span {
   color: $color-general;
+}
+
+@media  screen and (max-width: 1000px) {
+  .features__slider {
+    width: 100%;
+  }
 }
 
 .features__slider-wrapper {
@@ -47,17 +105,46 @@
   list-style: none;
 }
 
+@media  screen and (max-width: 1000px) {
+  .features__slider-wrapper {
+    justify-content: initial;
+    flex-wrap: nowrap;
+  }
+}
+
 .features__card {
   position: relative;
   width: 25%;
 }
 
+@media  screen and (max-width: 1300px) {
+  .features__card {
+    width: 33.33333%;
+  }
+}
 
+@media  screen and (max-width: 1000px) {
+  .features__card {
+    width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .features__card {
+    width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+
+    border: 1px solid #DDDFE7;
+    background-color: $color-grey-background;
+  }
+}
 
 .features__card:hover .features__back {
   opacity: 1;
 }
-
 
 .features__front {
   position: relative;
@@ -68,6 +155,18 @@
   padding-right: 15px;
 }
 
+@media  screen and (max-width: 768px) {
+  .features__front {
+    min-height: auto;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+}
+
+.features__front img {
+  width: 255px;
+  height: 136px;
+}
 
 .features__title {
   position: absolute;
@@ -75,8 +174,15 @@
   bottom: 26px;
 }
 
+@media  screen and (max-width: 768px) {
+  .features__title {
+    position: static;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
 .features__card h3 {
-  //position: relative;
   margin: 0;
   padding-right: 28px;
 
@@ -104,14 +210,8 @@
   background-repeat: no-repeat;
 }
 
-
 .features__back {
-  //display: none;
-
-
   position: absolute;
-
-
 
   top: 0;
   bottom: 0;
@@ -125,6 +225,18 @@
   background-color: $color-general;
 }
 
+@media  screen and (max-width: 768px) {
+  .features__back {
+    position: static;
+
+    height: auto;
+    width: auto;
+
+    background-color: $color-grey-background;
+    opacity: 1;
+  }
+}
+
 .features__back-wrap {
   position: relative;
 
@@ -135,6 +247,13 @@
   padding-bottom: 26px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+  .features__back-wrap {
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
 }
 
 .features__back-wrap::before {
@@ -152,6 +271,11 @@
   background-repeat: no-repeat;
 }
 
+@media  screen and (max-width: 768px) {
+  .features__back-wrap::before {
+    background-image: none;
+  }
+}
 
 .features__card p {
   margin: 0;
@@ -163,7 +287,23 @@
 
 @media  screen and (max-width: 768px) {
   .features__card p {
+    position: relative;
     color: $color-text;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .features__card p::before {
+    content: "";
+
+    position: absolute;
+
+    top: -16px;
+
+    height: 1px;
+    width: 100%;
+
+    background-color: $color-grey-decor;
   }
 }
 
@@ -179,6 +319,12 @@
   position: absolute;
 
   bottom: 26px;
+}
+
+@media  screen and (max-width: 768px) {
+  .features__back-title {
+    display: none;
+  }
 }
 
 .features__back-title span {
@@ -204,4 +350,3 @@
   background-image: url(../img/svg/arrow-light.svg);
   background-repeat: no-repeat;
 }
-
