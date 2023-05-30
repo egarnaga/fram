@@ -1,6 +1,29 @@
+.features {
+  position: relative;
+
+  padding-top: 120px;
+  padding-bottom: 121px;
+}
+
+.features::before {
+  content: "";
+
+  position: absolute;
+
+  right: 180px;
+  top: 165px;
+
+  width: 662px;
+  height: 45px;
+
+  background-image: url(../img/svg/bg-features.svg);
+  background-repeat: no-repeat;
+}
+
 .features h2 {
   max-width: 450px;
   margin: 0;
+  margin-bottom: 48px;
 
   font-weight: 800;
   font-size: 32px;
@@ -15,26 +38,122 @@
   color: $color-general;
 }
 
-.features__list {
+.features__slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.features__item h3 {
+.features__card {
+  position: relative;
+  width: 25%;
+}
+
+
+
+.features__card:hover .features__back {
+  opacity: 1;
+}
+
+
+.features__front {
+  position: relative;
+  min-height: 261px;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+
+
+.features__title {
+  position: absolute;
+
+  bottom: 26px;
+}
+
+.features__card h3 {
+  //position: relative;
   margin: 0;
+  padding-right: 28px;
 
   font-size: 16px;
   line-height: 22px;
   color: $color-title;
 }
 
+.features__card h3 b {
+  position: relative;
+}
+
+.features__card h3 b::before {
+  content: "";
+
+  position: absolute;
+
+  right: -28px;
+  bottom: 6px;
+
+  width: 20px;
+  height: 8px;
+
+  background-image: url(../img/svg/arrow.svg);
+  background-repeat: no-repeat;
+}
+
+
 .features__back {
+  //display: none;
+
+
+  position: absolute;
+
+
+
+  top: 0;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
   background-color: $color-general;
 }
 
-.features__item p {
+.features__back-wrap {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.features__back-wrap::before {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  bottom: -79px;
+
+  width: 79px;
+  height: 129px;
+
+  background-image: url(../img/svg/vector.svg);
+  background-repeat: no-repeat;
+}
+
+
+.features__card p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -43,15 +162,46 @@
 }
 
 @media  screen and (max-width: 768px) {
-  .features__item p {
+  .features__card p {
     color: $color-text;
   }
 }
 
-.features__item span {
+.features__card span {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 
   color: $color-default-white;
 }
+
+.features__back-title {
+  position: absolute;
+
+  bottom: 26px;
+}
+
+.features__back-title span {
+  display: block;
+  padding-right: 28px;
+}
+
+.features__back-title span b {
+  position: relative;
+}
+
+.features__back-title span b::before {
+  content: "";
+
+  position: absolute;
+
+  right: -28px;
+  bottom: 6px;
+
+  width: 20px;
+  height: 8px;
+
+  background-image: url(../img/svg/arrow-light.svg);
+  background-repeat: no-repeat;
+}
+
