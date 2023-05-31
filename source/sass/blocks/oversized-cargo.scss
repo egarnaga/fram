@@ -16,7 +16,6 @@
   }
 }
 
-
 .oversized-cargo__text {
   max-width: 420px;
   padding-right: 30px;
@@ -70,7 +69,6 @@
 @media  screen and (max-width: 840px) {
   .oversized-cargo h2 {
     padding-bottom: 314px;
-    //background-position: center;
   }
 }
 
@@ -109,13 +107,10 @@
   font-weight: 700;
 }
 
-
-
 .oversized-cargo__list {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-
 
   line-height: 22px;
   color: $color-grey-decor;
@@ -146,13 +141,6 @@
 
   background-color: $color-main;
 }
-
-
-
-
-
-
-
 
 .oversized-cargo__list-items {
   position: relative;
@@ -199,7 +187,6 @@
   }
 }
 
-
 .oversized-cargo__list-items li {
   width: 50%;
 }
@@ -210,7 +197,6 @@
     margin-bottom: 20px;
   }
 }
-
 
 .oversized-cargo__list-items li:nth-child(2n+1),
 .oversized-cargo__list-items li:nth-child(2n+2) {
@@ -224,8 +210,6 @@
   }
 }
 
-
-
 .oversized-cargo__list-items li:nth-child(4n+1),
 .oversized-cargo__list-items li:nth-child(4n+2) {
   padding-bottom: 10px;
@@ -237,7 +221,6 @@
     padding-bottom: 0;
   }
 }
-
 
 .oversized-cargo__list-items li:nth-child(2n+1) {
   padding-right: 10px;
@@ -273,7 +256,6 @@
     background-color: #23262D;
   }
 }
-
 
 .oversized-cargo__list-items li div {
   position: relative;
@@ -323,14 +305,9 @@
   }
 }
 
-
 .oversized-cargo__list-items li:nth-child(4n-3) div::before {
   background-image: url(../img/svg/oversized-cargo-1.svg);
 }
-
-
-
-
 
 .oversized-cargo__list-items h3 {
   margin: 0;
