@@ -2,8 +2,14 @@
   background-color: $color-title;
 }
 
+.company-scheme .container {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
 .company-scheme h2 {
   margin: 0;
+  margin-bottom: 48px;
 
   font-weight: 800;
   font-size: 32px;
@@ -12,16 +18,25 @@
 }
 
 .company-scheme__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.company-scheme__list li {
+  max-width: 205px;
+}
+
 .company-scheme__list span {
+  display: flex;
+  margin-bottom: 10px;
+
   font-weight: 900;
   font-size: 64px;
-  line-height: 70px;
+  line-height: 55px;
   leading-trim: both;
   text-edge: cap;
   color: #EFBA00;
@@ -29,6 +44,8 @@
 
 .company-scheme__list h3 {
   margin: 0;
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;

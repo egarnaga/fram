@@ -1184,6 +1184,7 @@ button,
   background-color: #313438; }
 
 .oversized-cargo .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,6 +1195,27 @@ button,
 @media screen and (max-width: 920px) {
   .oversized-cargo .container {
     display: block; } }
+
+.oversized-cargo .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 52px;
+  background-image: url(../img/svg/bg-title.svg);
+  background-repeat: no-repeat;
+  z-index: 1; }
+
+@media screen and (max-width: 1380px) {
+  .oversized-cargo .container::before {
+    top: -3px;
+    left: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .oversized-cargo .container::before {
+    top: -3px;
+    left: -24px; } }
 
 .oversized-cargo__text {
   max-width: 420px;
@@ -1214,13 +1236,15 @@ button,
     padding-right: 0; } }
 
 .oversized-cargo h2 {
+  position: relative;
   max-width: 390px;
   margin: 0;
   margin-bottom: 48px;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
-  color: #ffffff; }
+  color: #ffffff;
+  z-index: 10; }
 
 @media screen and (max-width: 920px) {
   .oversized-cargo h2 {
@@ -1589,28 +1613,47 @@ button,
 .company-scheme {
   background-color: #313438; }
 
+.company-scheme .container {
+  padding-top: 120px;
+  padding-bottom: 160px; }
+
 .company-scheme h2 {
   margin: 0;
+  margin-bottom: 48px;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: #ffffff; }
 
 .company-scheme__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none; }
 
+.company-scheme__list li {
+  max-width: 205px; }
+
 .company-scheme__list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
   font-weight: 900;
   font-size: 64px;
-  line-height: 70px;
+  line-height: 55px;
   leading-trim: both;
   text-edge: cap;
   color: #EFBA00; }
 
 .company-scheme__list h3 {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff; }
