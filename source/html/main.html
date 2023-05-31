@@ -377,55 +377,58 @@
 
       <section class="oversized-cargo-cost container">
         <div class="oversized-cargo-cost__wrapper">
-          <h2><span>Стоимость</span> перевозки негабаритных грузов</h2>
-          <table class="oversized-cargo-cost__table">
-            <thead>
-              <tr>
-                <th>Габариты и вес груза</th>
-                <th>Масса груза</th>
-                <th>Цена за километр<span>*</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <p>Негабаритный груз</p>
-                  <p>(ДxШxВ до 16 x 3,5 x 3,5 м)</p>
-                </td>
-                <td>
-                  <p>до 20 тонн</p>
-                </td>
-                <td>
-                  <p>от 50 руб. / км</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Негабаритный груз</p>
-                  <p>(ДxШxВ до 17 x 5 x 3,8 м)</p>
-                </td>
-                <td>
-                  <p>от 20 до 45 тонн</p>
-                </td>
-                <td>
-                  <p>от 100 руб. / км</p>
-                  <p>(сопровождение входит в стоимость)</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Негабаритный груз</p>
-                  <p>(ДxШxВ до 18 x от 6 x от 5 м)</p>
-                </td>
-                <td>
-                  <p>от 20 до 45 тонн</p>
-                </td>
-                <td>
-                  <p>11000 – 19000 руб.</p>
-                </td>
-              </tr>
-          </tbody>
-          </table>
+          <h2><span>Стоимость</span> перевозки негабаритных&nbsp;грузов</h2>
+          <div class="oversized-cargo-cost__table-wrap">
+            <table class="oversized-cargo-cost__table">
+              <thead>
+                <tr>
+                  <th>Габариты и вес груза</th>
+                  <th>Масса груза</th>
+                  <th>Цена за километр<span>*</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 16 x 3,5 x 3,5 м)</p>
+                  </td>
+                  <td>
+                    <p>до 20 тонн</p>
+                  </td>
+                  <td>
+                    <p>от 50 руб. / км</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 17 x 5 x 3,8 м)</p>
+                  </td>
+                  <td>
+                    <p>от 20 до 45 тонн</p>
+                  </td>
+                  <td>
+                    <p>от 100 руб. / км</p>
+                    <p>(сопровождение входит в стоимость)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 18 x от 6 x от 5 м)</p>
+                  </td>
+                  <td>
+                    <p>от 20 до 45 тонн</p>
+                  </td>
+                  <td>
+                    <p>11000 – 19000 руб.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <p class="oversized-cargo-cost__note">*Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
         </div>
 
@@ -435,27 +438,31 @@
 
             <p>Заполните форму, наш менеджер ответит в ближайшее время</p>
 
-            <div class="form__field form__field-name">
-              <label class="visually-hidden" for="name-light">Имя</label>
-              <input type="text" name="name-light" id="name-light" placeholder="Имя" required="">
-              <span class="form__error">Некорректное имя</span>
+            <div class="form__wrap">
+              <div class="form__field form__field-name">
+                <label class="visually-hidden" for="name-light">Имя</label>
+                <input type="text" name="name-light" id="name-light" placeholder="Имя" required="">
+                <span class="form__error">Некорректное имя</span>
+              </div>
+
+              <div class="form__field form__field-phone">
+                <label class="visually-hidden" for="phone-light">Номер телефона</label>
+                <input type="tel" name="phone-light" id="phone-light" placeholder="Номер телефона" required="">
+                <span class="form__error">Некорректный номер телефона</span>
+              </div>
             </div>
 
-            <div class="form__field form__field-phone">
-              <label class="visually-hidden" for="phone-light">Номер телефона</label>
-              <input type="tel" name="phone-light" id="phone-light" placeholder="Номер телефона" required="">
-              <span class="form__error">Некорректный номер телефона</span>
-            </div>
+            <div class="form__wrap">
+              <div class="form__btn">
+                <button class="btn" type="submit" aria-label="Получить консультацию">
+                  <span>Получить консультацию</span>
+                </button>
+              </div>
 
-            <div class="form__btn">
-              <button class="btn" type="submit" aria-label="Получить консультацию">
-                <span>Получить консультацию</span>
-              </button>
-            </div>
-
-            <div class="form__field form__field-check">
-              <input class="visually-hidden form__checkbox" id="check-light" type="checkbox" name="check-light" required="" checked>
-              <label for="check-light">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+              <div class="form__field form__field-check">
+                <input class="visually-hidden form__checkbox" id="check-light" type="checkbox" name="check-light" required="" checked>
+                <label for="check-light">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+              </div>
             </div>
           </form>
         </div>

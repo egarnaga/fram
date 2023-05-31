@@ -713,6 +713,15 @@ button,
 .form--light {
   background-color: #F5F6FA; }
 
+@media screen and (max-width: 768px) {
+  .form--light {
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 540px) {
+  .form--light {
+    padding-left: 24px;
+    padding-right: 24px; } }
+
 .form h2 {
   margin: 0;
   margin-bottom: 32px;
@@ -739,6 +748,19 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #525252; }
+
+@media screen and (max-width: 768px) {
+  .form--light .form__wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 28px; } }
+
+@media screen and (max-width: 600px) {
+  .form--light .form__wrap {
+    display: block; } }
 
 .form__field {
   margin-bottom: 16px; }
@@ -832,6 +854,14 @@ button,
 .form__btn {
   margin-top: 32px; }
 
+@media screen and (max-width: 768px) {
+  .form--light .form__btn {
+    margin-top: 0; } }
+
+@media screen and (max-width: 600px) {
+  .form--light .form__btn {
+    margin-top: 32px; } }
+
 .form__field-check input {
   display: inline-block;
   padding: 0;
@@ -851,6 +881,16 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+@media screen and (max-width: 768px) {
+  .form--light .form__field-check label {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0; } }
+
+@media screen and (max-width: 600px) {
+  .form--light .form__field-check label {
+    margin-top: 16px; } }
 
 @media screen and (max-width: 540px) {
   .form__field-check label {
@@ -1803,9 +1843,20 @@ button,
   padding-top: 120px;
   padding-bottom: 120px; }
 
+@media screen and (max-width: 1000px) {
+  .oversized-cargo-cost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .oversized-cargo-cost__wrapper {
   max-width: 775px;
   padding-top: 41px; }
+
+@media screen and (max-width: 1000px) {
+  .oversized-cargo-cost__wrapper {
+    margin-bottom: 48px; } }
 
 .oversized-cargo-cost__wrapper h2 {
   margin: 0;
@@ -1818,6 +1869,12 @@ button,
 .oversized-cargo-cost__wrapper h2 span {
   color: #E52421; }
 
+@media screen and (max-width: 665px) {
+  .oversized-cargo-cost__table-wrap {
+    width: 0;
+    min-width: 100%;
+    overflow: auto; } }
+
 .oversized-cargo-cost__table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1828,6 +1885,10 @@ button,
           flex-direction: column;
   width: 100%;
   border-collapse: collapse; }
+
+@media screen and (max-width: 665px) {
+  .oversized-cargo-cost__table {
+    width: 665px; } }
 
 .oversized-cargo-cost__table thead tr {
   display: -webkit-box;
@@ -1843,6 +1904,9 @@ button,
   color: #888A96;
   text-align: left; }
 
+.oversized-cargo-cost__table th:nth-child(2) {
+  padding-left: 30px; }
+
 .oversized-cargo-cost__table th span {
   color: #E52421; }
 
@@ -1854,6 +1918,9 @@ button,
 
 .oversized-cargo-cost__table tbody tr td {
   width: 33.33333%; }
+
+.oversized-cargo-cost__table tbody tr td:nth-child(2) {
+  padding-left: 30px; }
 
 .oversized-cargo-cost__table td p {
   margin: 0;
@@ -1875,6 +1942,10 @@ button,
 
 .oversized-cargo-cost__wrap {
   max-width: 390px; }
+
+@media screen and (max-width: 768px) {
+  .oversized-cargo-cost__wrap {
+    max-width: 100%; } }
 
 .industry-solutions h2 {
   margin: 0;

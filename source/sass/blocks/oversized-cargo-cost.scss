@@ -5,9 +5,21 @@
   padding-bottom: 120px;
 }
 
+@media  screen and (max-width: 1000px) {
+  .oversized-cargo-cost {
+    flex-direction: column;
+  }
+}
+
 .oversized-cargo-cost__wrapper {
   max-width: 775px;
   padding-top: 41px;
+}
+
+@media  screen and (max-width: 1000px) {
+  .oversized-cargo-cost__wrapper {
+    margin-bottom: 48px;
+  }
 }
 
 .oversized-cargo-cost__wrapper h2 {
@@ -24,12 +36,26 @@
   color: $color-general;
 }
 
+@media  screen and (max-width: 665px) {
+  .oversized-cargo-cost__table-wrap {
+    width: 0;        // for table scroll
+    min-width: 100%; // for table scroll
+    overflow: auto;  // for table scroll
+  }
+}
+
 .oversized-cargo-cost__table {
   display: flex;
   flex-direction: column;
   width: 100%;
 
   border-collapse: collapse;
+}
+
+@media  screen and (max-width: 665px) {
+  .oversized-cargo-cost__table {
+    width: 665px;  // for table scroll
+  }
 }
 
 .oversized-cargo-cost__table thead tr {
@@ -47,6 +73,9 @@
   text-align: left;
 }
 
+.oversized-cargo-cost__table th:nth-child(2) {
+  padding-left: 30px;
+}
 
 .oversized-cargo-cost__table th span {
   color: $color-general;
@@ -59,6 +88,10 @@
 
 .oversized-cargo-cost__table tbody tr td {
   width: 33.33333%;
+}
+
+.oversized-cargo-cost__table tbody tr td:nth-child(2) {
+  padding-left: 30px;
 }
 
 .oversized-cargo-cost__table td p {
@@ -86,4 +119,10 @@
 
 .oversized-cargo-cost__wrap {
   max-width: 390px;
+}
+
+@media  screen and (max-width: 768px) {
+  .oversized-cargo-cost__wrap {
+    max-width: 100%;
+  }
 }
