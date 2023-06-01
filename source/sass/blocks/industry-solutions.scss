@@ -1,5 +1,11 @@
+.industry-solutions {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
 .industry-solutions h2 {
   margin: 0;
+  margin-bottom: 48px;
 
   font-weight: 800;
   font-size: 32px;
@@ -7,31 +13,114 @@
   color: $color-title;
 }
 
-.industry-solutions__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.industry-solutions__row {
+  display: flex;
+  flex-wrap: wrap;
+  //padding: 0 4px;
 }
 
+.industry-solutions__column {
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.industry-solutions__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.industry-solutions__item:hover .industry-solutions__back {
+  opacity: 0.9;
+}
+
+
+.industry-solutions__item img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.industry-solutions__title {
+  position: absolute;
+
+  bottom: 15px;
+  left: 0;
+}
+
+@media  screen and (max-width: 1160px) {
+  .industry-solutions__title {
+    position: static;
+  }
+}
+
+
 .industry-solutions__front h3 {
+  position: relative;
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 24px;
 
   font-size: 20px;
   line-height: 24px;
   color: $color-default-white;
 
   background-color: $color-title;
+  z-index: 10;
 }
+
+@media  screen and (max-width: 1160px) {
+  .industry-solutions__front h3 {
+    padding-right: 55px;
+  }
+}
+
+@media  screen and (max-width: 1160px) {
+  .industry-solutions__front h3::before {
+    content: "";
+
+    position: absolute;
+
+    top: calc(50% - 12px);
+
+    right: 15px;
+
+    width: 24px;
+    height: 244px;
+
+    background-image: url(../img/svg/arrow-bottom.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 
 .industry-solutions__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
   background-color: $color-title;
-  opacity: 0.9;
 }
 
-.industry-solutions__back ul {
+.industry-solutions__lists-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.industry-solutions__list-1,
+.industry-solutions__list-2 {
+  //width: 100%;
   margin: 0;
   padding: 0;
+
 
   font-size: 16px;
   line-height: 22px;
@@ -39,4 +128,19 @@
 
   list-style: none;
   opacity: 0.8;
+}
+
+.industry-solutions__list-1 {
+  max-width: 230px;
+  margin-right: 16px;
+  padding-left: 16px;
+}
+
+.industry-solutions__list-2 {
+  max-width: 250px;
+}
+
+
+.industry-solutions__back ul li {
+  margin-bottom: 16px;
 }
