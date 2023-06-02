@@ -2148,10 +2148,47 @@ button,
   opacity: 1; }
 
 .call-to-action {
-  background-color: #313438; }
+  background-color: #313438;
+  background-image: url(../img/svg/bg-call-to-action.svg);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 768px) {
+  .call-to-action {
+    background-image: url(../img/svg/bg-call-to-action-2.svg); } }
+
+@media screen and (max-width: 650px) {
+  .call-to-action {
+    background-image: url(../img/svg/bg-call-to-action-3.svg); } }
+
+.call-to-action .container {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.call-to-action__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1020px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 650px) {
+  .call-to-action__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .call-to-action h2 {
   margin: 0;
+  margin-bottom: 8px;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
@@ -2163,11 +2200,36 @@ button,
     font-size: 24px;
     line-height: 29px; } }
 
+.call-to-action__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media screen and (max-width: 650px) {
+  .call-to-action__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px; } }
+
 .call-to-action__wrapper a {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #C0C2CC; }
+
+.call-to-action__wrapper a:hover {
+  color: #EFBA00; }
 
 @media screen and (max-width: 540px) {
   .call-to-action__wrapper a {
