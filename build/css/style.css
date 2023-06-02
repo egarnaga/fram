@@ -1948,8 +1948,11 @@ button,
     max-width: 100%; } }
 
 .industry-solutions {
-  padding-top: 120px;
   padding-bottom: 90px; }
+
+@media screen and (max-width: 768px) {
+  .industry-solutions {
+    padding-bottom: 104px; } }
 
 .industry-solutions h2 {
   margin: 0;
@@ -1966,16 +1969,44 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+@media screen and (max-width: 650px) {
+  .industry-solutions__row {
+    display: block; } }
+
 .industry-solutions__column {
   max-width: 50%;
   padding: 0 15px; }
+
+@media screen and (max-width: 768px) {
+  .industry-solutions__column {
+    padding: 0 4px; } }
+
+@media screen and (max-width: 650px) {
+  .industry-solutions__column {
+    max-width: 100%; } }
+
+@media screen and (max-width: 650px) {
+  .industry-solutions__accordion-1 {
+    margin-bottom: 24px; } }
 
 .industry-solutions__item {
   position: relative;
   margin-bottom: 30px; }
 
+@media screen and (max-width: 768px) {
+  .industry-solutions__item {
+    margin-bottom: 16px; } }
+
+@media screen and (max-width: 650px) {
+  .industry-solutions__item {
+    margin-bottom: 24px; } }
+
 .industry-solutions__item:hover .industry-solutions__back {
   opacity: 0.9; }
+
+@media screen and (max-width: 1160px) {
+  .industry-solutions__item:hover .industry-solutions__back {
+    opacity: 1; } }
 
 .industry-solutions__item img {
   vertical-align: middle;
@@ -1988,7 +2019,8 @@ button,
 
 @media screen and (max-width: 1160px) {
   .industry-solutions__title {
-    position: static; } }
+    position: static;
+    cursor: pointer; } }
 
 .industry-solutions__front h3 {
   position: relative;
@@ -2007,6 +2039,11 @@ button,
   .industry-solutions__front h3 {
     padding-right: 55px; } }
 
+@media screen and (max-width: 768px) {
+  .industry-solutions__front h3 {
+    padding-left: 24px;
+    padding-right: 55px; } }
+
 @media screen and (max-width: 1160px) {
   .industry-solutions__front h3::before {
     content: "";
@@ -2014,9 +2051,13 @@ button,
     top: calc(50% - 12px);
     right: 15px;
     width: 24px;
-    height: 244px;
+    height: 24px;
     background-image: url(../img/svg/arrow-bottom.svg);
     background-repeat: no-repeat; } }
+
+@media screen and (max-width: 1160px) {
+  .industry-solutions__item--active .industry-solutions__front h3::before {
+    background-image: url(../img/svg/arrow-top.svg); } }
 
 .industry-solutions__back {
   position: absolute;
@@ -2031,6 +2072,18 @@ button,
   transition: .5s ease;
   background-color: #313438; }
 
+@media screen and (max-width: 1160px) {
+  .industry-solutions__back {
+    display: none;
+    opacity: 1; } }
+
+@media screen and (max-width: 1160px) {
+  .industry-solutions__item--active .industry-solutions__back {
+    position: static;
+    display: block;
+    background-color: #F5F6FA;
+    opacity: 1; } }
+
 .industry-solutions__lists-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2042,13 +2095,24 @@ button,
   padding-left: 40px;
   padding-right: 40px; }
 
+@media screen and (max-width: 1160px) {
+  .industry-solutions__lists-wrap {
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  .industry-solutions__lists-wrap {
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px; } }
+
 .industry-solutions__list-1,
 .industry-solutions__list-2 {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
   list-style: none;
   opacity: 0.8; }
 
@@ -2060,8 +2124,28 @@ button,
 .industry-solutions__list-2 {
   max-width: 250px; }
 
+@media screen and (max-width: 1160px) {
+  .industry-solutions__list-1,
+  .industry-solutions__list-2 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0; } }
+
 .industry-solutions__back ul li {
   margin-bottom: 16px; }
+
+.industry-solutions__back ul li a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.8; }
+
+@media screen and (max-width: 1160px) {
+  .industry-solutions__back ul li a {
+    color: #313438; } }
+
+.industry-solutions__back ul li a:hover {
+  opacity: 1; }
 
 .call-to-action {
   background-color: #313438; }
