@@ -10,7 +10,7 @@
 }
 
 @media  screen and (max-width: 768px) {
-  .partners h2 {
+  .partners__wrapper {
     margin-bottom: 48px;
   }
 }
@@ -108,7 +108,6 @@
 }
 
 .partners__slider-wrapper li {
-  position: relative;
   flex-shrink: 0;
   width: 230px;
   padding-top: 19px;
