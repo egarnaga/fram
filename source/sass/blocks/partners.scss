@@ -1,5 +1,23 @@
+.partners .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.partners__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+  .partners h2 {
+    margin-bottom: 48px;
+  }
+}
+
 .partners h2 {
   margin: 0;
+  margin-top: 9px;
 
   font-weight: 800;
   font-size: 32px;
@@ -7,9 +25,103 @@
   color: $color-title;
 }
 
+@media  screen and (max-width: 768px) {
+  .partners h2 {
+    margin-top: 0;
+  }
+}
+
+.partners__buttons-slider {
+  display: flex;
+}
+
+@media  screen and (max-width: 768px) {
+  .partners__buttons-slider {
+    display: none;
+  }
+}
+
+.partners__btn-prev,
+.partners__btn-next {
+  position: relative;
+  width: 52px;
+  height: 52px;
+
+  cursor: pointer;
+  border: 1px solid $color-grey-decor;
+}
+
+.partners__btn-prev {
+  margin-right: 16px;
+}
+
+.partners__btn-prev:hover,
+.partners__btn-next:hover {
+   opacity: 0.7;
+}
+
+.partners__btn-prev::before,
+.partners__btn-next::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 13px;
+  height: 23px;
+
+  background-repeat: no-repeat;
+}
+
+.partners__btn-prev::before {
+  background-image: url(../img/svg/arrow-btn-prev.svg);
+}
+
+.partners__btn-next::before {
+  background-image: url(../img/svg/arrow-btn-next.svg);
+}
+
+.partners__slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media  screen and (max-width: 768px) {
+  .partners__slider-container {
+    overflow: visible;
+  }
+}
+
 .partners__slider-wrapper {
+  display: flex;
+  justify-content: initial;
+  flex-wrap: nowrap;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.partners__slider-wrapper li {
+  position: relative;
+  flex-shrink: 0;
+  width: 230px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.partners__slider-wrapper li a {
+  display: block;
+  border: 1px solid $color-default-white;
+}
+
+.partners__slider-wrapper li a:hover {
+  border: 1px solid $color-grey-decor;
 }
