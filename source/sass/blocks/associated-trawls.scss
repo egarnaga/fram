@@ -115,6 +115,7 @@
   .associated-trawls__trawl-and-date-tablet {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -125,8 +126,7 @@
   width: 100%;
 }
 
-.associated-trawls__trawl-and-date-desktop,
-.associated-trawls__trawl-and-date-tablet {
+.associated-trawls__trawl-and-date-desktop {
   display: flex;
   margin: 0;
 }
