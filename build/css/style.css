@@ -785,6 +785,7 @@ button,
   background-color: #23262D; }
 
 .form--light .form__field input {
+  color: #313438;
   border-bottom: 1px solid #DDDFE7;
   background-color: #F5F6FA; }
 
@@ -837,9 +838,17 @@ button,
   border-bottom: 1px solid #525252;
   background-color: #23262D; }
 
+.form--light .form__textarea textarea {
+  color: #313438;
+  border-bottom: 1px solid #DDDFE7;
+  background-color: #F5F6FA; }
+
 .form__textarea textarea:focus {
   outline: none;
   border-bottom: 1px solid #EFBA00; }
+
+.form--light .form__textarea textarea:focus {
+  border-bottom: 1px solid #23262D; }
 
 .form__field--error textarea {
   outline: none;
@@ -2765,37 +2774,152 @@ button,
   padding-left: 27px;
   padding-right: 27px; }
 
+.shipping-cost {
+  padding-bottom: 120px; }
+
+.shipping-cost__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1230px;
+  margin: 0 auto; }
+
+.shipping-cost__wrapper {
+  width: 550px;
+  max-width: 550px; }
+
 .shipping-cost__wrapper h3 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
   color: #525252; }
 
-.shipping-cost__wrap form {
+.shipping-cost__wrap {
   max-width: 600px; }
+
+.shipping-cost__wrap .form--light {
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px; }
+
+.about-company {
+  padding-top: 80px;
+  padding-bottom: 122px; }
 
 .about-company h2 {
   margin: 0;
+  margin-bottom: 48px;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: #313438; }
 
+.about-company__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+@media screen and (max-width: 990px) {
+  .about-company__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.about-company__text {
+  margin-bottom: -24px; }
+
 .about-company__text p {
   margin: 0;
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 22px;
   color: #525252; }
 
 .about-company__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  width: 630px;
   margin: 0;
   padding: 0;
+  padding-left: 86px;
   list-style: none; }
 
+@media screen and (max-width: 1070px) {
+  .about-company__list {
+    padding-left: 40px; } }
+
+@media screen and (max-width: 990px) {
+  .about-company__list {
+    width: 542px;
+    margin-top: 40px;
+    padding-left: 0; } }
+
+.about-company__list li {
+  width: 271px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.about-company__list li:nth-child(1) {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  border-bottom: 1px solid #DDDFE7;
+  border-right: 1px solid #DDDFE7; }
+
+.about-company__list li:nth-child(2) {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  border-bottom: 1px solid #DDDFE7; }
+
+.about-company__list li:nth-child(3) {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+  border-right: 1px solid #DDDFE7; }
+
+.about-company__list li:nth-child(4) {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3; }
+
 .about-company__list li span {
+  display: block;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 96px;
-  line-height: 134px;
+  line-height: 80px;
   /* leading-trim: both;
   text-edge: cap; */
   color: #ffffff;

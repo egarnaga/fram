@@ -1186,119 +1186,124 @@
       </section>
 
       <section class="shipping-cost container">
-        <div class="shipping-cost__wrapper">
-          <h2 class="visually-hidden">Параметры груза</h2>
+        <div class="shipping-cost__container">
+          <div class="shipping-cost__wrapper">
+            <h2 class="visually-hidden">Параметры груза</h2>
 
-          <div class="shipping-cost__width">
-            <h3>Ширина (м)</h3>
-            <div class="shipping-cost__width-wrap">
-              <div class="range-slider"></div>
-              <input class="range-slider__input" type="number">
+            <div class="shipping-cost__width">
+              <h3>Ширина (м)</h3>
+              <div class="shipping-cost__width-wrap">
+                <div class="range-slider"></div>
+                <input class="range-slider__input" type="number">
+              </div>
+            </div>
+
+            <div class="shipping-cost__height">
+              <h3>Высота (м)</h3>
+              <div class="shipping-cost__height-wrap">
+                <div class="range-slider"></div>
+                <input class="range-slider__input" type="number">
+              </div>
+            </div>
+
+            <div class="shipping-cost__length">
+              <h3>Длина (м)</h3>
+              <div class="shipping-cost__length-wrap">
+                <div class="range-slider"></div>
+                <input class="range-slider__input" type="number">
+              </div>
+            </div>
+
+            <div class="shipping-cost__weight">
+              <h3>Масса (тф)</h3>
+              <div class="shipping-cost__weight-wrap">
+                <div class="range-slider"></div>
+                <input class="range-slider__input" type="number">
+              </div>
             </div>
           </div>
 
-          <div class="shipping-cost__height">
-            <h3>Высота (м)</h3>
-            <div class="shipping-cost__height-wrap">
-              <div class="range-slider"></div>
-              <input class="range-slider__input" type="number">
-            </div>
-          </div>
+          <div class="shipping-cost__wrap">
+            <form class="form form--light" action="#" method="POST">
+              <h2>Стоимость перевозки</h2>
+              <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
 
-          <div class="shipping-cost__length">
-            <h3>Длина (м)</h3>
-            <div class="shipping-cost__length-wrap">
-              <div class="range-slider"></div>
-              <input class="range-slider__input" type="number">
-            </div>
-          </div>
+              <div class="form__wrapper">
+                <div class="form__field form__field-start">
+                  <label class="visually-hidden" for="start-cost">Откуда</label>
+                  <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
+                </div>
 
-          <div class="shipping-cost__weight">
-            <h3>Масса (тф)</h3>
-            <div class="shipping-cost__weight-wrap">
-              <div class="range-slider"></div>
-              <input class="range-slider__input" type="number">
-            </div>
+                <div class="form__field form__field-finish">
+                  <label class="visually-hidden" for="finish-cost">Куда</label>
+                  <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
+                </div>
+              </div>
+
+              <div class="form__textarea">
+                <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
+                <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
+              </div>
+
+              <div class="form__wrap">
+                <div class="form__field form__field-name">
+                  <label class="visually-hidden" for="name-cost">Имя</label>
+                  <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
+                  <span class="form__error">Некорректное имя</span>
+                </div>
+
+                <div class="form__field form__field-phone">
+                  <label class="visually-hidden" for="phone-cost">Номер телефона</label>
+                  <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
+                  <span class="form__error">Некорректный номер телефона</span>
+                </div>
+              </div>
+
+              <div class="form__btn-wrap">
+                <div class="form__btn">
+                  <button class="btn" type="submit" aria-label="Узнать стоимость">Отправить</button>
+                </div>
+
+                <div class="form__field form__field-check">
+                  <input class="visually-hidden form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
+                  <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
 
-        <div class="shipping-cost__wrap">
-          <form class="form form--light" action="#" method="POST">
-            <h2>Стоимость перевозки</h2>
-            <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
-
-            <div class="form__wrapper">
-              <div class="form__field form__field-start">
-                <label class="visually-hidden" for="start-cost">Откуда</label>
-                <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
-              </div>
-
-              <div class="form__field form__field-finish">
-                <label class="visually-hidden" for="finish-cost">Куда</label>
-                <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
-              </div>
-            </div>
-
-            <div class="form__textarea">
-              <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
-              <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
-            </div>
-
-            <div class="form__wrap">
-              <div class="form__field form__field-name">
-                <label class="visually-hidden" for="name-cost">Имя</label>
-                <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
-                <span>Некорректное имя</span>
-              </div>
-
-              <div class="form__field form__field-phone">
-                <label class="visually-hidden" for="phone-cost">Номер телефона</label>
-                <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
-                <span>Некорректный номер телефона</span>
-              </div>
-            </div>
-
-            <div class="form__btn-wrap">
-              <div class="form__btn">
-                <button class="btn" type="submit" aria-label="Узнать стоимость">Отправить</button>
-              </div>
-
-              <div class="form__field form__field-check">
-                <input class="visually-hidden form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
-                <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
-              </div>
-            </div>
-          </form>
-        </div>
       </section>
 
       <section class="about-company container">
         <h2>О компании</h2>
 
-        <div class="about-company__text">
-          <p>Компания «FRAM» существует с 2005 года. За это время мы накопили огромный опыт в сфере грузоперевозок и собрали штат квалифицированных специалистов. Можете быть уверены за сохранность своего груза и получение его в назначенный срок. Наша основная деятельность – это экспедирование и перевозка объектов любого типа, конструкции и сложности. Мы занимаемся перевозками по Санкт-Петербургу, области и территории России, а также международными перевозками.</p>
-          <p>Виды транспортировок осуществляем на собственном специализированном транспорте, оформляем разрешения и другую необходимую документацию, осуществляем страхование груза. Гарантируем аккуратность наших сотрудников при погрузочно-разгрузочных работах. Доставляем строго в пределах установленных сроков.</p>
-          <p>Свяжитесь с нами через форму на сайте или по телефону, чтобы заказать услугу перевозки и рассчитать стоимость затрат.</p>
-        </div>
+        <div class="about-company__wrapper">
+          <div class="about-company__text">
+            <p>Компания «FRAM» существует с 2005 года. За это время мы накопили огромный опыт в сфере грузоперевозок и собрали штат квалифицированных специалистов. Можете быть уверены за сохранность своего груза и получение его в назначенный срок. Наша основная деятельность – это экспедирование и перевозка объектов любого типа, конструкции и сложности. Мы занимаемся перевозками по Санкт-Петербургу, области и территории России, а также международными перевозками.</p>
+            <p>Виды транспортировок осуществляем на собственном специализированном транспорте, оформляем разрешения и другую необходимую документацию, осуществляем страхование груза. Гарантируем аккуратность наших сотрудников при погрузочно-разгрузочных работах. Доставляем строго в пределах установленных сроков.</p>
+            <p>Свяжитесь с нами через форму на сайте или по телефону, чтобы заказать услугу перевозки и рассчитать стоимость затрат.</p>
+          </div>
 
-        <ul class="about-company__list">
-          <li>
-            <span>430</span>
-            <p>Современных автопоездов в собственности</p>
-          </li>
-          <li>
-            <span>21</span>
-            <p>Офисов по всей России</p>
-          </li>
-          <li>
-            <span>1338</span>
-            <p>Профессиональных сотрудников</p>
-          </li>
-          <li>
-            <span>1338</span>
-            <p>Профессиональных сотрудников</p>
-          </li>
-        </ul>
+          <ul class="about-company__list">
+            <li>
+              <span>430</span>
+              <p>Современных автопоездов в собственности</p>
+            </li>
+            <li>
+              <span>21</span>
+              <p>Офисов по всей России</p>
+            </li>
+            <li>
+              <span>1338</span>
+              <p>Профессиональных сотрудников</p>
+            </li>
+            <li>
+              <span>1338</span>
+              <p>Профессиональных сотрудников</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="container">

@@ -121,6 +121,8 @@
 }
 
 .form--light .form__field input {
+  color: $color-title;
+
   border-bottom: 1px solid $color-grey-decor;
   background-color: $color-grey-background;
 }
@@ -187,10 +189,26 @@
   background-color: #23262D;
 }
 
+.form--light .form__textarea textarea {
+  color: $color-title;
+
+  border-bottom: 1px solid $color-grey-decor;
+  background-color: $color-grey-background;
+}
+
+
+
+
+
 .form__textarea textarea:focus {
   outline: none;
   border-bottom: 1px solid $color-main;
 }
+
+.form--light .form__textarea textarea:focus {
+  border-bottom: 1px solid #23262D;
+}
+
 
 
 .form__field--error textarea {

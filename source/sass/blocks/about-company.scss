@@ -1,5 +1,12 @@
+.about-company {
+
+  padding-top: 80px;
+  padding-bottom: 122px;
+}
+
 .about-company h2 {
   margin: 0;
+  margin-bottom: 48px;
 
   font-weight: 800;
   font-size: 32px;
@@ -7,8 +14,25 @@
   color: $color-title;
 }
 
+.about-company__wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media  screen and (max-width: 990px) {
+  .about-company__wrapper {
+    flex-direction: column;
+  }
+}
+
+.about-company__text {
+  //max-width: 600px;
+  margin-bottom: -24px;
+}
+
 .about-company__text p {
   margin: 0;
+  margin-bottom: 24px;
 
   font-size: 16px;
   line-height: 22px;
@@ -16,16 +40,83 @@
 }
 
 .about-company__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 630px;
   margin: 0;
   padding: 0;
+  padding-left: 86px;
 
   list-style: none;
 }
 
+@media  screen and (max-width: 1070px) {
+  .about-company__list {
+    padding-left: 40px;
+  }
+}
+
+@media  screen and (max-width: 990px) {
+  .about-company__list {
+    width: 542px;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+}
+
+.about-company__list li {
+  width: 271px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-company__list li:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  border-bottom: 1px solid $color-grey-decor;
+  border-right: 1px solid $color-grey-decor;;
+}
+.about-company__list li:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  border-bottom: 1px solid $color-grey-decor;
+}
+
+.about-company__list li:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  border-right: 1px solid $color-grey-decor;;
+}
+.about-company__list li:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .about-company__list li span {
+  display: block;
+  margin-bottom: 24px;
+
   font-weight: 700;
   font-size: 96px;
-  line-height: 134px;
+  line-height: 80px;
   /* leading-trim: both;
   text-edge: cap; */
   color: $color-default-white;
