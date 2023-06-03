@@ -897,17 +897,28 @@
       <section class="associated-trawls container">
         <div class="associated-trawls__text">
           <h2>Попутные траллы</h2>
-          <p>Автотранспорт ждущий в указанную дату груз на обратную дорогу. При заказе трала вы получаете значительную выгоду, так как часть затрат уже оплачена.</p>
+          <p>Автотранспорт ждущий в указанную дату груз на обратную дорогу. При&nbsp;заказе&nbsp;трала&nbsp;вы&nbsp;получаете значительную выгоду, так как часть затрат уже оплачена.</p>
         </div>
 
         <ul class="associated-trawls__list">
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-1" class="associated-trawls__map-1"></div>
+              <div id="map-1" class="associated-trawls__map"></div>
+
+              <dl class="associated-trawls__trawl-and-date-tablet">
+                <div>
+                  <dt>Попутный трал</dt>
+                  <dd>Себеж — Любань</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>11 апреля — 12 апреля</dd>
+                </div>
+              </dl>
             </div>
 
             <div class="associated-trawls__description">
-              <dl class="associated-trawls__trawl-and-date">
+              <dl class="associated-trawls__trawl-and-date-desktop">
                 <div>
                   <dt>Попутный трал</dt>
                   <dd>Себеж — Любань</dd>
@@ -939,6 +950,7 @@
                     <dd>65 тонн</dd>
                   </div>
                 </dl>
+
 
                 <div class="associated-trawls__btn">
                   <a class="btn" href="#">Оформить заявку</a>
@@ -949,11 +961,22 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-2" class="associated-trawls__map-1"></div>
+              <div id="map-2" class="associated-trawls__map"></div>
+
+              <dl class="associated-trawls__trawl-and-date-tablet">
+                <div>
+                  <dt>Попутный трал</dt>
+                  <dd>Себеж — Любань</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>11 апреля — 12 апреля</dd>
+                </div>
+              </dl>
             </div>
 
             <div class="associated-trawls__description">
-              <dl class="associated-trawls__trawl-and-date">
+              <dl class="associated-trawls__trawl-and-date-desktop">
                 <div>
                   <dt>Попутный трал</dt>
                   <dd>Себеж — Любань</dd>
@@ -985,6 +1008,7 @@
                     <dd>65 тонн</dd>
                   </div>
                 </dl>
+
 
                 <div class="associated-trawls__btn">
                   <a class="btn" href="#">Оформить заявку</a>
@@ -995,11 +1019,22 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-3" class="associated-trawls__map-1"></div>
+              <div id="map-3" class="associated-trawls__map"></div>
+
+              <dl class="associated-trawls__trawl-and-date-tablet">
+                <div>
+                  <dt>Попутный трал</dt>
+                  <dd>Себеж — Любань</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>11 апреля — 12 апреля</dd>
+                </div>
+              </dl>
             </div>
 
             <div class="associated-trawls__description">
-              <dl class="associated-trawls__trawl-and-date">
+              <dl class="associated-trawls__trawl-and-date-desktop">
                 <div>
                   <dt>Попутный трал</dt>
                   <dd>Себеж — Любань</dd>
@@ -1031,6 +1066,7 @@
                     <dd>65 тонн</dd>
                   </div>
                 </dl>
+
 
                 <div class="associated-trawls__btn">
                   <a class="btn" href="#">Оформить заявку</a>
@@ -1041,11 +1077,22 @@
 
           <li>
             <div class="associated-trawls__map-wrapper">
-              <div id="map-4" class="associated-trawls__map-1"></div>
+              <div id="map-4" class="associated-trawls__map"></div>
+
+              <dl class="associated-trawls__trawl-and-date-tablet">
+                <div>
+                  <dt>Попутный трал</dt>
+                  <dd>Себеж — Любань</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd>11 апреля — 12 апреля</dd>
+                </div>
+              </dl>
             </div>
 
             <div class="associated-trawls__description">
-              <dl class="associated-trawls__trawl-and-date">
+              <dl class="associated-trawls__trawl-and-date-desktop">
                 <div>
                   <dt>Попутный трал</dt>
                   <dd>Себеж — Любань</dd>
@@ -1078,12 +1125,14 @@
                   </div>
                 </dl>
 
+
                 <div class="associated-trawls__btn">
                   <a class="btn" href="#">Оформить заявку</a>
                 </div>
               </div>
             </div>
           </li>
+
         </ul>
       </section>
 
@@ -1227,7 +1276,227 @@
     })
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
+  <script>
+
+    function map1() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-1', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map2() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-2', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map3() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-3', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map4() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-4', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    map1();
+    map2();
+    map3();
+    map4();
+
+
+
+    /* let saintPetersburg = [60.883313609548765,26.766211660156202];
+
+    function init() {
+      console.log('зашли');
+      let map = new ymaps.Map('map', {
+        saintPetersburg: saintPetersburg,
+        zoom: 6
+      });
+
+
+
+      let placemark = new ymaps.Placemark(saintPetersburg, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/svg/placemark-red.svg',
+        iconImageSize: [26, 44],
+        iconImageOffset: [-19, -44]
+      });
+
+      //map.controls.remove('geolocationControl'); // удаляем геолокацию
+      //map.controls.remove('searchControl'); // удаляем поиск
+      //map.controls.remove('trafficControl'); // удаляем контроль трафика
+      //map.controls.remove('typeSelector'); // удаляем тип
+      //map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      //map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      //map.controls.remove('rulerControl'); // удаляем контрол правил
+      //map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+      map.geoObjects.add(placemark);
+    }
+
+    ymaps.ready(init); */
+
+  </script>
 </body>
 </html>

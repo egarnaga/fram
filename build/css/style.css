@@ -2529,15 +2529,21 @@ button,
   display: block;
   border: 1px solid #E52421; }
 
+.associated-trawls {
+  padding-bottom: 96px; }
+
 .associated-trawls h2 {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: #313438; }
 
 .associated-trawls p {
+  max-width: 582px;
   margin: 0;
+  margin-bottom: 48px;
   font-size: 14px;
   line-height: 20px;
   color: #313438; }
@@ -2547,20 +2553,142 @@ button,
   padding: 0;
   list-style: none; }
 
-.associated-trawls__trawl-and-date {
+.associated-trawls__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+@media screen and (max-width: 1050px) {
+  .associated-trawls__list li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media screen and (max-width: 710px) {
+  .associated-trawls__list li {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__list li {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+.associated-trawls__map-wrapper {
+  margin-right: 24px; }
+
+@media screen and (max-width: 1050px) {
+  .associated-trawls__map-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px; } }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__map-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 32px; } }
+
+.associated-trawls__map {
+  width: 320px;
+  height: 240px; }
+
+@media screen and (max-width: 1050px) {
+  .associated-trawls__map {
+    margin-right: 24px; } }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__map {
+    margin-right: 0;
+    margin-bottom: 24px; } }
+
+@media screen and (max-width: 450px) {
+  .associated-trawls__map {
+    width: 100%;
+    height: 206px; } }
+
+[class*="copyrights-pane"] {
+  display: none !important; }
+
+.associated-trawls__trawl-and-date-tablet {
+  display: none; }
+
+@media screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.associated-trawls__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.associated-trawls__trawl-and-date-desktop,
+.associated-trawls__trawl-and-date-tablet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0; }
 
-.associated-trawls__trawl-and-date dt {
+@media screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-desktop {
+    display: none; } }
+
+.associated-trawls__trawl-and-date-desktop div,
+.associated-trawls__trawl-and-date-tablet div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.associated-trawls__trawl-and-date-desktop div:nth-child(1),
+.associated-trawls__trawl-and-date-tablet div:nth-child(1) {
+  margin-right: 40px; }
+
+.associated-trawls__trawl-and-date-desktop dt,
+.associated-trawls__trawl-and-date-tablet dt {
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 20px;
   color: #888A96; }
 
-.associated-trawls__trawl-and-date dd {
+.associated-trawls__trawl-and-date-desktop dd,
+.associated-trawls__trawl-and-date-tablet dd {
   margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #313438; }
+
+@media screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-tablet div:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 16px; } }
 
 .associated-trawls__description p {
   margin: 0;
@@ -2568,10 +2696,53 @@ button,
   line-height: 20px;
   color: #525252; }
 
+@media screen and (max-width: 1050px) {
+  .associated-trawls__description p {
+    margin-bottom: 32px; } }
+
+.associated-trawls__description-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__description-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+
 .associated-trawls__description-list {
-  margin: 0; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-right: -24px; }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__description-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -16px; } }
+
+.associated-trawls__description-list div {
+  margin-right: 24px; }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__description-list div {
+    margin-bottom: 16px; } }
 
 .associated-trawls__description-list dt {
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 20px;
   color: #888A96; }
@@ -2582,6 +2753,17 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #525252; }
+
+.associated-trawls__btn {
+  max-width: 191px; }
+
+@media screen and (max-width: 650px) {
+  .associated-trawls__btn {
+    margin-top: 24px; } }
+
+.associated-trawls__btn .btn {
+  padding-left: 27px;
+  padding-right: 27px; }
 
 .shipping-cost__wrapper h3 {
   margin: 0;

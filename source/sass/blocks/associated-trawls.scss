@@ -1,5 +1,10 @@
+.associated-trawls {
+  padding-bottom: 96px;
+}
+
 .associated-trawls h2 {
   margin: 0;
+  margin-bottom: 16px;
 
   font-weight: 800;
   font-size: 32px;
@@ -8,7 +13,9 @@
 }
 
 .associated-trawls p {
+  max-width: 582px;
   margin: 0;
+  margin-bottom: 48px;
 
   font-size: 14px;
   line-height: 20px;
@@ -22,23 +29,149 @@
   list-style: none;
 }
 
-.associated-trawls__trawl-and-date {
+.associated-trawls__list li {
+  display: flex;
+  margin-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__list li {
+    flex-wrap: wrap;
+  }
+}
+
+@media  screen and (max-width: 710px) {
+  .associated-trawls__list li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__list li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.associated-trawls__map-wrapper {
+  margin-right: 24px;
+}
+
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__map-wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__map-wrapper {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+.associated-trawls__map {
+  width: 320px;
+  height: 240px;
+}
+
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__map {
+    margin-right: 24px;
+  }
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__map {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media  screen and (max-width: 450px) {
+  .associated-trawls__map {
+    width: 100%;
+    height: 206px;
+  }
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+.associated-trawls__trawl-and-date-tablet {
+  display: none;
+}
+
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.associated-trawls__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.associated-trawls__trawl-and-date-desktop,
+.associated-trawls__trawl-and-date-tablet {
+  display: flex;
   margin: 0;
 }
 
-.associated-trawls__trawl-and-date dt {
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-desktop {
+    display: none
+  }
+}
+
+.associated-trawls__trawl-and-date-desktop div,
+.associated-trawls__trawl-and-date-tablet div {
+  display: flex;
+  flex-direction: column;
+}
+
+.associated-trawls__trawl-and-date-desktop div:nth-child(1),
+.associated-trawls__trawl-and-date-tablet div:nth-child(1) {
+  margin-right: 40px;
+}
+
+.associated-trawls__trawl-and-date-desktop dt,
+.associated-trawls__trawl-and-date-tablet dt {
+  margin-bottom: 8px;
+
   font-size: 14px;
   line-height: 20px;
   color: $color-grey-text;
 }
 
-.associated-trawls__trawl-and-date dd {
+.associated-trawls__trawl-and-date-desktop dd,
+.associated-trawls__trawl-and-date-tablet dd {
   margin: 0;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: $color-title;
+}
+
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__trawl-and-date-tablet div:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 }
 
 .associated-trawls__description p {
@@ -49,11 +182,51 @@
   color: $color-text;
 }
 
+@media  screen and (max-width: 1050px) {
+  .associated-trawls__description p {
+    margin-bottom: 32px;
+  }
+}
+
+.associated-trawls__description-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__description-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .associated-trawls__description-list {
+  display: flex;
   margin: 0;
+  margin-right: -24px;
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__description-list {
+    flex-wrap: wrap;
+    margin-bottom: -16px;
+  }
+}
+
+.associated-trawls__description-list div {
+  margin-right: 24px;
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__description-list div {
+    margin-bottom: 16px;
+  }
 }
 
 .associated-trawls__description-list dt {
+  margin-bottom: 4px;
+
   font-size: 14px;
   line-height: 20px;
   color: $color-grey-text;
@@ -66,4 +239,19 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-text;
+}
+
+.associated-trawls__btn {
+  max-width: 191px;
+}
+
+@media  screen and (max-width: 650px) {
+  .associated-trawls__btn {
+    margin-top: 24px;
+  }
+}
+
+.associated-trawls__btn .btn {
+  padding-left: 27px;
+  padding-right: 27px;
 }
