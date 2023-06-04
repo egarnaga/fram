@@ -4,6 +4,12 @@
   padding-bottom: 122px;
 }
 
+@media  screen and (max-width: 620px) {
+  .about-company {
+    padding-bottom: 54px;
+  }
+}
+
 .about-company h2 {
   margin: 0;
   margin-bottom: 48px;
@@ -26,7 +32,6 @@
 }
 
 .about-company__text {
-  //max-width: 600px;
   margin-bottom: -24px;
 }
 
@@ -65,12 +70,42 @@
   }
 }
 
+@media  screen and (max-width: 620px) {
+  .about-company__list {
+    display: block;
+    width: 100%;
+  }
+}
+
 .about-company__list li {
+  position: relative;
   width: 271px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media  screen and (max-width: 620px) {
+  .about-company__list li {
+    width: 100%;
+  }
+}
+
+@media  screen and (max-width: 620px) {
+  .about-company__list li::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 38px;
+
+    height: 100%;
+    width: 1px;
+
+    background-color: $color-grey-decor;
+  }
 }
 
 .about-company__list li:nth-child(1) {
@@ -81,8 +116,9 @@
   grid-row-end: 2;
 
   border-bottom: 1px solid $color-grey-decor;
-  border-right: 1px solid $color-grey-decor;;
+  border-right: 1px solid $color-grey-decor;
 }
+
 .about-company__list li:nth-child(2) {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -100,7 +136,7 @@
   grid-row-start: 2;
   grid-row-end: 3;
 
-  border-right: 1px solid $color-grey-decor;;
+  border-right: 1px solid $color-grey-decor;
 }
 .about-company__list li:nth-child(4) {
   grid-column-start: 2;
@@ -110,6 +146,34 @@
   grid-row-end: 3;
 }
 
+@media  screen and (max-width: 620px) {
+  .about-company__list li:nth-child(1),
+  .about-company__list li:nth-child(2),
+  .about-company__list li:nth-child(3),
+  .about-company__list li:nth-child(4) {
+    border: none;
+  }
+}
+
+@media  screen and (max-width: 620px) {
+  .about-company__list li:nth-child(1)::after,
+  .about-company__list li:nth-child(2)::after,
+  .about-company__list li:nth-child(3)::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: -30px;
+
+    height: 1px;
+    width: 120%;
+
+    background-color: $color-grey-decor;
+  }
+}
+
+
 .about-company__list li span {
   display: block;
   margin-bottom: 24px;
@@ -117,8 +181,8 @@
   font-weight: 700;
   font-size: 96px;
   line-height: 80px;
-  /* leading-trim: both;
-  text-edge: cap; */
+  //leading-trim: both;
+  //text-edge: cap;
   color: $color-default-white;
 
   text-shadow: -1px 0 $color-general, 0 1px $color-general, 1px 0 $color-general, 0 -1px $color-general;
@@ -131,4 +195,10 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-title;
+}
+
+@media  screen and (max-width: 620px) {
+  .about-company__list li p {
+    max-width: 209px;
+  }
 }
