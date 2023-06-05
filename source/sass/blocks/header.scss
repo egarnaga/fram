@@ -5,32 +5,13 @@
   padding: 0 40px;
 
   background-color: $color-title;
+}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-  }
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
 
-  a,
-  p {
-    color: $color-grey-decor;
-  }
-
-  ul {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
-
-    list-style: none;
-
-    li {
-      margin-right: 20px;
-    }
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
+.header__toggle {
+  display: none;
 }
