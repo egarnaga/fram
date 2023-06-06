@@ -1,8 +1,10 @@
 .main-fram {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 74px;
 
   background-color: $color-title;
+  z-index: 1;
 }
 
 @media  screen and (max-width: 768px) {
