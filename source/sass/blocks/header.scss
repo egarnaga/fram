@@ -1,5 +1,11 @@
 .header {
+  position: fixed;
+  width: 100%;
+
+  top: 0;
+
   background-color: $color-title;
+  z-index: 8000;
 }
 
 .header--light {

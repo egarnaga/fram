@@ -1,4 +1,3 @@
-
 const showInputs = () => {
 
   const hiddenInputs = document.querySelectorAll('.form__inputs--hidden');

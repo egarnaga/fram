@@ -7,6 +7,7 @@ import {accordionIndustrySolutions} from './modules/accordion-industry-solutions
 import {partnersSlider} from './modules/partners-slider';
 import {reviewsSlider} from './modules/reviews-slider';
 import {hamburgerMenu} from './modules/hamburger-menu';
+import {headerLightScroll} from './modules/header-light-scroll';
 
 
 // Utils
@@ -24,3 +25,4 @@ accordionIndustrySolutions();
 partnersSlider();
 reviewsSlider();
 hamburgerMenu();
+headerLightScroll();

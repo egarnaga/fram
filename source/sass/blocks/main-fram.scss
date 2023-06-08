@@ -1,5 +1,6 @@
 .main-fram {
   position: relative;
+  margin-top: 163px;
   padding-top: 40px;
   padding-bottom: 74px;
 
@@ -7,9 +8,21 @@
   z-index: 1;
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 1283px) {
   .main-fram {
-    padding-bottom: 41px;
+    margin-top: 187px;
+  }
+}
+
+@media  screen and (max-width: 1100px) {
+  .main-fram {
+    margin-top: 121px;
+  }
+}
+
+@media  screen and (max-width: 630px) {
+  .main-fram {
+    margin-top: 77px;
   }
 }
 
