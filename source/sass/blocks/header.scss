@@ -2,6 +2,10 @@
   background-color: $color-title;
 }
 
+.header--light {
+  background-color: $color-default-white
+}
+
 .header .container {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -65,6 +69,10 @@
   }
 }
 
+.header--light .header__top::before {
+  background-color: $color-default-white;
+}
+
 @media  screen and (max-width: 1100px) {
   .header__toggle-btn {
     position: absolute;
@@ -100,7 +108,7 @@
 }
 
 @media  screen and (max-width: 1100px) {
-  .header__toggle::before{
+  .header__toggle::before {
     content: "";
 
     position: absolute;
@@ -117,9 +125,23 @@
 }
 
 @media  screen and (max-width: 1100px) {
-  .header--opened .header__toggle::before{
+  .header--light .header__toggle::before {
+
+    background-image: url(../img/svg/btn-open-light.svg);
+  }
+}
+
+@media  screen and (max-width: 1100px) {
+  .header--opened .header__toggle::before {
 
     background-image: url(../img/svg/btn-close-dark.svg);
+  }
+}
+
+@media  screen and (max-width: 1100px) {
+  .header--light.header--opened .header__toggle::before {
+
+    background-image: url(../img/svg/btn-close-light.svg) ;
   }
 }
 
@@ -135,7 +157,7 @@
   }
 }
 
-@media  screen and (max-width: 540px) {
+@media  screen and (max-width: 630px) {
   .header__logo {
     width: 115px;
     height: 40px;
@@ -155,6 +177,17 @@
 
   background-image: url(../img/svg/logo-dark.svg);
   background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 630px) {
+  .header__logo::before {
+    width: 115px;
+    height: 40px;
+  }
+}
+
+.header--light .header__logo::before {
+  background-image: url(../img/svg/logo-light.svg);
 }
 
 .header__list-wrap h2 {
@@ -200,7 +233,6 @@
     top: 36px;
   }
 }
-
 
 @media  screen and (max-width: 540px) {
   .header__list-wrapper--opened .header__list-wrap {
@@ -248,7 +280,6 @@
   margin-left: 22px;
 
   list-style: none;
-  //z-index: 3000;
 }
 
 @media  screen and (max-width: 1270px) {
@@ -269,7 +300,6 @@
     margin-left: 0;
   }
 }
-
 
 @media  screen and (max-width: 1200px) {
   .header__list-top {
@@ -300,6 +330,23 @@
   color: $color-main;
 }
 
+.header--light .header__item:hover .header__link {
+  color: $color-title;
+}
+
+@media  screen and (max-width: 1100px) {
+  .header--light .header__list-wrapper--opened .header__link {
+    color: $color-grey-decor;
+
+  }
+}
+
+@media  screen and (max-width: 1100px) {
+  .header--light .header__item:hover .header__link {
+    color: $color-grey-background;
+  }
+}
+
 .header__item:hover .header__link::before {
   content: "";
 
@@ -312,6 +359,10 @@
   width: 50px;
 
   background-color: $color-default-white;
+}
+
+.header--light .header__item:hover .header__link::before {
+  background-color: $color-general;
 }
 
 @media  screen and (max-width: 1100px) {
@@ -351,6 +402,10 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-grey-decor;
+}
+
+.header--light .header__link {
+  color: #888A96;
 }
 
 @media  screen and (max-width: 1100px) {
@@ -398,11 +453,9 @@
   position: relative;
   min-width: 459px;
   margin: 0;
-  margin-bottom: -16px;
   padding: 0;
-  padding-top: 15px;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   list-style: none;
   background-color: $color-default-white;
@@ -424,14 +477,23 @@
   background-image: url(../img/svg/vector-5.svg);
   background-repeat: no-repeat;
   z-index: 1001;
+  box-shadow: none;
+  border: none;
 
 }
 
 .header__sub-item {
-  margin-bottom: 16px;
+  display: flex;
+
 }
 
 .header__sub-link {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  padding-right: 17px;
+
   font-size: 16px;
   line-height: 22px;
   color: #313438;
@@ -440,6 +502,7 @@
 }
 
 .header__sub-link:hover {
+  background-color: $color-grey-background;
   opacity: 1;
 }
 
@@ -454,6 +517,20 @@
   padding-bottom: 9px;
   padding-left: 17px;
   padding-right: 17px;
+}
+
+.header--light .header__btn .btn {
+  color: $color-general;
+  background-color: transparent;
+  border: 1px solid $color-white-red;
+  box-shadow: none;
+}
+
+.header--light .header__btn .btn:hover {
+  color: $color-default-white;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), $color-general;
+  border: 1px solid $color-white-red;
+  box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
 }
 
 .header__chat {
@@ -479,6 +556,11 @@
   border-radius: 50%;
 }
 
+.header--light .header__whatsapp a,
+.header--light .header__telegram a {
+  background-color: $color-grey-background;
+}
+
 .header__whatsapp a::before {
   content: "";
 
@@ -494,6 +576,10 @@
 
   background-image: url(../img/svg/whatsapp-dark.svg);
   background-repeat: no-repeat;
+}
+
+.header--light .header__whatsapp a::before {
+  background-image: url(../img/svg/whatsapp-light.svg);
 }
 
 .header__whatsapp a:hover::before {
@@ -513,6 +599,10 @@
   background-repeat: no-repeat;
 }
 
+.header--light .header__whatsapp a:hover::before {
+  background-image: url(../img/svg/whatsapp-light-hover.svg);
+}
+
 .header__telegram a::before {
   content: "";
 
@@ -528,6 +618,10 @@
 
   background-image: url(../img/svg/telegram-dark.svg);
   background-repeat: no-repeat;
+}
+
+.header--light .header__telegram a::before {
+  background-image: url(../img/svg/telegram-light.svg);
 }
 
 .header__telegram a:hover::before {
@@ -547,6 +641,10 @@
   background-repeat: no-repeat;
 }
 
+.header--light .header__telegram a:hover::before {
+  background-image: url(../img/svg/telegram-light-hover.svg);
+}
+
 @media  screen and (max-width: 600px) {
   .header__wrap {
     display: none;
@@ -561,6 +659,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-grey-decor;
+}
+
+.header--light .header__schedule p {
+  color: #888A96
 }
 
 .header__schedule p::before {
@@ -585,15 +687,22 @@
   color: $color-grey-background;
 }
 
+.header--light .header__phone-link {
+  color: $color-text;
+}
+
 .header__phone-link:hover {
   color: $color-main;
+}
+
+.header--light .header__phone-link:hover {
+  color: $color-general;
 }
 
 .header__bottom {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
 
 .header__tablet {
   position: relative;
@@ -669,9 +778,6 @@
   color: $color-main;
 
   opacity: 1;
-}
-
-.header__tablet-contacts {
 }
 
 @media  screen and (max-width: 940px) {

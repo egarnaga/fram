@@ -539,6 +539,9 @@ button,
 .header {
   background-color: #313438; }
 
+.header--light {
+  background-color: #ffffff; }
+
 .header .container {
   padding-top: 30px;
   padding-bottom: 16px; }
@@ -589,6 +592,9 @@ button,
     height: 0;
     background-color: transparent; } }
 
+.header--light .header__top::before {
+  background-color: #ffffff; }
+
 @media screen and (max-width: 1100px) {
   .header__toggle-btn {
     position: absolute;
@@ -625,8 +631,16 @@ button,
     background-repeat: no-repeat; } }
 
 @media screen and (max-width: 1100px) {
+  .header--light .header__toggle::before {
+    background-image: url(../img/svg/btn-open-light.svg); } }
+
+@media screen and (max-width: 1100px) {
   .header--opened .header__toggle::before {
     background-image: url(../img/svg/btn-close-dark.svg); } }
+
+@media screen and (max-width: 1100px) {
+  .header--light.header--opened .header__toggle::before {
+    background-image: url(../img/svg/btn-close-light.svg); } }
 
 .header__logo {
   position: relative;
@@ -637,7 +651,7 @@ button,
   .header__logo {
     margin-left: 72px; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 630px) {
   .header__logo {
     width: 115px;
     height: 40px; } }
@@ -651,6 +665,14 @@ button,
   height: 44px;
   background-image: url(../img/svg/logo-dark.svg);
   background-repeat: no-repeat; }
+
+@media screen and (max-width: 630px) {
+  .header__logo::before {
+    width: 115px;
+    height: 40px; } }
+
+.header--light .header__logo::before {
+  background-image: url(../img/svg/logo-light.svg); }
 
 .header__list-wrap h2 {
   margin: 0;
@@ -771,6 +793,17 @@ button,
 .header__item:hover .header__link {
   color: #EFBA00; }
 
+.header--light .header__item:hover .header__link {
+  color: #313438; }
+
+@media screen and (max-width: 1100px) {
+  .header--light .header__list-wrapper--opened .header__link {
+    color: #DDDFE7; } }
+
+@media screen and (max-width: 1100px) {
+  .header--light .header__item:hover .header__link {
+    color: #F5F6FA; } }
+
 .header__item:hover .header__link::before {
   content: "";
   position: absolute;
@@ -779,6 +812,9 @@ button,
   height: 1px;
   width: 50px;
   background-color: #ffffff; }
+
+.header--light .header__item:hover .header__link::before {
+  background-color: #E52421; }
 
 @media screen and (max-width: 1100px) {
   .header__list-wrapper--opened .header__item:hover .header__link::before {
@@ -810,6 +846,9 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #DDDFE7; }
+
+.header--light .header__link {
+  color: #888A96; }
 
 @media screen and (max-width: 1100px) {
   .header__list-wrapper--opened .header__link {
@@ -844,11 +883,9 @@ button,
   position: relative;
   min-width: 459px;
   margin: 0;
-  margin-bottom: -16px;
   padding: 0;
-  padding-top: 15px;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #F5F6FA;
@@ -864,18 +901,29 @@ button,
   height: 92px;
   background-image: url(../img/svg/vector-5.svg);
   background-repeat: no-repeat;
-  z-index: 1001; }
+  z-index: 1001;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none; }
 
 .header__sub-item {
-  margin-bottom: 16px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header__sub-link {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  padding-right: 17px;
   font-size: 16px;
   line-height: 22px;
   color: #313438;
   opacity: 0.7; }
 
 .header__sub-link:hover {
+  background-color: #F5F6FA;
   opacity: 1; }
 
 @media screen and (max-width: 830px) {
@@ -887,6 +935,21 @@ button,
   padding-bottom: 9px;
   padding-left: 17px;
   padding-right: 17px; }
+
+.header--light .header__btn .btn {
+  color: #E52421;
+  background-color: transparent;
+  border: 1px solid #FCE9E9;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.header--light .header__btn .btn:hover {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08))), #E52421;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #E52421;
+  border: 1px solid #FCE9E9;
+  -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+          box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
 
 .header__chat {
   display: -webkit-box;
@@ -910,6 +973,10 @@ button,
   background-color: #525252;
   border-radius: 50%; }
 
+.header--light .header__whatsapp a,
+.header--light .header__telegram a {
+  background-color: #F5F6FA; }
+
 .header__whatsapp a::before {
   content: "";
   position: absolute;
@@ -921,6 +988,9 @@ button,
   height: 24px;
   background-image: url(../img/svg/whatsapp-dark.svg);
   background-repeat: no-repeat; }
+
+.header--light .header__whatsapp a::before {
+  background-image: url(../img/svg/whatsapp-light.svg); }
 
 .header__whatsapp a:hover::before {
   content: "";
@@ -934,6 +1004,9 @@ button,
   background-image: url(../img/svg/whatsapp-dark-hover.svg);
   background-repeat: no-repeat; }
 
+.header--light .header__whatsapp a:hover::before {
+  background-image: url(../img/svg/whatsapp-light-hover.svg); }
+
 .header__telegram a::before {
   content: "";
   position: absolute;
@@ -945,6 +1018,9 @@ button,
   height: 24px;
   background-image: url(../img/svg/telegram-dark.svg);
   background-repeat: no-repeat; }
+
+.header--light .header__telegram a::before {
+  background-image: url(../img/svg/telegram-light.svg); }
 
 .header__telegram a:hover::before {
   content: "";
@@ -958,6 +1034,9 @@ button,
   background-image: url(../img/svg/telegram-dark-hover.svg);
   background-repeat: no-repeat; }
 
+.header--light .header__telegram a:hover::before {
+  background-image: url(../img/svg/telegram-light-hover.svg); }
+
 @media screen and (max-width: 600px) {
   .header__wrap {
     display: none; } }
@@ -969,6 +1048,9 @@ button,
   font-size: 14px;
   line-height: 20px;
   color: #DDDFE7; }
+
+.header--light .header__schedule p {
+  color: #888A96; }
 
 .header__schedule p::before {
   content: "";
@@ -986,8 +1068,14 @@ button,
   line-height: 24px;
   color: #F5F6FA; }
 
+.header--light .header__phone-link {
+  color: #525252; }
+
 .header__phone-link:hover {
   color: #EFBA00; }
+
+.header--light .header__phone-link:hover {
+  color: #E52421; }
 
 .header__bottom {
   padding-top: 16px;
