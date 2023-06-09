@@ -13,16 +13,22 @@
   width: 550px;
   max-width: 550px;
   margin-right: 40px;
-  margin-bottom: -24px;
   padding-top: 48px;
 }
 
 .shipping-cost__width-wrapper,
 .shipping-cost__height-wrapper,
-.shipping-cost__length-wrapper,
-.shipping-cost__weight-wrapper {
-  //min-height: 119px;
-  margin-bottom: 24px;
+.shipping-cost__length-wrapper {
+  margin-bottom: 36px;
+}
+
+.shipping-cost__wrapper h3 {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
 }
 
 .shipping-cost__width-wrap,
@@ -33,19 +39,155 @@
   align-items: center;
 }
 
+.shipping-cost__range .range-slider {
+  border-radius: 0;
+}
+
+.shipping-cost__range .noUi-connects {
+  border-radius: 0;
+}
+
+.shipping-cost__range .noUi-target {
+  height: 6px;
+
+  background-color: $color-grey-decor;
+  border: none;
+  box-shadow: none;
+}
+
+.shipping-cost__range .noUi-connect {
+  background-color: $color-general;
+}
+
+.shipping-cost__range .noUi-handle::after,
+.shipping-cost__range .noUi-handle::before {
+	display: none;
+}
+
+.shipping-cost__range .noUi-handle {
+  background-color: $color-default-white;
+  border: 2px solid $color-title;
+  box-shadow: none;
+}
+
+.shipping-cost__range .noUi-horizontal .noUi-handle {
+  width: 16px;
+  height: 16px;
+
+  top: -4.5px;
+  right: -8px;
+
+  border-radius: 0;
+}
+
+.shipping-cost__range .noUi-pips-horizontal {
+  height: 40px;
+  padding-top: 6px;
+}
+
+.shipping-cost__range .noUi-marker-horizontal.noUi-marker {
+    margin-left: -1px;
+    width: 2px;
+    height: 10px;
+
+    background-color: $color-title;
+    opacity: 0.1;
+}
+
+.shipping-cost__range .noUi-marker-normal {
+  display: none;
+}
+
+.shipping-cost__range .noUi-value-large,
+.shipping-cost__range .noUi-value-sub {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text;
+}
+
 .shipping-cost__range {
+  position: relative;
   width: 100%;
   max-width: 422px;
   margin-right: 34px;
 }
 
-.shipping-cost__wrapper h3 {
-  margin: 0;
-  margin-bottom: 50px;
+.shipping-cost__range::before {
+  content: "";
 
+  position: absolute;
+
+  top: -5px;
+  right: -8px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: $color-title;
+  z-index: 100;
+}
+
+.shipping-cost__tooltip {
+  position: absolute;
+  display: flex;
+  min-width: 44px;
+  min-height: 39px;
+
+  top: -39px;
+  left: 0;
+
+  background-image: url(../img/svg/tooltip.svg);
+  background-repeat: no-repeat;
+  z-index: 800;
+}
+
+.shipping-cost__width-wrapper .shipping-cost__tooltip {
+  left: 49%;
+}
+
+.shipping-cost__height-wrapper .shipping-cost__tooltip {
+  left: 26%;
+}
+
+.shipping-cost__length-wrapper .shipping-cost__tooltip {
+  left: 59%;
+}
+
+.shipping-cost__weight-wrapper .shipping-cost__tooltip {
+  left: 95%;
+}
+
+.shipping-cost__tooltip-number {
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  color: $color-text;
+  text-align: center;
+  color: $color-default-white;
+
+  background-color: $color-title;
+}
+
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+.range-slider__input-wrap input::-webkit-outer-spin-button,
+.range-slider__input-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.range-slider__input-wrap input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .range-slider__input {
@@ -65,15 +207,13 @@
   background-color: $color-grey-background;
   border: none;
   border-bottom: 1px solid transparent;
+  outline: none;
 }
 
 .range-slider__input:hover {
   border-bottom: 1px solid $color-title;
   cursor: pointer;
 }
-
-
-
 
 .shipping-cost__wrap {
   max-width: 600px;
@@ -85,4 +225,50 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
+}
+
+.shipping-cost__wrap .form__wrapper {
+  display: flex;
+}
+
+.shipping-cost__wrap .form__field {
+  width: 100%;
+  max-width: 248px;
+}
+
+.shipping-cost__wrap .form__field-start {
+  margin-right: 24px;
+}
+
+.shipping-cost__wrap textarea {
+  height: 128px;
+  margin-bottom: 24px;
+}
+
+.shipping-cost__wrap .form__wrap {
+  display: flex;
+}
+
+.shipping-cost__wrap .form__field-name {
+  margin-right: 24px;
+}
+
+.shipping-cost__wrap .form__field {
+  margin-bottom: 0;
+}
+
+.shipping-cost__wrap .form__btn-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.shipping-cost__wrap .form__btn {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 24px;
+}
+
+.shipping-cost__wrap .form__field-check {
+  width: 100%;
+  max-width: 278px;
 }
