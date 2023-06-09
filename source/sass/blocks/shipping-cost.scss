@@ -12,18 +12,72 @@
 .shipping-cost__wrapper {
   width: 550px;
   max-width: 550px;
+  margin-right: 40px;
+  margin-bottom: -24px;
+  padding-top: 48px;
+}
+
+.shipping-cost__width-wrapper,
+.shipping-cost__height-wrapper,
+.shipping-cost__length-wrapper,
+.shipping-cost__weight-wrapper {
+  //min-height: 119px;
+  margin-bottom: 24px;
+}
+
+.shipping-cost__width-wrap,
+.shipping-cost__height-wrap,
+.shipping-cost__length-wrap,
+.shipping-cost__weight-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.shipping-cost__range {
+  width: 100%;
+  max-width: 422px;
+  margin-right: 34px;
 }
 
 .shipping-cost__wrapper h3 {
   margin: 0;
+  margin-bottom: 50px;
 
   font-size: 16px;
   line-height: 22px;
   color: $color-text;
 }
 
+.range-slider__input {
+  width: 100px;
+  height: 56px;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 17px;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: $color-title;
+
+  background-color: $color-grey-background;
+  border: none;
+  border-bottom: 1px solid transparent;
+}
+
+.range-slider__input:hover {
+  border-bottom: 1px solid $color-title;
+  cursor: pointer;
+}
+
+
+
+
 .shipping-cost__wrap {
   max-width: 600px;
+  margin-left: 40px;
 }
 
 .shipping-cost__wrap .form--light {

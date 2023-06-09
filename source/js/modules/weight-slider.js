@@ -1,0 +1,7 @@
+const weightSlider = () => {
+
+
+
+};
+
+export {weightSlider};

@@ -9,6 +9,12 @@ import {reviewsSlider} from './modules/reviews-slider';
 import {hamburgerMenu} from './modules/hamburger-menu';
 import {headerLightScroll} from './modules/header-light-scroll';
 
+import {widthSlider} from './modules/width-slider';
+import {heightSlider} from './modules/height-slider';
+import {lengthSlider} from './modules/length-slider';
+import {weightSlider} from './modules/weight-slider';
+
+
 
 // Utils
 // ---------------------------------
@@ -18,6 +24,7 @@ ieFix();
 // Modules
 // ---------------------------------
 
+
 initModals();
 showInputs();
 featuresSlider();
@@ -26,3 +33,7 @@ partnersSlider();
 reviewsSlider();
 hamburgerMenu();
 headerLightScroll();
+widthSlider();
+heightSlider();
+lengthSlider();
+weightSlider();

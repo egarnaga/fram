@@ -1372,38 +1372,55 @@
 
       <section class="shipping-cost container">
         <div class="shipping-cost__container">
+
           <div class="shipping-cost__wrapper">
             <h2 class="visually-hidden">Параметры груза</h2>
 
-            <div class="shipping-cost__width">
+            <div class="shipping-cost__width-wrapper">
               <h3>Ширина (м)</h3>
               <div class="shipping-cost__width-wrap">
-                <div class="range-slider"></div>
-                <input class="range-slider__input" type="number">
+                <div class="shipping-cost__range">
+                  <div class="range-slider shipping-cost__width" id="width-slider"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number">
+                </div>
               </div>
             </div>
 
-            <div class="shipping-cost__height">
+            <div class="shipping-cost__height-wrapper">
               <h3>Высота (м)</h3>
               <div class="shipping-cost__height-wrap">
-                <div class="range-slider"></div>
-                <input class="range-slider__input" type="number">
+                <div class="shipping-cost__range">
+                  <div class="range-slider shipping-cost__height"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number">
+                </div>
               </div>
             </div>
 
-            <div class="shipping-cost__length">
+            <div class="shipping-cost__length-wrapper">
               <h3>Длина (м)</h3>
               <div class="shipping-cost__length-wrap">
-                <div class="range-slider"></div>
-                <input class="range-slider__input" type="number">
+                <div class="shipping-cost__range">
+                  <div class="range-slider shipping-cost__length"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number">
+                </div>
               </div>
             </div>
 
-            <div class="shipping-cost__weight">
+            <div class="shipping-cost__weight-wrapper">
               <h3>Масса (тф)</h3>
               <div class="shipping-cost__weight-wrap">
-                <div class="range-slider"></div>
-                <input class="range-slider__input" type="number">
+                <div class="shipping-cost__range">
+                  <div class="range-slider shipping-cost__weight"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number">
+                </div>
               </div>
             </div>
           </div>

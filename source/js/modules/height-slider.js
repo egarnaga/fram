@@ -1,0 +1,7 @@
+const heightSlider = () => {
+
+
+
+};
+
+export {heightSlider};
