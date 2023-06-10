@@ -35,3 +35,32 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), $color-general;
   border: 1px solid $color-text;
 }
+
+.btn--success {
+  color: #6A9E15;
+
+  background-color: $color-grey-background;
+  border: 1px solid #6A9E15;
+  box-shadow: none;
+}
+
+.btn--success:hover {
+  color: $color-default-white;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #6A9E15;
+  box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+}
+
+.btn--error {
+  color: $color-general;
+
+  background-color: $color-grey-background;
+  border: 1px solid $color-general;
+}
+
+.btn--error:hover {
+  color: $color-default-white;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), $color-general;
+  box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+}

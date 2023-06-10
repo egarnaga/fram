@@ -128,7 +128,7 @@
               <div class="header__tablet-wrapper">
                 <div class="header__tablet-btn-wrap">
                   <div class="header__tablet-btn">
-                    <a class="btn btn--transparent" href="#" data-modal="call">Заказать звонок</a>
+                    <a class="btn btn--transparent" data-modal="call">Заказать звонок</a>
                   </div>
 
                   <div class="header__tablet-link">
@@ -166,7 +166,7 @@
         </div>
 
         <div class="header__btn">
-          <a class="btn btn--transparent" href="#" data-modal="call">Заказать&nbsp;звонок</a>
+          <a class="btn btn--transparent" href="#" data-modal="success">Заказать&nbsp;звонок</a>
         </div>
 
         <div class="header__chat">
@@ -1521,10 +1521,6 @@
         </div>
       </section>
 
-      <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
-      </div>
     </main>
 
     <footer class="footer">
@@ -1557,7 +1553,7 @@
       </a>
 
       <div class="footer__btn">
-        <a class="btn btn--transparent" href="#" data-modal="call">Заказать звонок</a>
+        <a class="btn btn--transparent" data-modal="call">Заказать звонок</a>
       </div>
 
       <div class="footer__link">
@@ -1683,12 +1679,18 @@
 </div>
 
 
-    <div class="modal modal--preload modal--feedback    ">
+    <div class="modal modal--preload modal--success    ">
   <div class="modal__wrapper">
     <div class="modal__overlay"></div>
     <div class="modal__content">
 
-      <p class="modal__description">Обычная модалка</p>
+      <h2>Заявка отправлена</h2>
+
+<p>Скоро с вами свяжется менедежер</p>
+
+<div>
+  <button class="btn btn--success modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">Отлично</button>
+</div>
 
 
       <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
@@ -1702,23 +1704,7 @@
 </div>
 
 
-    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
-
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
+    
 
   </div>
 

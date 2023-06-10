@@ -1,8 +1,6 @@
 import {setupModal} from '../utils/modal';
 
 const modals = document.querySelectorAll('.modal');
-const modalFeedback = document.querySelector('.modal--feedback');
-const modalFeedbackBtns = document.querySelectorAll('[data-modal="feedback"]');
 const modalSuccess = document.querySelector('.modal--success');
 const modalSuccessBtns = document.querySelectorAll('[data-modal="success"]');
 const modalCall = document.querySelector('.modal--call');
@@ -23,11 +21,8 @@ const initModals = () => {
     }
   });
 
-  if (modalFeedback && modalFeedbackBtns.length) {
-    setupModal(modalFeedback, false, modalFeedbackBtns, false, false);
-  }
   if (modalSuccess && modalSuccessBtns.length) {
-    setupModal(modalSuccess, false, modalSuccessBtns);
+    setupModal(modalSuccess, false, modalSuccessBtns, false, false);
   }
   if (modalCall && modalCallBtns.length) {
     setupModal(modalCall, false, modalCallBtns, false, false);

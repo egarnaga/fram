@@ -2133,6 +2133,32 @@ button,
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #E52421;
   border: 1px solid #525252; }
 
+.btn--success {
+  color: #6A9E15;
+  background-color: #F5F6FA;
+  border: 1px solid #6A9E15;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.btn--success:hover {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08))), #6A9E15;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #6A9E15;
+  -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+          box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
+.btn--error {
+  color: #E52421;
+  background-color: #F5F6FA;
+  border: 1px solid #E52421; }
+
+.btn--error:hover {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08))), #E52421;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #E52421;
+  -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+          box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
 .features {
   position: relative;
   padding-top: 120px;
@@ -4990,6 +5016,54 @@ button,
 @media screen and (max-width: 768px) {
   .modal__wrap .form__field-check {
     margin-bottom: 24px; } }
+
+.modal--success .modal__wrapper {
+  padding-left: 45px;
+  padding-right: 45px; }
+
+@media screen and (max-width: 540px) {
+  .modal--success .modal__wrapper {
+    padding: 0 20px; } }
+
+.modal--success .modal__content {
+  width: 100%;
+  max-width: 390px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #F5F6FA; }
+
+@media screen and (max-width: 768px) {
+  .modal--success .modal__content {
+    max-width: 358px;
+    padding-top: 53px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px; } }
+
+.modal--success h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #6A9E15; }
+
+.modal--success p {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #525252; }
+
+.modal--success .modal__close-btn {
+  position: static;
+  display: none; }
+
+.modal--success .btn.modal__close-btn {
+  display: block; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

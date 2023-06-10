@@ -1287,10 +1287,6 @@
         </div>
       </section>
 
-      <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
-      </div>
     </main>
 
     @@include("source/html/base/footer.html", {
@@ -1302,15 +1298,13 @@
     })
 
     @@include("source/html/base/modal.html", {
-      "name": "feedback"
+      "name": "success",
     })
 
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
+    <!-- @@include("source/html/base/modal.html", {
+      "name": "error"
+    }) -->
+
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
