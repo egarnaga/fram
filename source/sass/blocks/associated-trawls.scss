@@ -2,6 +2,13 @@
   padding-bottom: 96px;
 }
 
+@media  screen and (max-width: 1000px) {
+  .associated-trawls {
+    padding-bottom: 50px;
+  }
+}
+
+
 .associated-trawls h2 {
   margin: 0;
   margin-bottom: 16px;

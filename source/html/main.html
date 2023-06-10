@@ -1203,56 +1203,57 @@
             </div>
           </div>
 
-          <div class="shipping-cost__wrap">
-            <form class="form form--light" action="#" method="POST">
-              <h2>Стоимость перевозки</h2>
-              <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
+          <div class="shipping-cost__tablet">
+            <div class="shipping-cost__wrap">
+              <form class="form form--light" action="#" method="POST">
+                <h2>Стоимость перевозки</h2>
+                <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
 
-              <div class="form__wrapper">
-                <div class="form__field form__field-start">
-                  <label class="visually-hidden" for="start-cost">Откуда</label>
-                  <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
+                <div class="form__wrapper">
+                  <div class="form__field form__field-start">
+                    <label class="visually-hidden" for="start-cost">Откуда</label>
+                    <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
+                  </div>
+
+                  <div class="form__field form__field-finish">
+                    <label class="visually-hidden" for="finish-cost">Куда</label>
+                    <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
+                  </div>
                 </div>
 
-                <div class="form__field form__field-finish">
-                  <label class="visually-hidden" for="finish-cost">Куда</label>
-                  <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
-                </div>
-              </div>
-
-              <div class="form__textarea">
-                <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
-                <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
-              </div>
-
-              <div class="form__wrap">
-                <div class="form__field form__field-name">
-                  <label class="visually-hidden" for="name-cost">Имя</label>
-                  <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
-                  <span class="form__error">Некорректное имя</span>
+                <div class="form__textarea">
+                  <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
+                  <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
                 </div>
 
-                <div class="form__field form__field-phone">
-                  <label class="visually-hidden" for="phone-cost">Номер телефона</label>
-                  <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
-                  <span class="form__error">Некорректный номер телефона</span>
-                </div>
-              </div>
+                <div class="form__wrap">
+                  <div class="form__field form__field-name">
+                    <label class="visually-hidden" for="name-cost">Имя</label>
+                    <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
+                    <span class="form__error">Некорректное имя</span>
+                  </div>
 
-              <div class="form__btn-wrap">
-                <div class="form__btn">
-                  <button class="btn" type="submit" aria-label="Узнать стоимость">Отправить</button>
+                  <div class="form__field form__field-phone">
+                    <label class="visually-hidden" for="phone-cost">Номер телефона</label>
+                    <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
+                    <span class="form__error">Некорректный номер телефона</span>
+                  </div>
                 </div>
 
-                <div class="form__field form__field-check">
-                  <input class="visually-hidden form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
-                  <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                <div class="form__btn-wrap">
+                  <div class="form__btn">
+                    <button class="btn" type="submit" aria-label="Узнать стоимость">Отправить</button>
+                  </div>
+
+                  <div class="form__field form__field-check">
+                    <input class="visually-hidden form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
+                    <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-
       </section>
 
       <section class="about-company container">
