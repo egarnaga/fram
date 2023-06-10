@@ -7,6 +7,8 @@
 // ! Не используйте scroll-behavior: smooth вместе с текущим utils/scroll-lock.js
 html {
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 html,

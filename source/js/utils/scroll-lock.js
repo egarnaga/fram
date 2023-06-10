@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const header = document.querySelector('.header');
 
 // eslint-disable-next-line consistent-return
 const getScrollbarWidth = () => {
@@ -35,9 +36,13 @@ const disableScrolling = (noScrollbar) => {
 };
 
 const enableScrolling = () => {
-  body.removeAttribute('style');
-  body.classList.remove('scroll-lock');
-  window.scrollTo(0, +body.dataset.scrollY);
+  if (!header.classList.contains('header--opened'
+  )) {
+    body.removeAttribute('style');
+    body.classList.remove('scroll-lock');
+    window.scrollTo(0, +body.dataset.scrollY);
+  }
+
 };
 
 export {disableScrolling, enableScrolling};

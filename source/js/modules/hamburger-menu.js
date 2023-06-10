@@ -1,3 +1,5 @@
+import {disableScrolling, enableScrolling} from '../utils/scroll-lock';
+
 const hamburgerMenu = () => {
   const menu = document.querySelector('#hamburger-menu');
   const btnHamburger = document.querySelector('.header__toggle');
@@ -10,14 +12,19 @@ const hamburgerMenu = () => {
     )) {
       menu.classList.remove('header__list-wrapper--closed');
       menu.classList.add('header__list-wrapper--opened');
-      body.classList.add('scroll-lock');
       header.classList.add('header--opened');
+
+      disableScrolling();
+
     } else {
       menu.classList.add('header__list-wrapper--closed');
       menu.classList.remove('header__list-wrapper--opened');
-      body.classList.remove('scroll-lock');
       header.classList.remove('header--opened');
+
+      enableScrolling();
     }
+
+
   });
 
   window.addEventListener('resize', () => {
@@ -25,8 +32,8 @@ const hamburgerMenu = () => {
       if (window.innerWidth > 768 && menu.classList.contains('header__list-wrapper--opened')) {
         menu.classList.remove('header__list-wrapper--opened');
         menu.classList.add('header__list-wrapper--closed');
-        body.classList.remove('scroll-lock');
         header.classList.remove('header--opened');
+        enableScrolling();
       }
     }
   });

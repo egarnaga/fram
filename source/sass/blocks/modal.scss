@@ -5,12 +5,15 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
+  z-index: 9999;
 
   display: flex;
   flex-direction: column;
   overflow-y: auto;
 
-  background-color: rgba($color-default-black, 0.6);
+  //background-color: rgba($color-default-black, 0.6);
+  background-color: rgba(35, 38, 45, 0.6);
+  backdrop-filter: blur(12.5px);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -55,7 +58,7 @@
     position: relative;
 
     width: 600px;
-    padding: 40px;
+    //padding: 40px;
 
     background-color: $color-default-white;
 
@@ -63,8 +66,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 16px;
+    right: 16px;
   }
 
   &--responsive {
@@ -92,5 +95,28 @@
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+
+.modal--call .modal__content {
+  max-width: 390px;
+
+  background-color: $color-grey-background;
+}
+
+@media  screen and (max-width: 768px) {
+  .modal--call .modal__content {
+    max-width: 678px;
+  }
+}
+
+.modal__wrap .form__field-check {
+  margin-bottom: 0;
+}
+
+@media  screen and (max-width: 768px) {
+  .modal__wrap .form__field-check {
+    margin-bottom: 24px;
   }
 }

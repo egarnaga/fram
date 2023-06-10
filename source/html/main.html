@@ -746,7 +746,7 @@
             </div>
             <div class="call-to-action__wrap">
               <div class="call-to-action__btn">
-                <a class="btn" href="#">Перейти к форме расчета</a>
+                <a class="btn" href="#calculation">Перейти к форме расчета</a>
               </div>
             </div>
           </div>
@@ -1136,7 +1136,7 @@
         </ul>
       </section>
 
-      <section class="shipping-cost container">
+      <section class="shipping-cost container" id="calculation">
         <div class="shipping-cost__container">
 
           <div class="shipping-cost__wrapper">
@@ -1288,15 +1288,17 @@
       </section>
 
       <div class="container">
-        <!-- <p><a href="#" data-modal="feedback">modal--feedback link</a></p> -->
-        <!-- <p><a href="#" data-modal="success">modal--success link</a></p> -->
+        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-modal="success">modal--success link</a></p>
       </div>
     </main>
 
-    <!-- @@include("source/html/base/footer.html") -->
-
     @@include("source/html/base/footer.html", {
       "main": true
+    })
+
+    @@include("source/html/base/modal.html", {
+      "name": "call"
     })
 
     @@include("source/html/base/modal.html", {

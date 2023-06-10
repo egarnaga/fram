@@ -685,7 +685,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html,
 body {
@@ -4903,6 +4904,7 @@ button,
   bottom: 0;
   left: 0;
   z-index: 1000;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4911,7 +4913,9 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(35, 38, 45, 0.6);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   visibility: hidden;
@@ -4951,12 +4955,11 @@ button,
   .modal__content {
     position: relative;
     width: 600px;
-    padding: 40px;
     background-color: #ffffff; }
   .modal__close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px; }
+    top: 16px;
+    right: 16px; }
   .modal--responsive .modal__content {
     width: 100%; }
   .modal--fit-content .modal__content {
@@ -4972,6 +4975,21 @@ button,
     visibility: visible;
     opacity: 1;
     pointer-events: auto; }
+
+.modal--call .modal__content {
+  max-width: 390px;
+  background-color: #F5F6FA; }
+
+@media screen and (max-width: 768px) {
+  .modal--call .modal__content {
+    max-width: 678px; } }
+
+.modal__wrap .form__field-check {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 768px) {
+  .modal__wrap .form__field-check {
+    margin-bottom: 24px; } }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
