@@ -812,7 +812,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: clip; }
   .wrapper--no-scrollbar {
     height: 100vh;
     -ms-overflow-style: none;
@@ -1708,7 +1708,7 @@ button,
   padding-top: 40px;
   padding-bottom: 74px;
   background-color: #313438;
-  z-index: 1; }
+  z-index: 1500; }
 
 @media screen and (max-width: 1283px) {
   .main-fram {
@@ -4360,11 +4360,15 @@ button,
 
 .about-company {
   padding-top: 80px;
-  padding-bottom: 122px; }
+  padding-bottom: 150px; }
+
+@media screen and (max-width: 768px) {
+  .about-company {
+    padding-bottom: 180px; } }
 
 @media screen and (max-width: 620px) {
   .about-company {
-    padding-bottom: 54px; } }
+    padding-bottom: 120px; } }
 
 .about-company h2 {
   margin: 0;
@@ -4533,19 +4537,62 @@ button,
     max-width: 209px; } }
 
 .buttons-bar {
-  max-width: 763px;
-  margin: 0 auto; }
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  max-width: 736px;
+  margin: 0 auto;
+  z-index: 900; }
+
+@media screen and (max-width: 768px) {
+  .buttons-bar {
+    max-width: 564px; } }
 
 .buttons-bar__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #FFFFFF;
   border-width: 1px 1px 0px 1px;
   border-style: solid;
   border-color: #F5F6FA;
   -webkit-box-shadow: 0px -6px 30px -15px rgba(136, 138, 150, 0.3);
           box-shadow: 0px -6px 30px -15px rgba(136, 138, 150, 0.3); }
+
+@media screen and (max-width: 768px) {
+  .buttons-bar__wrapper {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px; } }
+
+.buttons-bar__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .buttons-bar__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media screen and (max-width: 540px) {
+  .buttons-bar__wrap {
+    max-width: 375px; } }
 
 .buttons-bar button {
   position: relative;
@@ -4563,6 +4610,22 @@ button,
   border: none;
   cursor: pointer; }
 
+@media screen and (max-width: 768px) {
+  .buttons-bar button {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 28px;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center; } }
+
+@media screen and (max-width: 540px) {
+  .buttons-bar button {
+    max-width: 64px;
+    font-size: 10px;
+    line-height: 11px; } }
+
 .buttons-bar button::before {
   content: "";
   position: absolute;
@@ -4571,6 +4634,15 @@ button,
   width: 28px;
   height: 28px;
   background-repeat: no-repeat; }
+
+@media screen and (max-width: 768px) {
+  .buttons-bar button::before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 24px;
+    height: 24px; } }
 
 .buttons-bar button:nth-child(1)::before {
   background-image: url(../img/svg/trace.svg); }

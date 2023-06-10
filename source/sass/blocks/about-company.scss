@@ -1,12 +1,18 @@
 .about-company {
 
   padding-top: 80px;
-  padding-bottom: 122px;
+  padding-bottom: 150px;
+}
+
+@media  screen and (max-width: 768px) {
+  .about-company {
+    padding-bottom: 180px;
+  }
 }
 
 @media  screen and (max-width: 620px) {
   .about-company {
-    padding-bottom: 54px;
+    padding-bottom: 120px;
   }
 }
 
