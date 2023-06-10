@@ -123,19 +123,22 @@
 }
 
 
-.modal--success .modal__wrapper {
+.modal--success .modal__wrapper,
+.modal--error .modal__wrapper {
   padding-left: 45px;
   padding-right: 45px;
 }
 
 @media  screen and (max-width: 540px) {
-  .modal--success .modal__wrapper {
+  .modal--success .modal__wrapper,
+  .modal--error .modal__wrapper {
     padding: 0 20px;
   }
 }
 
 
-.modal--success .modal__content {
+.modal--success .modal__content,
+.modal--error .modal__content {
   width: 100%;
   max-width: 390px;
   padding-top: 50px;
@@ -147,7 +150,8 @@
 }
 
 @media  screen and (max-width: 768px) {
-  .modal--success .modal__content {
+  .modal--success .modal__content,
+  .modal--error .modal__content {
     max-width: 358px;
     padding-top: 53px;
     padding-bottom: 24px;
@@ -157,7 +161,8 @@
 }
 
 
-.modal--success h2 {
+.modal--success h2,
+.modal--error h2 {
   margin: 0;
   margin-bottom: 16px;
 
@@ -167,7 +172,12 @@
   color: #6A9E15;
 }
 
-.modal--success p {
+.modal--error h2 {
+  color: $color-general;
+}
+
+.modal--success p,
+.modal--error p {
   margin: 0;
   margin-bottom: 32px;
 
@@ -177,11 +187,13 @@
   color: $color-text;
 }
 
-.modal--success .modal__close-btn {
+.modal--success .modal__close-btn,
+.modal--error .modal__close-btn {
   position: static;
   display: none;
 }
 
-.modal--success .btn.modal__close-btn {
+.modal--success .btn.modal__close-btn,
+.modal--error .btn.modal__close-btn {
   display: block;
 }

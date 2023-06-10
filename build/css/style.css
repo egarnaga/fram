@@ -2150,7 +2150,9 @@ button,
 .btn--error {
   color: #E52421;
   background-color: #F5F6FA;
-  border: 1px solid #E52421; }
+  border: 1px solid #E52421;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .btn--error:hover {
   color: #ffffff;
@@ -5017,15 +5019,18 @@ button,
   .modal__wrap .form__field-check {
     margin-bottom: 24px; } }
 
-.modal--success .modal__wrapper {
+.modal--success .modal__wrapper,
+.modal--error .modal__wrapper {
   padding-left: 45px;
   padding-right: 45px; }
 
 @media screen and (max-width: 540px) {
-  .modal--success .modal__wrapper {
+  .modal--success .modal__wrapper,
+  .modal--error .modal__wrapper {
     padding: 0 20px; } }
 
-.modal--success .modal__content {
+.modal--success .modal__content,
+.modal--error .modal__content {
   width: 100%;
   max-width: 390px;
   padding-top: 50px;
@@ -5035,14 +5040,16 @@ button,
   background-color: #F5F6FA; }
 
 @media screen and (max-width: 768px) {
-  .modal--success .modal__content {
+  .modal--success .modal__content,
+  .modal--error .modal__content {
     max-width: 358px;
     padding-top: 53px;
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px; } }
 
-.modal--success h2 {
+.modal--success h2,
+.modal--error h2 {
   margin: 0;
   margin-bottom: 16px;
   font-size: 24px;
@@ -5050,7 +5057,11 @@ button,
   text-align: center;
   color: #6A9E15; }
 
-.modal--success p {
+.modal--error h2 {
+  color: #E52421; }
+
+.modal--success p,
+.modal--error p {
   margin: 0;
   margin-bottom: 32px;
   font-size: 16px;
@@ -5058,11 +5069,13 @@ button,
   text-align: center;
   color: #525252; }
 
-.modal--success .modal__close-btn {
+.modal--success .modal__close-btn,
+.modal--error .modal__close-btn {
   position: static;
   display: none; }
 
-.modal--success .btn.modal__close-btn {
+.modal--success .btn.modal__close-btn,
+.modal--error .btn.modal__close-btn {
   display: block; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
