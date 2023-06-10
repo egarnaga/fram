@@ -1,0 +1,77 @@
+.buttons-bar {
+  max-width: 763px;
+  margin: 0 auto;
+}
+
+.buttons-bar__wrapper {
+  display: flex;
+
+  background-color: #FFFFFF;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #F5F6FA;
+  box-shadow: 0px -6px 30px -15px rgba(136, 138, 150, 0.3);
+}
+
+.buttons-bar button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 55px;
+  padding-right: 27px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-grey-text;
+
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons-bar button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 13px;
+  left: 20px;
+
+  width: 28px;
+  height: 28px;
+
+  background-repeat: no-repeat;
+}
+
+.buttons-bar button:nth-child(1)::before {
+  background-image: url(../img/svg/trace.svg);
+}
+
+.buttons-bar button:nth-child(2)::before {
+  background-image: url(../img/svg/calculate.svg);
+}
+
+.buttons-bar button:nth-child(3)::before {
+  background-image: url(../img/svg/help.svg);
+}
+
+.buttons-bar button:hover {
+  color: $color-default-white;
+
+  background-color: $color-general;
+}
+
+.buttons-bar button:hover:nth-child(1)::before {
+  background-image: url(../img/svg/trace-hover.svg);
+}
+
+.buttons-bar button:hover:nth-child(2)::before {
+  background-image: url(../img/svg/calculate-hover.svg);
+}
+
+.buttons-bar button:hover:nth-child(3)::before {
+  background-image: url(../img/svg/help-hover.svg);
+}
