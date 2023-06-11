@@ -8,8 +8,27 @@
   }
 }
 
+.associated-trawls__header {
+  position: relative;
+}
+
+.associated-trawls__header::before {
+  content: "";
+
+  position: absolute;
+
+  top: -10px;
+  left: -45px;
+
+  width: 185px;
+  height: 52px;
+
+  background-image: url(../img/svg/rectangle-4.svg);
+  background-repeat: no-repeat;
+}
 
 .associated-trawls h2 {
+  position: relative;
   margin: 0;
   margin-bottom: 16px;
 
@@ -17,6 +36,8 @@
   font-size: 32px;
   line-height: 35px;
   color: $color-title;
+
+  z-index: 5;
 }
 
 .associated-trawls p {

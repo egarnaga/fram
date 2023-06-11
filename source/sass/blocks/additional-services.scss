@@ -3,7 +3,27 @@
   padding-bottom: 120px;
 }
 
+.additional-services__header {
+  position: relative;
+}
+
+.additional-services__header::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -40px;
+
+  width: 265px;
+  height: 52px;
+
+  background-image: url(../img/svg/rectangle.svg);
+  background-repeat: no-repeat;
+}
+
 .additional-services h2 {
+  position: relative;
   margin: 0;
   margin-bottom: 48px;
 
@@ -11,6 +31,8 @@
   font-size: 32px;
   line-height: 35px;
   color: $color-grey-1;
+
+  z-index: 5;
 }
 
 .additional-services h2 span {

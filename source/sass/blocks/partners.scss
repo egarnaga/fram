@@ -15,7 +15,34 @@
   }
 }
 
+.partners__header {
+  position: relative;
+}
+
+.partners__header::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: -45px;
+
+  width: 125px;
+  height: 52px;
+
+  background-image: url(../img/svg/rectangle-2.svg);
+  background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 768px) {
+  .partners__header::before {
+    top: -1px;
+  }
+}
+
+
 .partners h2 {
+  position: relative;
   margin: 0;
   margin-top: 9px;
 
@@ -23,6 +50,8 @@
   font-size: 32px;
   line-height: 35px;
   color: $color-title;
+
+  z-index: 5;
 }
 
 @media  screen and (max-width: 768px) {

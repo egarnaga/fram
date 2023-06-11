@@ -1,5 +1,5 @@
 .about-company {
-
+  position: relative;
   padding-top: 80px;
   padding-bottom: 150px;
 }
@@ -16,7 +16,31 @@
   }
 }
 
+.about-company::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -97px;
+
+  width: 284px;
+  height: 325px;
+
+  background-image: url(../img/svg/decor.svg);
+  background-repeat: no-repeat;
+
+  z-index: 3;
+}
+
+@media  screen and (max-width: 540px) {
+  .about-company::before {
+    left: -120px;
+  }
+}
+
 .about-company h2 {
+  position: relative;
   margin: 0;
   margin-bottom: 48px;
 
@@ -24,11 +48,16 @@
   font-size: 32px;
   line-height: 35px;
   color: $color-title;
+
+  z-index: 5;
 }
 
 .about-company__wrapper {
+  position: relative;
   display: flex;
   align-items: flex-start;
+
+  z-index: 5;
 }
 
 @media  screen and (max-width: 990px) {
