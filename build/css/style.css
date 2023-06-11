@@ -4885,6 +4885,14 @@ button,
 .buttons-bar button:hover:nth-child(3)::before {
   background-image: url(../img/svg/help-hover.svg); }
 
+.main-category {
+  padding-top: 180px; }
+
+.main-category__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .footer {
   background-color: #313438; }
 
