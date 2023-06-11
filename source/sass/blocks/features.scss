@@ -103,6 +103,8 @@
   padding: 0;
 
   list-style: none;
+  border-top: 1px solid #E8EFF9;
+  border-left: 1px solid #E8EFF9;
 }
 
 @media  screen and (max-width: 1000px) {
@@ -112,9 +114,19 @@
   }
 }
 
+@media  screen and (max-width: 768px) {
+  .features__slider-wrapper {
+    border-top: none;
+    border-left: none;
+  }
+}
+
 .features__card {
   position: relative;
   width: 25%;
+
+  border-bottom: 1px solid #E8EFF9;
+  border-right: 1px solid #E8EFF9;
 }
 
 @media  screen and (max-width: 1300px) {
