@@ -192,6 +192,8 @@
   .industry-solutions__back {
     display: none;
 
+
+    background-color: $color-grey-background;
     opacity: 1;
   }
 }
@@ -212,6 +214,7 @@
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 @media  screen and (max-width: 1160px) {

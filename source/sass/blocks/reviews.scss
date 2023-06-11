@@ -240,9 +240,14 @@
   color: $color-grey-text;
 }
 
+.reviews__card-img {
+  margin-left: 30px;
+}
+
 @media  screen and (max-width: 768px) {
   .reviews__card-img {
     position: absolute;
+    margin-right: 0;
 
     top: 30px;
     right: 30px;

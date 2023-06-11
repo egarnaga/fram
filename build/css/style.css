@@ -1185,11 +1185,20 @@ button,
   background-image: url(../img/svg/vector-3.svg);
   background-repeat: no-repeat; }
 
+.header__link-not-sub-list.header__link::after {
+  background-image: none; }
+
 @media screen and (max-width: 1100px) {
   .header__list-wrapper--opened .header__link::after {
     width: 5px;
     height: 8px;
     background-image: url(../img/svg/vector-4.svg); } }
+
+@media screen and (max-width: 1100px) {
+  .header__list-wrapper--opened .header__link-not-sub-list.header__link::after {
+    width: 5px;
+    height: 8px;
+    background-image: none; } }
 
 .header__sub-list-wrap {
   display: none;
@@ -3394,6 +3403,7 @@ button,
 @media screen and (max-width: 1160px) {
   .industry-solutions__back {
     display: none;
+    background-color: #F5F6FA;
     opacity: 1; } }
 
 @media screen and (max-width: 1160px) {
@@ -3412,7 +3422,8 @@ button,
           justify-content: space-between;
   padding-top: 40px;
   padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  padding-bottom: 20px; }
 
 @media screen and (max-width: 1160px) {
   .industry-solutions__lists-wrap {
@@ -3874,9 +3885,13 @@ button,
   line-height: 20px;
   color: #888A96; }
 
+.reviews__card-img {
+  margin-left: 30px; }
+
 @media screen and (max-width: 768px) {
   .reviews__card-img {
     position: absolute;
+    margin-right: 0;
     top: 30px;
     right: 30px;
     width: 60px;
@@ -3937,7 +3952,8 @@ button,
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  border: 1px solid #E8EFF9; }
 
 @media screen and (max-width: 1050px) {
   .associated-trawls__list li {
