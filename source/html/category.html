@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>FRAM — Страница категории</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+      "main": false
+    })
+
+    <main>
+
+      <section class="company-scheme">
+        <div class="container">
+          <h2>Схема работы</h2>
+
+          <ol class="company-scheme__list">
+            <li>
+              <span>1</span>
+              <h3>Получаем запрос на логистические услуги</h3>
+              <p>Используйте любой удобный для вас способ оформления заявки: свяжитесь через форму расчета на сайте, электронной почтой или по телефону.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Подбираем оптимальную логистическую схему</h3>
+              <p>Стоимость услуги грузоперевозок зависит от объема товара, габаритов, веса,его характеристик, точки забора и направления, вида используемого транспортадля перевозки, и срочности.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <h3>Формируем предложение и заключаем договор</h3>
+              <p>Подробно прописываем все условия: сроки, цену, транспорт, дополнительные обязательства нашей компании.</p>
+            </li>
+            <li>
+              <span>4</span>
+              <h3>Формируем подробную документацию</h3>
+              <p>Поможем составить сопроводительные документы по всем правилам при перевозках грузов за рубеж и по территории России.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="oversized-cargo-cost container">
+        <div class="oversized-cargo-cost__wrapper">
+          <div class="oversized-cargo-cost__header">
+            <h2><span>Стоимость</span> перевозки негабаритных&nbsp;грузов</h2>
+          </div>
+
+          <div class="oversized-cargo-cost__table-wrap">
+            <table class="oversized-cargo-cost__table">
+              <thead>
+                <tr>
+                  <th>Габариты и вес груза</th>
+                  <th>Масса груза</th>
+                  <th>Цена за километр<span>*</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 16 x 3,5 x 3,5 м)</p>
+                  </td>
+                  <td>
+                    <p>до 20 тонн</p>
+                  </td>
+                  <td>
+                    <p>от 50 руб. / км</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 17 x 5 x 3,8 м)</p>
+                  </td>
+                  <td>
+                    <p>от 20 до 45 тонн</p>
+                  </td>
+                  <td>
+                    <p>от 100 руб. / км</p>
+                    <p>(сопровождение входит в стоимость)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Негабаритный груз</p>
+                    <p>(ДxШxВ до 18 x от 6 x от 5 м)</p>
+                  </td>
+                  <td>
+                    <p>от 20 до 45 тонн</p>
+                  </td>
+                  <td>
+                    <p>11000 – 19000 руб.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="oversized-cargo-cost__note">*Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
+        </div>
+
+        <div class="oversized-cargo-cost__wrap">
+          <form class="form form--light" action="#" method="POST">
+            <h2><span>Нет времени</span> разбираться?</h2>
+
+            <p>Заполните форму, наш менеджер ответит в ближайшее время</p>
+
+            <div class="form__wrap">
+              <div class="form__field form__field-name">
+                <label class="visually-hidden" for="name-light">Имя</label>
+                <input type="text" name="name-light" id="name-light" placeholder="Имя" required="">
+                <span class="form__error">Некорректное имя</span>
+              </div>
+
+              <div class="form__field form__field-phone">
+                <label class="visually-hidden" for="phone-light">Номер телефона</label>
+                <input type="tel" name="phone-light" id="phone-light" placeholder="Номер телефона" required="">
+                <span class="form__error">Некорректный номер телефона</span>
+              </div>
+            </div>
+
+            <div class="form__wrap">
+              <div class="form__btn">
+                <button class="btn" type="submit" aria-label="Получить консультацию">
+                  <span>Получить консультацию</span>
+                </button>
+              </div>
+
+              <div class="form__field form__field-check">
+                <input class="visually-hidden form__checkbox" id="check-light" type="checkbox" name="check-light" required="" checked>
+                <label for="check-light">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="call-to-action">
+        <div class="container">
+          <div class="call-to-action__container">
+            <div class="call-to-action__wrapper">
+              <h2>Позвоните прямо сейчас</h2>
+              <a href="tel:+88123175028"><span>+7 (812) 317-50-28</span></a>
+            </div>
+            <div class="call-to-action__wrap">
+              <div class="call-to-action__btn">
+                <a class="btn" href="#calculation">Перейти к форме расчета</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="additional-services container">
+        <div class="additional-services__header">
+          <h2><span>Дополнительные</span> услуги нашей компании</h2>
+        </div>
+
+        <ul class="additional-services__list">
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Аренда техники</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Таможенный брокер</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Складские услуги</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Организация сопровождения</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Погрузочно-разгрузочные работы</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Экспедирование грузов</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="additional-services__wrapper">
+                <div class="additional-services__wrap">
+                  <h3>Сюрвейерские услуги</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="industry-solutions container">
+        <div class="industry-solutions__header">
+          <h2>Отраслевые решения</h2>
+        </div>
+
+        <div class="industry-solutions__row">
+          <div class="industry-solutions__column industry-solutions__accordion industry-solutions__accordion-1" data-mobile="false">
+
+            <div class="industry-solutions__item industry-solutions__item-1">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-1-mobile@1x.webp 1x, img/content/industry-solutions-1-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-1-tablet@1x.webp 1x, img/content/industry-solutions-1-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-1-desktop@1x.webp 1x, img/content/industry-solutions-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-1-mobile@1x.jpg 1x, img/content/industry-solutions-1-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-1-tablet@1x.jpg 1x, img/content/industry-solutions-1-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-1-desktop@1x.jpg" srcset="img/content/industry-solutions-1-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка спецтехники</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-solutions__item industry-solutions__item-1">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-2-mobile@1x.webp 1x, img/content/industry-solutions-2-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-2-tablet@1x.webp 1x, img/content/industry-solutions-2-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-2-desktop@1x.webp 1x, img/content/industry-solutions-2-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-2-mobile@1x.jpg 1x, img/content/industry-solutions-2-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-2-tablet@1x.jpg 1x, img/content/industry-solutions-2-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-2-desktop@1x.jpg" srcset="img/content/industry-solutions-2-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка лесозаготовительной техники</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-solutions__item industry-solutions__item-1">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-3-mobile@1x.webp 1x, img/content/industry-solutions-3-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-3-tablet@1x.webp 1x, img/content/industry-solutions-3-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-3-desktop@1x.webp 1x, img/content/industry-solutions-3-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-3-mobile@1x.jpg 1x, img/content/industry-solutions-3-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-3-tablet@1x.jpg 1x, img/content/industry-solutions-3-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-3-desktop@1x.jpg" srcset="img/content/industry-solutions-3-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка металлических конструкций</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудованияs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-solutions__item industry-solutions__item-1">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-4-mobile@1x.webp 1x, img/content/industry-solutions-4-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-4-tablet@1x.webp 1x, img/content/industry-solutions-4-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-4-desktop@1x.webp 1x, img/content/industry-solutions-4-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-4-mobile@1x.jpg 1x, img/content/industry-solutions-4-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-4-tablet@1x.jpg 1x, img/content/industry-solutions-4-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-4-desktop@1x.jpg" srcset="img/content/industry-solutions-4-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка длинномерных грузов</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="industry-solutions__column industry-solutions__accordion-2" data-mobile="false">
+            <div class="industry-solutions__item industry-solutions__item-2">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-5-mobile@1x.webp 1x, img/content/industry-solutions-5-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-5-tablet@1x.webp 1x, img/content/industry-solutions-5-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-5-desktop@1x.webp 1x, img/content/industry-solutions-5-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-5-mobile@1x.jpg 1x, img/content/industry-solutions-5-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-5-tablet@1x.jpg 1x, img/content/industry-solutions-5-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-5-desktop@1x.jpg" srcset="img/content/industry-solutions-5-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка промышленного оборудования</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-solutions__item industry-solutions__item-2">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: px; 2x: px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-6-mobile@1x.webp 1x, img/content/industry-solutions-6-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-6-tablet@1x.webp 1x, img/content/industry-solutions-6-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-6-desktop@1x.webp 1x, img/content/industry-solutions-6-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-6-mobile@1x.jpg 1x, img/content/industry-solutions-6-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-6-tablet@1x.jpg 1x, img/content/industry-solutions-6-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-6-desktop@1x.jpg" srcset="img/content/industry-solutions-6-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка негабаритных грузов</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                    <li><a href="#">Перевозка военной техники</a></li>
+                    <li><a href="#">Перевозка катеров</a></li>
+                    <li><a href="#">Перевозка яхт</a></li>
+                  </ul>
+                  <ul class="industry-solutions__list-2">
+                    <li><a href="#">Перевозка самолетов</a></li>
+                    <li><a href="#">Перевозка вертолетов</a></li>
+                    <li><a href="#">Перевозка спецтехники</a></li>
+                    <li><a href="#">Перевозка модульных домов</a></li>
+                    <li><a href="#">Перевозка емкостей</a></li>
+                    <li><a href="#">Перевозка самосвала</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-solutions__item industry-solutions__item-2">
+              <div class="industry-solutions__front">
+                <picture>
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 375px)" srcset="img/content/industry-solutions-7-mobile@1x.webp 1x, img/content/industry-solutions-7-mobile@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/industry-solutions-7-tablet@1x.webp 1x, img/content/industry-solutions-7-tablet@2x.webp 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <source type="image/webp" srcset="img/content/industry-solutions-7-desktop@1x.webp 1x, img/content/industry-solutions-7-desktop@2x.webp 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 375px)" srcset="img/content/industry-solutions-7-mobile@1x.jpg 1x, img/content/industry-solutions-7-mobile@2x.jpg 2x">
+
+                  <!-- 1x: 335px; 2x: 670px -->
+                  <source media="(max-width: 768px)" srcset="img/content/industry-solutions-7-tablet@1x.jpg 1x, img/content/industry-solutions-7-tablet@2x.jpg 2x">
+
+                  <!-- 1x: 600px; 2x: 1200px -->
+                  <img src="img/content/industry-solutions-7-desktop@1x.jpg" srcset="img/content/industry-solutions-7-desktop@2x.jpg 2x" alt="">
+                </picture>
+                <div class="industry-solutions__title">
+                  <h3>Перевозка сельскохозяйственной техники</h3>
+                </div>
+              </div>
+              <div class="industry-solutions__back">
+                <div class="industry-solutions__lists-wrap">
+                  <ul class="industry-solutions__list-1">
+                    <li><a href="#">Перевозка тяжеловесных грузов</a></li>
+                    <li><a href="#">Перевозка промышленного оборудования</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shipping-cost container" id="calculation">
+        <div class="shipping-cost__container">
+
+          <div class="shipping-cost__wrapper">
+            <h2 class="visually-hidden">Параметры груза</h2>
+
+            <div class="shipping-cost__width-wrapper">
+              <h3>Ширина (м)</h3>
+              <div class="shipping-cost__width-wrap">
+                <div class="shipping-cost__range">
+                  <span class="shipping-cost__tooltip">
+                    <span class="shipping-cost__tooltip-number">5.9</span>
+                  </span>
+                  <div class="range-slider shipping-cost__width" id="width-slider"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number" id="input-width">
+                </div>
+              </div>
+            </div>
+
+            <div class="shipping-cost__height-wrapper">
+              <h3>Высота (м)</h3>
+              <div class="shipping-cost__height-wrap">
+                <div class="shipping-cost__range">
+                  <span class="shipping-cost__tooltip">
+                    <span class="shipping-cost__tooltip-number">3</span>
+                  </span>
+                  <div class="range-slider shipping-cost__height"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number" id="input-height">
+                </div>
+              </div>
+            </div>
+
+            <div class="shipping-cost__length-wrapper">
+              <h3>Длина (м)</h3>
+              <div class="shipping-cost__length-wrap">
+                <div class="shipping-cost__range">
+                  <span class="shipping-cost__tooltip">
+                    <span class="shipping-cost__tooltip-number">19</span>
+                  </span>
+                  <div class="range-slider shipping-cost__length"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number" id="input-length">
+                </div>
+              </div>
+            </div>
+
+            <div class="shipping-cost__weight-wrapper">
+              <h3>Масса (тф)</h3>
+              <div class="shipping-cost__weight-wrap">
+                <div class="shipping-cost__range">
+                  <span class="shipping-cost__tooltip">
+                    <span class="shipping-cost__tooltip-number">150</span>
+                  </span>
+                  <div class="range-slider shipping-cost__weight"></div>
+                </div>
+                <div class="range-slider__input-wrap">
+                  <input class="range-slider__input" type="number" id="input-weight">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shipping-cost__tablet">
+            <div class="shipping-cost__wrap">
+              <form class="form form--light" action="#" method="POST">
+                <h2>Стоимость перевозки</h2>
+                <p>Стоимость рассчитывается индивидуально, т.к. зависит от множества факторов: тип транспорта, километраж, тип груза, оформление документов, растаможка, сроки и пр.</p>
+
+                <div class="form__wrapper">
+                  <div class="form__field form__field-start">
+                    <label class="visually-hidden" for="start-cost">Откуда</label>
+                    <input id="start-cost" type="text" name="start" placeholder="Откуда" required="">
+                  </div>
+
+                  <div class="form__field form__field-finish">
+                    <label class="visually-hidden" for="finish-cost">Куда</label>
+                    <input id="finish-cost" type="text" name="finish" placeholder="Куда" required="">
+                  </div>
+                </div>
+
+                <div class="form__textarea">
+                  <label class="visually-hidden" for="message-cost">Описание груза и задач</label>
+                  <textarea name="message" id="message-cost" placeholder="Описание груза и задач" required=""></textarea>
+                </div>
+
+                <div class="form__wrap">
+                  <div class="form__field form__field-name">
+                    <label class="visually-hidden" for="name-cost">Имя</label>
+                    <input type="text" name="name" id="name-cost" placeholder="Имя" required="">
+                    <span class="form__error">Некорректное имя</span>
+                  </div>
+
+                  <div class="form__field form__field-phone">
+                    <label class="visually-hidden" for="phone-cost">Номер телефона</label>
+                    <input type="tel" name="phone" id="phone-cost" placeholder="Номер телефона" required="">
+                    <span class="form__error">Некорректный номер телефона</span>
+                  </div>
+                </div>
+
+                <div class="form__btn-wrap">
+                  <div class="form__btn">
+                    <button class="btn" type="submit" aria-label="Узнать стоимость">Отправить</button>
+                  </div>
+
+                  <div class="form__field form__field-check">
+                    <input class="visually-hidden form__checkbox" id="check-cost" type="checkbox" name="check" required="" checked>
+                    <label for="check-cost">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@include("source/html/base/footer.html", {
+      "main": true
+    })
+
+    @@include("source/html/base/modal.html", {
+      "name": "call"
+    })
+
+    @@include("source/html/base/modal.html", {
+      "name": "success",
+    })
+
+    @@include("source/html/base/modal.html", {
+      "name": "error"
+    })
+
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+  <script>
+
+    function map1() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-1', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map2() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-2', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map3() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-3', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    function map4() {
+      let center = [57.457388384703805,30.52628246093745];
+
+      let saintPetersburg = [59.94067450825698,30.09232249999997];
+      let moscow = [55.58422718162347,37.38553349999997];
+
+
+      function init() {
+        let map = new ymaps.Map('map-4', {
+          center: center,
+          zoom: 4
+        });
+
+        let placemark1 = new ymaps.Placemark(saintPetersburg, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        let placemark2 = new ymaps.Placemark(moscow, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-2.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-11, -44]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects
+            .add(placemark1)
+            .add(placemark2);
+      }
+
+      ymaps.ready(init);
+    }
+
+    map1();
+    map2();
+    map3();
+    map4();
+
+
+
+    /* let saintPetersburg = [60.883313609548765,26.766211660156202];
+
+    function init() {
+      console.log('зашли');
+      let map = new ymaps.Map('map', {
+        saintPetersburg: saintPetersburg,
+        zoom: 6
+      });
+
+
+
+      let placemark = new ymaps.Placemark(saintPetersburg, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/svg/placemark-red.svg',
+        iconImageSize: [26, 44],
+        iconImageOffset: [-19, -44]
+      });
+
+      //map.controls.remove('geolocationControl'); // удаляем геолокацию
+      //map.controls.remove('searchControl'); // удаляем поиск
+      //map.controls.remove('trafficControl'); // удаляем контроль трафика
+      //map.controls.remove('typeSelector'); // удаляем тип
+      //map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      //map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      //map.controls.remove('rulerControl'); // удаляем контрол правил
+      //map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+      map.geoObjects.add(placemark);
+    }
+
+    ymaps.ready(init); */
+
+  </script>
+</body>
+</html>
