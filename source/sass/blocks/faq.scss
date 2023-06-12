@@ -1,0 +1,39 @@
+.faq__header h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.faq__header h2 span {
+  color: $color-general;
+}
+
+.faq__accordion {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.faq__title h3 {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+}
+
+.faq__title--active h3 {
+  color: $color-general;
+}
+
+.faq__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-title;
+}

@@ -231,16 +231,23 @@
 
       <section class="main-category container">
         <div class="main-category__wrapper">
-          <ul>
-            <li>
-              <a href="#">Главная</a>
-            </li>
-            <li>
-              <a href="#">Перевозка спетцехники</a>
-            </li>
-          </ul>
+          <div class="main-category__breadcrumbs">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--active">Перевозка спетцехники</a>
+              </li>
+            </ul>
+          </div>
+
           <h1>Перевозка спецтехники</h1>
-          <span>По России и всему миру</span>
+
+          <div class="main-category__note">
+            <span>По России и всему миру</span>
+          </div>
+
           <div class="main-category__img">
             <picture>
               <!-- 1x: 295px; 2x: 590px -->
@@ -266,12 +273,12 @@
 
           <div class="main-category__btn-wrap">
             <div class="main-category__btn">
-              <a href="#calculation">Узнать стоимость перевозки</a>
+              <a class="btn btn--transparent-red" href="#calculation">Узнать стоимость перевозки</a>
+            </div>
 
-              <div class="main-category__phone">
-                <span>Позвоните прямо сейчас</span>
-                <a class="main-category__phone-link" href="tel:+78123175028">+7 (812) 317-50-28</a>
-              </div>
+            <div class="main-category__phone">
+              <span>Позвоните прямо сейчас</span>
+              <a class="main-category__phone-link" href="tel:+78123175028">+7 (812) 317-50-28</a>
             </div>
           </div>
         </div>
@@ -552,7 +559,7 @@
         </div>
       </section>
 
-      <section class="faq">
+      <section class="faq container">
         <div class="faq__header">
           <h2>Часто задаваемые <span>вопросы</span></h2>
         </div>
