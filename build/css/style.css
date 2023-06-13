@@ -5947,6 +5947,61 @@ button,
   line-height: 22px;
   color: #313438; }
 
+.requisites {
+  padding-bottom: 120px; }
+
+.requisites__header h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #333333; }
+
+.requisites__wrapper p,
+.requisites__wrap p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.requisites__wrapper h3,
+.requisites__wrap h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #313438; }
+
+.requisites__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.requisites__list h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.requisites__list p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.requisites__sub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.requisites__sub-list h5 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
 .footer {
   background-color: #313438; }
 
