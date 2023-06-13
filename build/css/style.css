@@ -5798,6 +5798,19 @@ button,
   .faq__text p {
     max-width: 319px; } }
 
+.main-contacts {
+  padding-top: 180px;
+  padding-bottom: 120px; }
+
+.main-contacts__form-title {
+  display: none; }
+
+.main-contacts__form-p {
+  display: none; }
+
+.main-contacts__form-btn {
+  display: none; }
+
 .footer {
   background-color: #313438; }
 
