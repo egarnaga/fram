@@ -2,19 +2,170 @@
   background-color: $color-title;
 }
 
+.video .container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media  screen and (max-width: 768px) {
+  .video .container {
+    flex-direction: column;
+  }
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+@media  screen and (max-width: 768px) {
+  .video__wrapper {
+    margin-top: 32px;
+
+    order: 2;
+  }
+}
+
+.video__wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: -90px;
+  right: -450px;
+
+  width: 485px;
+  height: 153px;
+
+  background-image: url(../img/svg/vector-11.svg);
+  background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 1210px) {
+  .video__wrapper::before {
+    width: 307px;
+    height: 97px;
+    left: 0;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .video__wrapper::before {
+    bottom: -118px;
+  }
+}
+
+.video__wrapper iframe {
+  position: relative;
+  width: 705px;
+  height: 448px;
+
+  z-index: 1;
+}
+
+@media  screen and (max-width: 1210px) {
+  .video__wrapper iframe {
+    width: 560px;
+    height: 303px;
+  }
+}
+
+@media  screen and (max-width: 960px) {
+  .video__wrapper iframe {
+    width: 460px;
+  }
+}
+
+@media  screen and (max-width: 860px) {
+  .video__wrapper iframe {
+    width: 360px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .video__wrapper iframe {
+    width: 100%;
+    height: 430px;
+  }
+}
+
+@media  screen and (max-width: 640px) {
+  .video__wrapper iframe {
+    height: 380px;
+  }
+}
+
+@media  screen and (max-width: 440px) {
+  .video__wrapper iframe {
+    height: 375px;
+    max-height: 375px;
+  }
+}
+
+.video__wrap {
+  padding-left: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+  .video__wrap {
+    padding-left: 0;
+  }
+}
+
+.video__header {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.video__header::before {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+  left: 0;
+
+  width: 137px;
+  height: 82px;
+
+  background-image: url(../img/svg/vector-9.svg);
+  background-repeat: no-repeat;
+}
+
 .video__header h2 {
+  position: relative;
   margin: 0;
 
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: $color-default-white;
+  z-index: 1;
 }
 
 .video__wrap p {
+  position: relative;
   margin: 0;
+  padding-bottom: 39px;
 
   font-size: 16px;
   line-height: 22px;
   color: #DDDFE7;
+}
+
+.video__wrap p::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+
+  width: 495px;
+
+  width: 100%;
+  height: 15px;
+
+  background-image: url(../img/svg/vector-10.svg);
+  background-repeat: no-repeat;
 }
