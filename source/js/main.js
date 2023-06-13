@@ -14,6 +14,8 @@ import {heightSlider} from './modules/height-slider';
 import {lengthSlider} from './modules/length-slider';
 import {weightSlider} from './modules/weight-slider';
 
+import {accordionFaq} from './modules/accordion-faq';
+
 
 
 // Utils
@@ -37,3 +39,4 @@ widthSlider();
 heightSlider();
 lengthSlider();
 weightSlider();
+accordionFaq();
