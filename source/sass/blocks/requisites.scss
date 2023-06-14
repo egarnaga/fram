@@ -2,18 +2,77 @@
   padding-bottom: 120px;
 }
 
+.requisites__header {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.requisites__header::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0px;
+  left: -42px;
+
+  width: 179px;
+  height: 52px;
+
+  background-image: url(../img/svg/rectangle-9.svg);
+  background-repeat: no-repeat;
+}
+
 .requisites__header h2 {
+  position: relative;
   margin: 0;
 
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: $color-grey-1;
+
+  z-index: 1;
+}
+
+.requisites__text {
+  display: flex;
+}
+
+@media  screen and (max-width: 620px) {
+  .requisites__text {
+    flex-direction: column;
+  }
+}
+
+.requisites__wrapper {
+  width: 50%;
+  padding-right: 20px;
+}
+
+@media  screen and (max-width: 620px) {
+  .requisites__wrapper {
+    width: 100%;
+    padding-bottom: 49px;
+    padding-right: 0;
+  }
+}
+
+.requisites__wrap {
+  width: 50%;
+  padding-left: 20px;
+}
+
+@media  screen and (max-width: 620px) {
+  .requisites__wrap {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .requisites__wrapper p,
 .requisites__wrap p {
   margin: 0;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 14px;
@@ -21,9 +80,23 @@
   color: $color-grey-text;
 }
 
+@media  screen and (max-width: 1012px) {
+  .requisites__wrap p {
+    margin-bottom: 24px;
+  }
+}
+
+@media  screen and (max-width: 620px) {
+  .requisites__wrapper p,
+  .requisites__wrap p {
+    margin-bottom: 4px;
+  }
+}
+
 .requisites__wrapper h3,
 .requisites__wrap h3 {
   margin: 0;
+  margin-bottom: 32px;
 
   font-size: 24px;
   line-height: 29px;
@@ -33,12 +106,22 @@
 .requisites__list {
   margin: 0;
   padding: 0;
+  margin-bottom: -24px;
 
   list-style: none;
 }
 
+.requisites__list li {
+  margin-bottom: 24px;
+}
+
+.requisites__list li:nth-child(4) {
+  margin-bottom: 0;
+}
+
 .requisites__list h4 {
   margin: 0;
+  margin-bottom: 8px;
 
   font-weight: 400;
   font-size: 14px;
@@ -56,15 +139,24 @@
 }
 
 .requisites__sub-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-right: -32px;
   padding: 0;
 
   list-style: none;
 }
 
+.requisites__sub-list li {
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
 .requisites__sub-list h5 {
   margin: 0;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $color-grey-text;
