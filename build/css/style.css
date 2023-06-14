@@ -6416,6 +6416,34 @@ button,
   line-height: 20px;
   color: #888A96; }
 
+.main-portfolio {
+  padding-top: 180px;
+  padding-bottom: 120px; }
+
+@media screen and (max-width: 1283px) {
+  .main-portfolio {
+    padding-top: 206px; } }
+
+@media screen and (max-width: 1217px) {
+  .main-portfolio {
+    padding-top: 230px; } }
+
+@media screen and (max-width: 1200px) {
+  .main-portfolio {
+    padding-top: 210px; } }
+
+@media screen and (max-width: 1100px) {
+  .main-portfolio {
+    padding-top: 144px; } }
+
+@media screen and (max-width: 630px) {
+  .main-portfolio {
+    padding-top: 96px; } }
+
+@media screen and (max-width: 600px) {
+  .main-portfolio {
+    padding-top: 92px; } }
+
 .footer {
   background-color: #313438; }
 
