@@ -302,7 +302,7 @@
               <form class="form form--light" action="post" novalidate>
                 <h2>Напишите нам!</h2>
                 <h2 class="main-contacts__form-title"><span>Нет времени</span> разбираться</h2>
-                <p>Если у вас остались вопросы, напишите, мы свяжутся с вами в ближайшее время!</p>
+                <p>Если у вас остались вопросы, напишите, мы свяжемся с вами в ближайшее время!</p>
                 <p class="main-contacts__form-p">Заполните форму, наш менеджер ответит в ближайшее время</p>
 
                 <div class="form__wrapper">
@@ -360,11 +360,66 @@
               </div>
 
               <div class="main-contacts__map-btn">
-                <button class="btn btn--map" type="button">Проложить маршрут</button>
+                <button class="btn btn--map" type="button">Проложить&nbsp;маршрут</button>
               </div>
             </div>
 
-            <div class="main-contacts__map"></div>
+            <div class="main-contacts__map" id="map-contacts"></div>
+
+            <div class="main-contacts__form">
+              <form class="form form--light" action="post" novalidate>
+                <h2>Напишите нам!</h2>
+                <h2 class="main-contacts__form-title"><span>Нет времени</span> разбираться?</h2>
+                <p>Если у вас остались вопросы, напишите, мы свяжемся с вами в ближайшее время!</p>
+                <p class="main-contacts__form-p">Заполните форму, наш менеджер ответит в ближайшее время</p>
+
+                <div class="form__wrapper">
+                  <div class="form__field form__field-name form__inputs--active">
+                    <label class="visually-hidden" for="name-contacts-tablet">Имя</label>
+                    <input type="text" name="name" id="name-contacts-tablet" placeholder="Имя">
+                    <span class="form__error">Некорректное имя</span>
+                  </div>
+
+                  <div class="form__field form__field-phone form__inputs--active">
+                    <label class="visually-hidden" for="phone-contacts-tablet">Номер телефона</label>
+                    <input type="tel" name="phone" id="phone-contacts-tablet" placeholder="Номер телефона">
+                    <span class="form__error">Некорректный номер телефона</span>
+                  </div>
+                </div>
+
+                <div class="form__wrapper">
+                  <div class="form__field form__field-email form__inputs--hidden">
+                    <label class="visually-hidden" for="email-contacts-tablet">E-mail</label>
+                    <input type="email" name="email" id="email-contacts-tablet" placeholder="E-mail">
+                  </div>
+
+                  <div class="form__field form__field-subject form__inputs--hidden">
+                    <label class="visually-hidden" for="subject-contacts-tablet">Тема письма</label>
+                    <input type="text" name="subject" id="subject-contacts-tablet" placeholder="Тема письма">
+                  </div>
+                </div>
+
+                <div class="form__textarea form__inputs--hidden">
+                  <label class="visually-hidden" for="message-contacts-tablet">Описание груза и задач</label>
+                  <textarea name="message" id="message-contacts-tablet" placeholder="Описание груза и задач"></textarea>
+                </div>
+
+                <div class="form__wrapper">
+                  <div class="form__btn">
+                    <button class="btn form__btn-submit" type="submit" aria-label="Узнать стоимость">Узнать стоимость</button>
+                  </div>
+
+                  <div class="form__btn main-contacts__form-btn">
+                    <button class="btn form__btn-submit" type="submit" aria-label="Узнать стоимость">Получить консультацию</button>
+                  </div>
+
+                  <div class="form__field form__field-check">
+                    <input class="visually-hidden form__checkbox" id="check-contacts-tablet" type="checkbox" name="check" checked>
+                    <label for="check-contacts-tablet">Я даю согласие на обработку <span>моих персональных данных</span>, в соответствии с <a href="#"><span>Политикой конфиденциальности</span></a></label>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -731,8 +786,49 @@
 
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
+  <script>
+
+    function mapContacts() {
+      let center = [59.78251819182072,30.43555492726137];
+
+      let fram = [59.78251819182072,30.43555492726137];
+
+
+
+      function init() {
+        let map = new ymaps.Map('map-contacts', {
+          center: center,
+          zoom: 15
+        });
+
+        let placemark1 = new ymaps.Placemark(fram, {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/svg/placemark-1.svg',
+          iconImageSize: [26, 44],
+          iconImageOffset: [-50, 105]
+        });
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+        map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+        map.geoObjects.add(placemark1);
+      }
+
+      ymaps.ready(init);
+    }
+
+    mapContacts();
+  </script>
 
 </body>
 </html>
