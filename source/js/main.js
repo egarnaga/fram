@@ -16,7 +16,8 @@ import {weightSlider} from './modules/weight-slider';
 
 import {accordionFaq} from './modules/accordion-faq';
 
-
+import {portfolioSlider1} from './modules/portfolio-slider1';
+import {portfolioSlider2} from './modules/portfolio-slider2';
 
 // Utils
 // ---------------------------------
@@ -28,6 +29,7 @@ ieFix();
 
 
 initModals();
+
 showInputs();
 featuresSlider();
 accordionIndustrySolutions();
@@ -35,8 +37,13 @@ partnersSlider();
 reviewsSlider();
 hamburgerMenu();
 headerLightScroll();
+
 widthSlider();
 heightSlider();
 lengthSlider();
 weightSlider();
+
 accordionFaq();
+
+portfolioSlider1();
+portfolioSlider2();
