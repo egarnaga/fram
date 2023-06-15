@@ -7195,6 +7195,77 @@ button,
 .car-park__text-phone-link:hover {
   color: #E52421; }
 
+.calculator {
+  padding-top: 180px;
+  padding-bottom: 120px; }
+
+@media screen and (max-width: 1283px) {
+  .calculator {
+    padding-top: 206px; } }
+
+@media screen and (max-width: 1217px) {
+  .calculator {
+    padding-top: 230px; } }
+
+@media screen and (max-width: 1200px) {
+  .calculator {
+    padding-top: 210px; } }
+
+@media screen and (max-width: 1100px) {
+  .calculator {
+    padding-top: 144px; } }
+
+@media screen and (max-width: 630px) {
+  .calculator {
+    padding-top: 96px; } }
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    padding-top: 92px; } }
+
+.calculator__header {
+  margin-top: 24px;
+  margin-bottom: 40px; }
+
+.calculator__header h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #313438; }
+
+@media screen and (max-width: 540px) {
+  .calculator__header h1 {
+    font-size: 30px;
+    line-height: 33px; } }
+
+.calculator__header h2 {
+  max-width: 155px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313438;
+  background-color: #F5F6FA; }
+
+@media screen and (max-width: 768px) {
+  .calculator__header h2 {
+    max-width: 254px;
+    padding-right: 111px;
+    color: #525252; } }
+
+.calculator__description {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
 .footer {
   background-color: #313438; }
 
