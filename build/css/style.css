@@ -6779,6 +6779,95 @@ button,
   line-height: 22px;
   color: #525252; }
 
+.car-park__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.car-park__aside {
+  width: 25%;
+  padding-right: 15px; }
+
+.car-park__aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.car-park__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #525252;
+  background-color: #F5F6FA; }
+
+.car-park__link:hover {
+  color: #E52421; }
+
+.car-park__link--active {
+  color: #FFFFFF;
+  background-color: #E52421;
+  -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+          box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
+.car-park__link--active:hover {
+  color: #FFFFFF;
+  cursor: default; }
+
+.car-park__wrap {
+  width: 75%;
+  padding-left: 15px; }
+
+.car-park__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.car-park__list-wrap h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #313438; }
+
+.car-park__slider-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.car-park__text h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #313438; }
+
+.car-park__text h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.car-park__text p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252; }
+
+.car-park__text-phone span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888A96; }
+
+.car-park__text-phone-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313438; }
+
+.car-park__text-phone-link:hover {
+  color: #E52421; }
+
 .footer {
   background-color: #313438; }
 
