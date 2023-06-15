@@ -159,3 +159,14 @@
 .block.active {
   display: block;
 }
+
+.calculator__title h2 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: $color-title;
+}
+
+.calculator__title h2 span {
+  color: $color-general;
+}

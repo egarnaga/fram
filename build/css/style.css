@@ -7319,6 +7319,15 @@ button,
 .block.active {
   display: block; }
 
+.calculator__title h2 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 35px;
+  color: #313438; }
+
+.calculator__title h2 span {
+  color: #E52421; }
+
 .footer {
   background-color: #313438; }
 
