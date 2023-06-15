@@ -293,108 +293,109 @@
 
         <div class="calculator__block block active">
           <div class="calculator__title">
-            <h2><span> Калькулятор</span> негабаритных перевозок</h2>
+            <h2><span>Калькулятор</span> негабаритных перевозок</h2>
+          </div>
+          <form class="form-calculator" action="post" novalidate>
+            <div class="form-calculator__wrapper">
+              <div class="form-calculator__date">
+                <h3>Направление и дата</h3>
 
-            <form class="form-calculator" action="post" novalidate>
-              <div class="form-calculator__wrapper">
-                <div class="form-calculator__date">
-                  <h3>Направление и дата</h3>
-
-                  <div class="form-calculator__wrap">
-                    <div class="form-calculator__field form-calculator__field-sending">
-                      <label class="visually-hidden" for="sending">Отправка</label>
-                      <input type="text" name="sending" id="sending" placeholder="Отправка">
-                    </div>
-
-                    <button class="form-calculator__btn-reverse"></button>
-
-                    <div class="form-calculator__field form-calculator__field-receiving">
-                      <label class="visually-hidden" for="receiving">Прибытие</label>
-                      <input type="text" name="receiving" id="receiving" placeholder="Прибытие">
-                    </div>
+                <div class="form-calculator__fields-wrap">
+                  <div class="form-calculator__field form-calculator__field-sending">
+                    <label class="visually-hidden" for="sending">Отправка</label>
+                    <input type="text" name="sending" id="sending" placeholder="Отправка">
                   </div>
 
-                  <div class="form-calculator__wrap">
-                    <div class="form-calculator__field form-calculator__field-sending-date">
-                      <label class="visually-hidden" for="sending-date">Дата отправки</label>
-                      <input type="text" name="sending-date" id="sending-date" placeholder="Дата отправки">
-                    </div>
+                  <button class="form-calculator__btn-reverse"></button>
 
-                    <div class="form-calculator__field form-calculator__field-receiving-date">
-                      <label class="visually-hidden" for="receiving-date">Дата получения</label>
-                      <input type="text" name="receiving-date" id="receiving-date" placeholder="Дата получения">
-                    </div>
+                  <div class="form-calculator__field form-calculator__field-receiving">
+                    <label class="visually-hidden" for="receiving">Прибытие</label>
+                    <input type="text" name="receiving" id="receiving" placeholder="Прибытие">
                   </div>
                 </div>
 
-                <div class="form-calculator__cargo">
-                  <h3>Данные о грузе</h3>
-
-                  <div class="form-calculator__cargo-wrap">
-                    <div class="form-calculator__field form-calculator__field-weight">
-                      <label class="visually-hidden" for="weight">Вес, т</label>
-                      <input type="text" name="weight" id="weight" placeholder="Вес, т">
-                    </div>
-
-                    <div class="form-calculator__field form-calculator__field-volume">
-                      <label class="visually-hidden" for="volume">Объём, м</label>
-                      <input type="text" name="volume" id="volume" placeholder="Объём, м">
-                    </div>
-
-                    <div class="form-calculator__field form-calculator__field-length">
-                      <label class="visually-hidden" for="length">Длина, м</label>
-                      <input type="text" name="length" id="length" placeholder="Длина, м">
-                    </div>
-
-                    <div class="form-calculator__field form-calculator__field-width">
-                      <label class="visually-hidden" for="width">Ширина, м</label>
-                      <input type="text" name="width" id="width" placeholder="Ширина, м">
-                    </div>
-
-                    <div class="form-calculator__field form-calculator__field-height">
-                      <label class="visually-hidden" for="height">Высота, м</label>
-                      <input type="text" name="height" id="height" placeholder="Высота, м">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-calculator__checkbox-wrap">
-                  <div class="form-calculator__check-wrapper">
-                    <h3>Услуги по документам</h3>
-
-                    <div class="form-calculator__field-check">
-                      <input class="visually-hidden form-calculator__checkbox" id="check-1" type="checkbox" name="check-1" checked>
-                      <label for="check-1">Организация перевозки сопроводительных документов</label>
-                    </div>
-
-                    <div class="form-calculator__field-check">
-                      <input class="visually-hidden form-calculator__checkbox" id="check-2" type="checkbox" name="check-2">
-                      <label for="check-2">Возврат документов</label>
-                    </div>
+                <div class="form-calculator__fields-wrap">
+                  <div class="form-calculator__field form-calculator__field-sending-date">
+                    <label class="visually-hidden" for="sending-date">Дата отправки</label>
+                    <input type="text" name="sending-date" id="sending-date" placeholder="Дата отправки">
                   </div>
 
-                  <div class="form-calculator__check-wrapper">
-                    <h3>Упаковка</h3>
-
-                    <div class="form-calculator__field-check">
-                      <input class="visually-hidden form-calculator__checkbox" id="check-3" type="checkbox" name="check-3">
-                      <label for="check-3">Защитная транспортировочная упаковка</label>
-                    </div>
-
-                    <div class="form-calculator__field-check">
-                      <input class="visually-hidden form-calculator__checkbox" id="check-4" type="checkbox" name="check-4" checked>
-                      <label for="check-4">Пломбировка груза</label>
-                    </div>
-
-                    <div class="form-calculator__field form-calculator__field-quantity">
-                      <label class="visually-hidden" for="quantity">Количество пломб</label>
-                      <input type="text" name="quantity" id="quantity" placeholder="Количество пломб">
-                    </div>
+                  <div class="form-calculator__field form-calculator__field-receiving-date">
+                    <label class="visually-hidden" for="receiving-date">Дата получения</label>
+                    <input type="text" name="receiving-date" id="receiving-date" placeholder="Дата получения">
                   </div>
                 </div>
               </div>
 
-              <div class="form-calculator__wrap">
+              <div class="form-calculator__cargo">
+                <h3>Данные о грузе</h3>
+
+                <div class="form-calculator__cargo-wrap">
+                  <div class="form-calculator__field form-calculator__field-weight">
+                    <label class="visually-hidden" for="weight">Вес, т</label>
+                    <input type="text" name="weight" id="weight" placeholder="Вес, т">
+                  </div>
+
+                  <div class="form-calculator__field form-calculator__field-volume">
+                    <label class="visually-hidden" for="volume">Объём, м</label>
+                    <input type="text" name="volume" id="volume" placeholder="Объём, м">
+                  </div>
+
+                  <div class="form-calculator__field form-calculator__field-length">
+                    <label class="visually-hidden" for="length">Длина, м</label>
+                    <input type="text" name="length" id="length" placeholder="Длина, м">
+                  </div>
+
+                  <div class="form-calculator__field form-calculator__field-width">
+                    <label class="visually-hidden" for="width">Ширина, м</label>
+                    <input type="text" name="width" id="width" placeholder="Ширина, м">
+                  </div>
+
+                  <div class="form-calculator__field form-calculator__field-height">
+                    <label class="visually-hidden" for="height">Высота, м</label>
+                    <input type="text" name="height" id="height" placeholder="Высота, м">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-calculator__checkbox-wrap">
+                <div class="form-calculator__check-wrapper">
+                  <h3>Услуги по документам</h3>
+
+                  <div class="form-calculator__field-check">
+                    <input class="visually-hidden form-calculator__checkbox" id="check-1" type="checkbox" name="check-1" checked>
+                    <label for="check-1">Организация перевозки сопроводительных документов</label>
+                  </div>
+
+                  <div class="form-calculator__field-check">
+                    <input class="visually-hidden form-calculator__checkbox" id="check-2" type="checkbox" name="check-2">
+                    <label for="check-2">Возврат документов</label>
+                  </div>
+                </div>
+
+                <div class="form-calculator__check-wrapper">
+                  <h3>Упаковка</h3>
+
+                  <div class="form-calculator__field-check">
+                    <input class="visually-hidden form-calculator__checkbox" id="check-3" type="checkbox" name="check-3">
+                    <label for="check-3">Защитная транспортировочная упаковка</label>
+                  </div>
+
+                  <div class="form-calculator__field-check">
+                    <input class="visually-hidden form-calculator__checkbox" id="check-4" type="checkbox" name="check-4" checked>
+                    <label for="check-4">Пломбировка груза</label>
+                  </div>
+
+                  <div class="form-calculator__field form-calculator__field-quantity">
+                    <label class="visually-hidden" for="quantity">Количество пломб</label>
+                    <input type="text" name="quantity" id="quantity" placeholder="Количество пломб">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-calculator__wrap">
+              <div class="form-calculator__bg">
                 <dl class="form-calculator__list">
                   <div>
                     <dt>Откуда</dt>
@@ -445,37 +446,37 @@
                   </div>
                 </div>
               </div>
-            </form>
-
-            <div class="calculator__btns">
-              <button class="calculator__btn-print" type="button"></button>
-
-              <button class="calculator__btn-share" type="button"></button>
             </div>
+          </form>
+
+          <div class="calculator__btns">
+            <button class="calculator__btn-print" type="button"></button>
+
+            <button class="calculator__btn-share" type="button"></button>
           </div>
         </div>
 
         <div class="calculator__block block">
           <div class="calculator__title">
-            <h2><span> Калькулятор</span> перевозки контейнеров</h2>
+            <h2><span>Калькулятор</span> перевозки контейнеров</h2>
           </div>
         </div>
 
         <div class="calculator__block block">
           <div class="calculator__title">
-            <h2><span> Калькулятор</span> перевозки цистерн</h2>
+            <h2><span>Калькулятор</span> перевозки цистерн</h2>
           </div>
         </div>
 
         <div class="calculator__block block">
           <div class="calculator__title">
-            <h2><span> Калькулятор</span> перевозки сборных грузов</h2>
+            <h2><span>Калькулятор</span> перевозки сборных грузов</h2>
           </div>
         </div>
 
         <div class="calculator__block block">
           <div class="calculator__title">
-            <h2><span> Калькулятор</span> рефрижератор</h2>
+            <h2><span>Калькулятор</span> рефрижератор</h2>
           </div>
         </div>
       </section>

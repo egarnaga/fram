@@ -160,11 +160,38 @@
   display: block;
 }
 
+
+
+
+
+
+.calculator__title {
+  position: relative;
+}
+
+.calculator__title::before {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+  left: -40px;
+
+  width: 219px;
+  height: 52px;
+
+  background-image: url(../img/svg/rectangle-10.svg);
+  background-repeat: no-repeat;
+}
+
 .calculator__title h2 {
+  position: relative;
   font-weight: 800;
   font-size: 32px;
   line-height: 35px;
   color: $color-title;
+
+  z-index: 1;
 }
 
 .calculator__title h2 span {
