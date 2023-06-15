@@ -19,6 +19,11 @@ import {accordionFaq} from './modules/accordion-faq';
 import {portfolioSlider1} from './modules/portfolio-slider1';
 import {portfolioSlider2} from './modules/portfolio-slider2';
 
+import {carSlider1} from './modules/car-slider1';
+import {carSlider2} from './modules/car-slider2';
+import {carSlider3} from './modules/car-slider3';
+import {carSlider4} from './modules/car-slider4';
+
 // Utils
 // ---------------------------------
 
@@ -47,3 +52,8 @@ accordionFaq();
 
 portfolioSlider1();
 portfolioSlider2();
+
+carSlider1();
+carSlider2();
+carSlider3();
+carSlider4();
