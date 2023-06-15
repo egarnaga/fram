@@ -23,6 +23,7 @@ import {carSlider1} from './modules/car-slider1';
 import {carSlider2} from './modules/car-slider2';
 import {carSlider3} from './modules/car-slider3';
 import {carSlider4} from './modules/car-slider4';
+import {mobileCarSlider} from './modules/mobile-car-slider';
 
 // Utils
 // ---------------------------------
@@ -57,3 +58,4 @@ carSlider1();
 carSlider2();
 carSlider3();
 carSlider4();
+mobileCarSlider();

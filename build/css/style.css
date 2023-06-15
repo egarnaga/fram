@@ -6784,22 +6784,83 @@ button,
   display: -ms-flexbox;
   display: flex; }
 
+@media screen and (max-width: 860px) {
+  .car-park__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .car-park__aside {
   width: 25%;
   padding-right: 15px; }
+
+@media screen and (max-width: 860px) {
+  .car-park__aside {
+    width: 100%;
+    padding-right: 0; } }
+
+.car-park__slider-mobile {
+  position: sticky;
+  top: 163px; }
+
+@media screen and (max-width: 1283px) {
+  .car-park__slider-mobile {
+    top: 189px; } }
+
+@media screen and (max-width: 1217px) {
+  .car-park__slider-mobile {
+    top: 213px; } }
+
+@media screen and (max-width: 1200px) {
+  .car-park__slider-mobile {
+    top: 190px; } }
+
+@media screen and (max-width: 1100px) {
+  .car-park__slider-mobile {
+    top: 120px; } }
+
+@media screen and (max-width: 860px) {
+  .car-park__slider-mobile {
+    position: static;
+    width: 100%; } }
+
+@media screen and (max-width: 860px) {
+  .car-park__aside {
+    margin-bottom: 48px; } }
 
 .car-park__aside ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
+@media screen and (max-width: 860px) {
+  .car-park__slider-mobile-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+
 .car-park__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+@media screen and (max-width: 860px) {
+  .car-park__item {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; } }
+
 .car-park__item:not(:last-child) {
   margin-bottom: 16px; }
+
+@media screen and (max-width: 860px) {
+  .car-park__item:not(:last-child) {
+    margin-bottom: 0; } }
 
 .car-park__link {
   width: 100%;
@@ -6813,6 +6874,11 @@ button,
   text-align: center;
   color: #525252;
   background-color: #F5F6FA; }
+
+@media screen and (max-width: 860px) {
+  .car-park__link {
+    padding-left: 27px;
+    padding-right: 27px; } }
 
 .car-park__link:hover {
   color: #E52421; }
@@ -6830,6 +6896,11 @@ button,
 .car-park__wrap {
   width: 75%;
   padding-left: 15px; }
+
+@media screen and (max-width: 860px) {
+  .car-park__wrap {
+    width: 100%;
+    padding-left: 0; } }
 
 .car-park__list-wrap:not(:first-child) {
   margin-top: 24px; }
@@ -6852,15 +6923,54 @@ button,
   list-style: none; }
 
 .car-park__card {
+  position: relative;
   width: 50%;
   margin-bottom: 24px;
   background-color: #F5F6FA; }
 
+@media screen and (max-width: 680px) {
+  .car-park__card {
+    width: 100%; } }
+
 .car-park__card:nth-child(2n) {
   padding-left: 4px; }
 
+@media screen and (max-width: 860px) {
+  .car-park__card:nth-child(2n) {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 680px) {
+  .car-park__card:nth-child(2n) {
+    padding-left: 0; } }
+
 .car-park__card:nth-child(2n-1) {
   padding-right: 4px; }
+
+@media screen and (max-width: 860px) {
+  .car-park__card:nth-child(2n-1) {
+    padding-right: 15px; } }
+
+@media screen and (max-width: 680px) {
+  .car-park__card:nth-child(2n-1) {
+    padding-right: 0; } }
+
+.car-park__card::before {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  right: 27px;
+  width: 55px;
+  height: 67px;
+  background-image: url(../img/svg/vector-13.svg);
+  background-repeat: no-repeat;
+  z-index: 4; }
+
+@media screen and (max-width: 1295px) {
+  .car-park__card::before {
+    right: 50%;
+    bottom: 20px;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%); } }
 
 .car-park__slider {
   position: relative;
@@ -6962,6 +7072,17 @@ button,
           justify-content: space-between;
   margin-bottom: 24px; }
 
+@media screen and (max-width: 1295px) {
+  .car-park__text-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 16px; } }
+
 .car-park__text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6985,6 +7106,10 @@ button,
   line-height: 22px;
   color: #525252; }
 
+@media screen and (max-width: 1295px) {
+  .car-park__text-wrap {
+    margin-top: 16px; } }
+
 .car-park__text-axis,
 .car-park__text-width,
 .car-park__text-height {
@@ -6992,11 +7117,28 @@ button,
   display: -ms-flexbox;
   display: flex; }
 
+@media screen and (max-width: 1295px) {
+  .car-park__text-axis,
+  .car-park__text-width,
+  .car-park__text-height {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 16px; } }
+
 .car-park__text-axis h5,
 .car-park__text-width h5,
 .car-park__text-height h5 {
   width: 151px;
   margin-bottom: 16px; }
+
+@media screen and (max-width: 1295px) {
+  .car-park__text-axis h5,
+  .car-park__text-width h5,
+  .car-park__text-height h5 {
+    width: 100%;
+    margin-bottom: 4px; } }
 
 .car-park__text-btns {
   display: -webkit-box;
@@ -7007,21 +7149,36 @@ button,
           align-items: center;
   margin-top: 24px; }
 
+@media screen and (max-width: 1295px) {
+  .car-park__text-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .car-park__text-btn {
   margin-right: 24px; }
+
+@media screen and (max-width: 1295px) {
+  .car-park__text-btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px; } }
 
 .car-park__text-btn .btn {
   padding-left: 27px;
   padding-right: 27px; }
 
 .car-park__text-phone {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  z-index: 10; }
 
 .car-park__text-phone span {
   margin-bottom: 4px;
