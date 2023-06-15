@@ -25,6 +25,10 @@ import {carSlider3} from './modules/car-slider3';
 import {carSlider4} from './modules/car-slider4';
 import {mobileCarSlider} from './modules/mobile-car-slider';
 
+import {calculatorSlider} from './modules/calculator-slider';
+import {tabs} from './modules/tabs';
+
+
 // Utils
 // ---------------------------------
 
@@ -59,3 +63,6 @@ carSlider2();
 carSlider3();
 carSlider4();
 mobileCarSlider();
+
+calculatorSlider();
+tabs();

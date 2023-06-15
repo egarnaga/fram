@@ -7266,6 +7266,59 @@ button,
   line-height: 22px;
   color: #525252; }
 
+.calculator__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  list-style: none; }
+
+.calculator__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.calculator__link {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #525252;
+  background-color: #F5F6FA; }
+
+.calculator__link:hover {
+  color: #E52421; }
+
+.calculator__link.active {
+  color: #FFFFFF;
+  background-color: #E52421;
+  -webkit-box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25);
+          box-shadow: 0px 13px 12px -10px rgba(229, 36, 33, 0.25); }
+
+.calculator__link.active:hover {
+  color: #FFFFFF;
+  cursor: default; }
+
+.block {
+  display: none; }
+
+.block.active {
+  display: block; }
+
 .footer {
   background-color: #313438; }
 
