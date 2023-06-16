@@ -197,3 +197,71 @@
 .calculator__title h2 span {
   color: $color-general;
 }
+
+
+
+
+
+.calculator__btns {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 95px;
+  margin-top: 8px;
+  margin-left: auto;
+}
+
+.calculator__btns button {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.calculator__btn-print {
+  margin-right: 8px;
+}
+
+.calculator__btns button:hover {
+  background-color: $color-grey-background;
+}
+
+.calculator__btn-print::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../img/svg/print.svg);
+  background-repeat: no-repeat;
+}
+
+.calculator__btn-share::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 18px;
+  height: 20px;
+
+  background-image: url(../img/svg/share.svg);
+  background-repeat: no-repeat;
+}
