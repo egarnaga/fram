@@ -304,11 +304,14 @@
                   <div class="form-calculator__field form-calculator__field-sending">
                     <label class="visually-hidden" for="sending">Отправка</label>
                     <input type="text" name="sending" id="sending" placeholder="Отправка">
+                    <button class="form-calculator__btn-map" type="button"></button>
+                    <button class="form-calculator__btn-city" type="button"></button>
                   </div>
 
                   <div class="form-calculator__field form-calculator__field-receiving">
                     <label class="visually-hidden" for="receiving">Прибытие</label>
                     <input type="text" name="receiving" id="receiving" placeholder="Прибытие">
+                    <button class="form-calculator__btn-map" type="button"></button>
                   </div>
 
                   <button class="form-calculator__btn-reverse"></button>
@@ -317,12 +320,14 @@
                 <div class="form-calculator__fields-wrap form-calculator__fields-date">
                   <div class="form-calculator__field form-calculator__field-sending-date">
                     <label class="visually-hidden" for="sending-date">Дата отправки</label>
-                    <input type="text" name="sending-date" id="sending-date" placeholder="Дата отправки">
+                    <input type="text" name="sending-date" id="sending-date" placeholder="Дата отправки" readonly>
+                    <button class="form-calculator__btn-calendar" type="button"></button>
                   </div>
 
-                  <div class="form-calculator__field form-calculator__field-receiving-date">
+                  <div class="form-calculator__field form-calculator__field-receiving-date form-calculator__field-receiving-date--active">
                     <label class="visually-hidden" for="receiving-date">Дата получения</label>
-                    <input type="text" name="receiving-date" id="receiving-date" placeholder="Дата получения">
+                    <input type="text" name="receiving-date" id="receiving-date" placeholder="Дата получения" readonly>
+                    <button class="form-calculator__btn-calendar" type="button"></button>
                   </div>
                 </div>
               </div>
@@ -365,11 +370,18 @@
                   <div class="form-calculator__field-check">
                     <input class="visually-hidden form-calculator__checkbox" id="check-1" type="checkbox" name="check-1" checked>
                     <label for="check-1">Организация перевозки сопроводительных документов</label>
+                    <div class="form-calculator__tooltip-wrap">
+                      <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      <div class="form-calculator__question"></div>
+                    </div>
                   </div>
 
                   <div class="form-calculator__field-check">
                     <input class="visually-hidden form-calculator__checkbox" id="check-2" type="checkbox" name="check-2">
                     <label for="check-2">Возврат документов</label>
+                    <div class="form-calculator__tooltip-wrap">
+                      <div class="form-calculator__question"></div>
+                    </div>
                   </div>
                 </div>
 
@@ -379,11 +391,17 @@
                   <div class="form-calculator__field-check">
                     <input class="visually-hidden form-calculator__checkbox" id="check-3" type="checkbox" name="check-3">
                     <label for="check-3">Защитная транспортировочная упаковка</label>
+                    <div class="form-calculator__tooltip-wrap">
+                      <div class="form-calculator__question"></div>
+                    </div>
                   </div>
 
                   <div class="form-calculator__field-check">
                     <input class="visually-hidden form-calculator__checkbox" id="check-4" type="checkbox" name="check-4" checked>
                     <label for="check-4">Пломбировка груза</label>
+                    <div class="form-calculator__tooltip-wrap">
+                      <div class="form-calculator__question"></div>
+                    </div>
                   </div>
 
                   <div class="form-calculator__field form-calculator__field-quantity">
@@ -439,6 +457,7 @@
 
                   <div class="form-calculator__price">
                     <p>530 000 руб.</p>
+                    <div class="form-calculator__question"></div>
                   </div>
 
                   <div class="form-calculator__btn">
