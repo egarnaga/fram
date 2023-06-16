@@ -94,3 +94,113 @@
   line-height: 22px;
   color: $color-text;
 }
+
+
+
+
+
+
+
+.vacancies__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.vacancies__item {
+  display: flex;
+
+  border: 1px solid #E8EFF9;
+}
+
+.vacancies__item:not(:last-child) {
+  margin-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.vacancies__item h3 {
+  margin: 0;
+  display: none;
+
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-text;
+}
+
+.vacancies__item h4 {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text
+}
+
+.vacancies__item p {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+.vacancies__item ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.vacancies__item ul li {
+  padding-left: 28px;
+}
+
+.vacancies__item ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.vacancies__wrapper {
+  width: 75%;
+  padding-right: 15px;
+}
+
+.vacancies__wrapper h3 {
+  display: block;
+}
+
+
+
+.vacancies__wrap {
+  width: 25%;
+  padding-left: 15px;
+}
+
+.vacancies__status p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.vacancies__status--open p {
+  color: #6A9E15;
+}
+
+.vacancies__status--close p {
+  color: $color-general;
+}
+
+.vacancies__wage p,
+.vacancies__experience p,
+.vacancies__employment p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-title;
+}
+
