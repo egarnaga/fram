@@ -28,6 +28,9 @@ import {mobileCarSlider} from './modules/mobile-car-slider';
 import {calculatorSlider} from './modules/calculator-slider';
 import {tabs} from './modules/tabs';
 
+import {accordionVacancies} from './modules/accordion-vacancies';
+
+
 
 // Utils
 // ---------------------------------
@@ -66,3 +69,5 @@ mobileCarSlider();
 
 calculatorSlider();
 tabs();
+
+accordionVacancies();
