@@ -7976,22 +7976,26 @@ button,
   display: flex;
   border: 1px solid #E8EFF9; }
 
-.vacancies__item:not(:last-child) {
-  margin-bottom: 24px;
+.vacancies__item {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px; }
 
+.vacancies__item:not(:last-child) {
+  margin-bottom: 24px; }
+
 .vacancies__item h3 {
   margin: 0;
   display: none;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 29px;
   color: #525252; }
 
 .vacancies__item h4 {
   margin: 0;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -7999,6 +8003,7 @@ button,
 
 .vacancies__item p {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -8010,7 +8015,17 @@ button,
   list-style: none; }
 
 .vacancies__item ul li {
+  position: relative;
   padding-left: 28px; }
+
+.vacancies__item ul li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #C0C2CC; }
 
 .vacancies__item ul li:not(:last-child) {
   margin-bottom: 8px; }
@@ -8021,6 +8036,13 @@ button,
 
 .vacancies__wrapper h3 {
   display: block; }
+
+.vacancies__responsibilities,
+.vacancies__requirements,
+.vacancies__wage,
+.vacancies__experience,
+.vacancies__employment {
+  margin-bottom: 24px; }
 
 .vacancies__wrap {
   width: 25%;
@@ -8040,6 +8062,7 @@ button,
 .vacancies__wage p,
 .vacancies__experience p,
 .vacancies__employment p {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
