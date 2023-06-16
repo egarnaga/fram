@@ -7,6 +7,8 @@ const modalCall = document.querySelector('.modal--call');
 const modalCallBtns = document.querySelectorAll('[data-modal="call"]');
 const modalError = document.querySelector('.modal--error');
 const modalErrorBtns = document.querySelectorAll('[data-modal="error"]');
+const modalMap = document.querySelector('.modal--map');
+const modalMapBtns = document.querySelectorAll('[data-modal="map"]');
 
 // аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault)
 // возможна инициализация только с первыми аргументом,
@@ -31,6 +33,9 @@ const initModals = () => {
   }
   if (modalError && modalErrorBtns.length) {
     setupModal(modalError, false, modalErrorBtns, false, false);
+  }
+  if (modalMap && modalMapBtns.length) {
+    setupModal(modalMap, false, modalMapBtns, false, false);
   }
 };
 

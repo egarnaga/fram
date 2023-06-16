@@ -11,7 +11,6 @@
   flex-direction: column;
   overflow-y: auto;
 
-  //background-color: rgba($color-default-black, 0.6);
   background-color: rgba(35, 38, 45, 0.6);
   backdrop-filter: blur(12.5px);
   transform: scale(1.2);
@@ -57,7 +56,6 @@
     position: relative;
 
     width: 600px;
-    //padding: 40px;
 
     background-color: $color-default-white;
 
@@ -97,9 +95,6 @@
   }
 }
 
-
-
-
 .modal--call .modal__content {
   max-width: 390px;
 
@@ -122,7 +117,6 @@
   }
 }
 
-
 .modal--success .modal__wrapper,
 .modal--error .modal__wrapper {
   padding-left: 45px;
@@ -135,7 +129,6 @@
     padding: 0 20px;
   }
 }
-
 
 .modal--success .modal__content,
 .modal--error .modal__content {
@@ -159,7 +152,6 @@
     padding-right: 24px;
   }
 }
-
 
 .modal--success h2,
 .modal--error h2 {
@@ -196,4 +188,66 @@
 .modal--success .btn.modal__close-btn,
 .modal--error .btn.modal__close-btn {
   display: block;
+}
+
+.modal--map .modal__content {
+  width: 100%;
+  max-width: 810px;
+
+  background-color: $color-default-white;
+}
+
+.modal--map .form-calculator__field-sending {
+  margin: 0;
+}
+
+.modal--map .form-calculator__field-sending input {
+  margin: 0;
+  padding-right: 178px;
+}
+
+.modal--map .form-calculator__btn-city {
+  right: 117px;
+}
+
+.modal--map .form-calculator__btn-ok {
+  position: absolute;
+  padding: 0;
+
+  top: 50%;
+  right: 62px;
+
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  background-color: transparent;
+  background-image: url(../img/svg/ok.svg);
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal--map .modal__close-btn {
+  top: 20px;
+  right: 20px;
+}
+
+.modal--map .modal__close-btn svg {
+  width: 18px;
+  height: 18px;
+
+  fill: $color-general;
+}
+
+.modal--map .map-calculator {
+  height: 445px;
+}
+
+@media  screen and (max-width: 540px) {
+  .modal--map .map-calculator {
+    height: 380px;
+  }
 }

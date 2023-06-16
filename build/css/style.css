@@ -9173,6 +9173,54 @@ button,
 .modal--error .btn.modal__close-btn {
   display: block; }
 
+.modal--map .modal__content {
+  width: 100%;
+  max-width: 810px;
+  background-color: #FFFFFF; }
+
+.modal--map .form-calculator__field-sending {
+  margin: 0; }
+
+.modal--map .form-calculator__field-sending input {
+  margin: 0;
+  padding-right: 178px; }
+
+.modal--map .form-calculator__btn-city {
+  right: 117px; }
+
+.modal--map .form-calculator__btn-ok {
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  right: 62px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  background-image: url(../img/svg/ok.svg);
+  background-repeat: no-repeat;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer; }
+
+.modal--map .modal__close-btn {
+  top: 20px;
+  right: 20px; }
+
+.modal--map .modal__close-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #E52421; }
+
+.modal--map .map-calculator {
+  height: 445px; }
+
+@media screen and (max-width: 540px) {
+  .modal--map .map-calculator {
+    height: 380px; } }
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
