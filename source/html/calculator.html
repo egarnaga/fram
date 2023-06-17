@@ -344,20 +344,27 @@
                 <div class="form-calculator__check-wrapper">
                   <h3>Услуги по документам</h3>
 
-                  <div class="form-calculator__field-check">
-                    <input class="visually-hidden form-calculator__checkbox" id="check-1" type="checkbox" name="check-1" checked>
-                    <label for="check-1">Организация перевозки сопроводительных документов</label>
+                  <div class="form-calculator__field-check-wrap">
+                    <div class="form-calculator__field-check">
+                      <input class="visually-hidden form-calculator__checkbox" id="check-1" type="checkbox" name="check-1" checked>
+                      <label for="check-1">Организация перевозки сопроводительных документов</label>
+                    </div>
                     <div class="form-calculator__tooltip-wrap">
-                      <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
-                      <div class="form-calculator__question"></div>
+                      <div class="form-calculator__question">
+                        <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="form-calculator__field-check">
-                    <input class="visually-hidden form-calculator__checkbox" id="check-2" type="checkbox" name="check-2">
-                    <label for="check-2">Возврат документов</label>
+                  <div class="form-calculator__field-check-wrap">
+                    <div class="form-calculator__field-check">
+                      <input class="visually-hidden form-calculator__checkbox" id="check-2" type="checkbox" name="check-2">
+                      <label for="check-2">Возврат документов</label>
+                    </div>
                     <div class="form-calculator__tooltip-wrap">
-                      <div class="form-calculator__question"></div>
+                      <div class="form-calculator__question">
+                        <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -365,19 +372,28 @@
                 <div class="form-calculator__check-wrapper">
                   <h3>Упаковка</h3>
 
-                  <div class="form-calculator__field-check">
-                    <input class="visually-hidden form-calculator__checkbox" id="check-3" type="checkbox" name="check-3">
-                    <label for="check-3">Защитная транспортировочная упаковка</label>
+                  <div class="form-calculator__field-check-wrap">
+                    <div class="form-calculator__field-check">
+                      <input class="visually-hidden form-calculator__checkbox" id="check-3" type="checkbox" name="check-3">
+                      <label for="check-3">Защитная транспортировочная упаковка</label>
+                    </div>
                     <div class="form-calculator__tooltip-wrap">
-                      <div class="form-calculator__question"></div>
+                      <div class="form-calculator__question">
+                        <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="form-calculator__field-check">
-                    <input class="visually-hidden form-calculator__checkbox" id="check-4" type="checkbox" name="check-4" checked>
-                    <label for="check-4">Пломбировка груза</label>
+                  <div class="form-calculator__field-check-wrap">
+                    <div class="form-calculator__field-check">
+                      <input class="visually-hidden form-calculator__checkbox" id="check-4" type="checkbox" name="check-4" checked>
+                      <label for="check-4">Пломбировка груза</label>
+                    </div>
+
                     <div class="form-calculator__tooltip-wrap">
-                      <div class="form-calculator__question"></div>
+                      <div class="form-calculator__question">
+                        <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      </div>
                     </div>
                   </div>
 
@@ -434,7 +450,11 @@
 
                   <div class="form-calculator__price">
                     <p>530 000 руб.</p>
-                    <div class="form-calculator__question"></div>
+                    <div class="form-calculator__tooltip-wrap">
+                      <div class="form-calculator__question">
+                        <div class="form-calculator__tooltip">Осуществляется при наличии документов в двух экземплярах</div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-calculator__btn">
@@ -446,7 +466,12 @@
           </form>
 
           <div class="calculator__btns">
-            <button class="calculator__btn-print" type="button"></button>
+
+              <div class="form-calculator__tooltip-wrap">
+                <button class="calculator__btn-print" type="button">
+                  <span class="form-calculator__tooltip">Распечатать расчет</span>
+                </button>
+              </div>
 
             <button class="calculator__btn-share" type="button"></button>
           </div>

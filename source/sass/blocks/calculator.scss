@@ -103,7 +103,6 @@
   padding: 0;
   margin-bottom: 48px;
 
-
   list-style: none;
 }
 
@@ -209,6 +208,7 @@
 }
 
 .calculator__btn-print {
+  position: relative;
   margin-right: 8px;
 }
 
