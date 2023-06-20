@@ -503,7 +503,10 @@
 }
 
 .header__sub-item {
+  position: relative;
   display: flex;
+
+  z-index: 1005;
 
 }
 

@@ -1234,9 +1234,11 @@ button,
   border: none; }
 
 .header__sub-item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  z-index: 1005; }
 
 .header__sub-link {
   width: 100%;
