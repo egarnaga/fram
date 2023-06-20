@@ -1849,6 +1849,7 @@ button,
     height: 249px; } }
 
 .form {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 24px;
   padding-left: 40px;
@@ -2012,12 +2013,6 @@ button,
   outline: none;
   border-bottom: 1px solid #E52421; }
 
-.form__inputs--hidden {
-  display: none; }
-
-.form__inputs--show {
-  display: block; }
-
 .form__btn {
   margin-top: 32px; }
 
@@ -2109,6 +2104,51 @@ button,
 
 .form__error--show {
   display: block; }
+
+.form__animation-visible {
+  position: relative;
+  z-index: 10; }
+
+.form__animation {
+  position: absolute;
+  display: none;
+  top: 0;
+  z-index: 5; }
+
+.form__animation2 {
+  position: absolute;
+  display: none;
+  top: 0;
+  z-index: 5; }
+
+.form__animation--show {
+  position: relative;
+  display: block;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s; }
+
+.form__animation--show2 {
+  position: relative;
+  display: block;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s; }
+
+.form__animation--hidden {
+  display: none;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s; }
+
+@-webkit-keyframes show {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+
+@keyframes show {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
 
 .btn {
   display: block;
@@ -6300,6 +6340,14 @@ button,
   .main-contacts__address p {
     display: block; } }
 
+/* .form__animation {
+  position: absolute;
+  display: none;
+
+  top: 0;
+
+  z-index: 5;
+} */
 .requisites {
   padding-bottom: 120px; }
 

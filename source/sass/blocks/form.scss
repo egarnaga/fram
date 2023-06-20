@@ -1,4 +1,6 @@
 .form {
+  position: relative;
+
   padding-top: 50px;
   padding-bottom: 24px;
   padding-left: 40px;
@@ -216,13 +218,22 @@
   border-bottom: 1px solid $color-general;
 }
 
-.form__inputs--hidden {
-  display: none;
-}
 
-.form__inputs--show {
-  display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form__btn {
   margin-top: 32px;
@@ -346,4 +357,62 @@
 
 .form__error--show {
   display: block;
+}
+
+
+
+
+
+
+
+.form__animation-visible {
+  position: relative;
+
+  z-index: 10;
+}
+
+.form__animation {
+  position: absolute;
+  display: none;
+
+  top: 0;
+
+  z-index: 5;
+}
+
+
+.form__animation2 {
+  position: absolute;
+  display: none;
+
+  top: 0;
+
+  z-index: 5;
+}
+
+.form__animation--show {
+  position: relative;
+  display: block;
+  animation: show 0.6s;
+}
+
+.form__animation--show2 {
+  position: relative;
+  display: block;
+  animation: show 0.6s;
+}
+
+.form__animation--hidden {
+  display: none;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0% {
+  top: -50px;
+  }
+
+100% {
+  top: 0;
+  }
 }

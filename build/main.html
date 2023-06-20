@@ -263,31 +263,35 @@
               <form class="form" action="post" novalidate>
                 <h2><span>Быстрый</span> запрос на&nbsp;<span>расчет</span></h2>
 
-                <div class="form__field form__field-start form__inputs--active">
-                  <label class="visually-hidden" for="start">Откуда</label>
-                  <input id="start" type="text" name="start" placeholder="Откуда">
+                <div class="form__animation-visible">
+                  <div class="form__field form__field-start form__inputs--active">
+                    <label class="visually-hidden" for="start">Откуда</label>
+                    <input id="start" type="text" name="start" placeholder="Откуда">
+                  </div>
+
+                  <div class="form__field form__field-finish form__inputs--active">
+                    <label class="visually-hidden" for="finish">Куда</label>
+                    <input id="finish" type="text" name="finish" placeholder="Куда">
+                  </div>
                 </div>
 
-                <div class="form__field form__field-finish form__inputs--active">
-                  <label class="visually-hidden" for="finish">Куда</label>
-                  <input id="finish" type="text" name="finish" placeholder="Куда">
-                </div>
+                <div class="form__animation">
+                  <div class="form__field form__field-name">
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                    <span class="form__error">Некорректное имя</span>
+                  </div>
 
-                <div class="form__field form__field-name form__inputs--hidden">
-                  <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя">
-                  <span class="form__error">Некорректное имя</span>
-                </div>
+                  <div class="form__field form__field-phone">
+                    <label class="visually-hidden" for="phone">Номер телефона</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
+                    <span class="form__error">Некорректный номер телефона</span>
+                  </div>
 
-                <div class="form__field form__field-phone form__inputs--hidden">
-                  <label class="visually-hidden" for="phone">Номер телефона</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
-                  <span class="form__error">Некорректный номер телефона</span>
-                </div>
-
-                <div class="form__textarea form__inputs--hidden">
-                  <label class="visually-hidden" for="message">Описание груза и задач</label>
-                  <textarea name="message" id="message" placeholder="Описание груза и задач"></textarea>
+                  <div class="form__textarea">
+                    <label class="visually-hidden" for="message">Описание груза и задач</label>
+                    <textarea name="message" id="message" placeholder="Описание груза и задач"></textarea>
+                  </div>
                 </div>
 
                 <div class="form__btn">

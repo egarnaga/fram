@@ -1,27 +1,28 @@
 const showInputs = () => {
 
-  const hiddenInputs = document.querySelectorAll('.form__inputs--hidden');
-  const activeInputs = document.querySelectorAll('.form__inputs--active');
+  let hiddenInputs = document.querySelector('.form__animation');
+  let activeInputs = document.querySelectorAll('.form__inputs--active');
 
   function showHiddenInputs() {
-
-    for (let hiddenInput of hiddenInputs) {
-      if (hiddenInput.classList.contains('form__inputs--hidden')) {
-
-        hiddenInput.classList.remove("form__inputs--hidden");
-        hiddenInput.classList.add("form__inputs--show");
-
-        for (let activeInput of activeInputs) {
-          activeInput.removeEventListener('click', showHiddenInputs);
-        }
-
-      }
-    }
+    hiddenInputs.classList.add('form__animation--show');
   }
 
   if (hiddenInputs) {
     for (let activeInput of activeInputs) {
       activeInput.addEventListener('click', showHiddenInputs);
+    }
+  }
+
+  let hiddenInputs2 = document.querySelector('.form__animation2');
+  let activeInputs2 = document.querySelectorAll('.form__inputs--active2');
+
+  function showHiddenInput2() {
+    hiddenInputs2.classList.add('form__animation--show2');
+  }
+
+  if (hiddenInputs2) {
+    for (let activeInput2 of activeInputs2) {
+      activeInput2.addEventListener('click', showHiddenInput2);
     }
   }
 };
