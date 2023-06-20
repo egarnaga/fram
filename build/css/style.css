@@ -853,12 +853,16 @@ button,
   width: 100%;
   top: 0;
   background-color: #313438;
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
   z-index: 8000; }
 
 .header--light {
   background-color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1)); }
+          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; }
 
 .header .container {
   padding-top: 30px;

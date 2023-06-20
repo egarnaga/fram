@@ -5,12 +5,14 @@
   top: 0;
 
   background-color: $color-title;
+  transition: all .5s ease 0s;
   z-index: 8000;
 }
 
 .header--light {
   background-color: $color-default-white;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  transition: all .5s ease 0s;
 }
 
 .header .container {
