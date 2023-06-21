@@ -2251,17 +2251,21 @@ button,
 
 .btn--non-active {
   color: #C0C2CC;
+  background: none;
   background-color: #F5F6FA;
   -webkit-box-shadow: none;
           box-shadow: none;
-  cursor: default; }
+  cursor: default;
+  background-image: none; }
 
 .btn--non-active:hover {
   color: #C0C2CC;
   background: none;
   background-color: #F5F6FA;
   -webkit-box-shadow: none;
-          box-shadow: none; }
+          box-shadow: none;
+  cursor: default;
+  background-image: none; }
 
 .features {
   position: relative;

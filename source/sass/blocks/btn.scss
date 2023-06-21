@@ -104,14 +104,22 @@
 
 .btn--non-active {
   color: $color-grey-non-active;
+
+  background: none;
+
   background-color: $color-grey-background;
   box-shadow: none;
   cursor: default;
+  background-image: none;
 }
 
 .btn--non-active:hover {
   color: $color-grey-non-active;
+
   background: none;
+
   background-color: $color-grey-background;
   box-shadow: none;
+  cursor: default;
+  background-image: none;
 }
