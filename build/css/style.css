@@ -7060,8 +7060,7 @@ button,
 .car-park__card {
   position: relative;
   width: 50%;
-  margin-bottom: 24px;
-  background-color: #F5F6FA; }
+  margin-bottom: 24px; }
 
 @media screen and (max-width: 680px) {
   .car-park__card {
@@ -7189,7 +7188,8 @@ button,
   padding-top: 24px;
   padding-bottom: 30px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  background-color: #F5F6FA; }
 
 .car-park__text h4 {
   margin: 0;
