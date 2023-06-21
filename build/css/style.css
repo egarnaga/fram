@@ -5838,11 +5838,14 @@ button,
 
 .faq__item {
   position: relative;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  overflow: hidden; }
 
 .faq__title {
   position: relative;
-  padding-right: 58px; }
+  padding-right: 58px;
+  background-color: #FFFFFF;
+  z-index: 10; }
 
 .faq__item .faq__title::before {
   content: "";
@@ -5876,10 +5879,13 @@ button,
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  overflow-y: auto; }
+  overflow-y: auto;
+  z-index: 5; }
 
 .faq__item--active .faq__text {
-  height: auto; }
+  height: auto;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s; }
 
 .faq__text p {
   max-width: 551px;
@@ -5893,6 +5899,12 @@ button,
 @media screen and (max-width: 620px) {
   .faq__text p {
     max-width: 319px; } }
+
+@keyframes show {
+  0% {
+    height: 0; }
+  100% {
+    height: auto; } }
 
 .main-contacts {
   padding-top: 180px;
@@ -8265,7 +8277,7 @@ button,
 
 @keyframes show {
   0% {
-    top: -200px; }
+    top: -50px; }
   100% {
     top: 0; } }
 
