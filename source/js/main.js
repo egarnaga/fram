@@ -7,6 +7,7 @@ import {accordionIndustrySolutions} from './modules/accordion-industry-solutions
 import {partnersSlider} from './modules/partners-slider';
 import {reviewsSlider} from './modules/reviews-slider';
 import {hamburgerMenu} from './modules/hamburger-menu';
+import {mobileMenu} from './modules/mobile-menu';
 import {headerLightScroll} from './modules/header-light-scroll';
 
 import {widthSlider} from './modules/width-slider';
@@ -49,6 +50,7 @@ accordionIndustrySolutions();
 partnersSlider();
 reviewsSlider();
 hamburgerMenu();
+mobileMenu();
 headerLightScroll();
 
 widthSlider();
