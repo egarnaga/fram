@@ -5510,7 +5510,13 @@ button,
 
 .transportation__title {
   position: relative;
-  margin-top: 16px; }
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .transportation__title::before {
   content: "";
@@ -5522,7 +5528,7 @@ button,
   width: 251px;
   height: 38px;
   background-image: url(../img/svg/rectangle-6.svg);
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat; }
 
 @media screen and (max-width: 1090px) {

@@ -102,7 +102,9 @@
 
 .transportation__title {
   position: relative;
-  margin-top: 16px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .transportation__title::before {
@@ -119,7 +121,7 @@
   height: 38px;
 
   background-image: url(../img/svg/rectangle-6.svg);
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
