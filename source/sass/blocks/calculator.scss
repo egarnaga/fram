@@ -216,6 +216,7 @@
   background-color: $color-grey-background;
 }
 
+
 .calculator__btn-print::before {
   content: "";
 
@@ -233,6 +234,10 @@
   background-repeat: no-repeat;
 }
 
+.calculator__btn-print:hover::before {
+  background-image: url(../img/svg/print-hover.svg);
+}
+
 .calculator__btn-share::before {
   content: "";
 
@@ -248,4 +253,8 @@
 
   background-image: url(../img/svg/share.svg);
   background-repeat: no-repeat;
+}
+
+.calculator__btn-share:hover::before {
+  background-image: url(../img/svg/share-hover.svg);
 }

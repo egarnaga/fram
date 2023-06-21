@@ -7525,6 +7525,9 @@ button,
   background-image: url(../img/svg/print.svg);
   background-repeat: no-repeat; }
 
+.calculator__btn-print:hover::before {
+  background-image: url(../img/svg/print-hover.svg); }
+
 .calculator__btn-share::before {
   content: "";
   position: absolute;
@@ -7536,6 +7539,9 @@ button,
   height: 20px;
   background-image: url(../img/svg/share.svg);
   background-repeat: no-repeat; }
+
+.calculator__btn-share:hover::before {
+  background-image: url(../img/svg/share-hover.svg); }
 
 .form-calculator {
   display: -webkit-box;
