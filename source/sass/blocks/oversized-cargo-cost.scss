@@ -233,3 +233,15 @@
     max-width: 100%;
   }
 }
+
+@media  screen and (max-width: 600px) {
+  .oversized-cargo-cost__wrap .form--light .form__field {
+    margin-bottom: 0;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+  .oversized-cargo-cost__wrap .form--light {
+    padding-bottom: 24px;
+  }
+}
