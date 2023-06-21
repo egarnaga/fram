@@ -3443,6 +3443,11 @@ button,
     position: static;
     cursor: pointer; } }
 
+@media screen and (max-width: 1160px) {
+  .industry-solutions__front {
+    position: relative;
+    z-index: 3; } }
+
 .industry-solutions__front h3 {
   position: relative;
   margin: 0;
@@ -3495,16 +3500,22 @@ button,
 
 @media screen and (max-width: 1160px) {
   .industry-solutions__back {
+    position: absolute;
     display: none;
+    top: 0;
     background-color: #F5F6FA;
-    opacity: 1; } }
+    opacity: 1;
+    z-index: 1; } }
 
 @media screen and (max-width: 1160px) {
   .industry-solutions__item--active .industry-solutions__back {
-    position: static;
+    position: relative;
     display: block;
     background-color: #F5F6FA;
-    opacity: 1; } }
+    opacity: 1;
+    visibility: visible;
+    -webkit-animation: show 0.6s;
+            animation: show 0.6s; } }
 
 .industry-solutions__lists-wrap {
   display: -webkit-box;
@@ -3569,6 +3580,12 @@ button,
 
 .industry-solutions__back ul li a:hover {
   opacity: 1; }
+
+@keyframes show {
+  0% {
+    top: -200px; }
+  100% {
+    top: 0; } }
 
 .call-to-action {
   background-color: #313438;
@@ -8137,11 +8154,16 @@ button,
 
 @media screen and (max-width: 630px) {
   .vacancies__wrapper-mobile {
-    display: none; } }
+    position: absolute;
+    display: none;
+    z-index: 5; } }
 
 @media screen and (max-width: 630px) {
   .vacancies__accordion-item--active .vacancies__wrapper-mobile {
-    display: block; } }
+    position: relative;
+    display: block;
+    -webkit-animation: show 0.6s;
+            animation: show 0.6s; } }
 
 .vacancies__wrapper h3 {
   display: block; }
@@ -8211,6 +8233,12 @@ button,
     width: 100%;
     padding-left: 0; } }
 
+@media screen and (max-width: 630px) {
+  .vacancies__wrap {
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 10; } }
+
 .vacancies__status p {
   font-weight: 700;
   font-size: 20px;
@@ -8234,6 +8262,12 @@ button,
 @media screen and (max-width: 630px) {
   .vacancies__wrap .vacancies__btn {
     display: none; } }
+
+@keyframes show {
+  0% {
+    top: -200px; }
+  100% {
+    top: 0; } }
 
 .sample-page {
   padding-top: 180px;

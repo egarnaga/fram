@@ -227,13 +227,20 @@
 
 @media  screen and (max-width: 630px) {
   .vacancies__wrapper-mobile {
+    position: absolute;
+
     display: none;
+    z-index: 5;
   }
 }
 
 @media  screen and (max-width: 630px) {
   .vacancies__accordion-item--active .vacancies__wrapper-mobile {
+    position: relative;
+
     display: block;
+
+    animation: show 0.6s;
   }
 }
 
@@ -323,6 +330,16 @@
   }
 }
 
+@media  screen and (max-width: 630px) {
+  .vacancies__wrap {
+    position: relative;
+
+    background-color: $color-default-white;
+
+    z-index: 10;
+  }
+}
+
 .vacancies__status p {
   font-weight: 700;
   font-size: 20px;
@@ -351,5 +368,17 @@
 @media  screen and (max-width: 630px) {
   .vacancies__wrap .vacancies__btn {
     display: none;
+  }
+}
+
+
+@keyframes show {
+  0% {
+  top: -200px;
+  }
+
+
+100% {
+  top: 0;
   }
 }

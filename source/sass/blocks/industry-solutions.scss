@@ -121,6 +121,14 @@
   }
 }
 
+@media  screen and (max-width: 1160px) {
+  .industry-solutions__front {
+    position: relative;
+
+    z-index: 3;
+  }
+}
+
 .industry-solutions__front h3 {
   position: relative;
   margin: 0;
@@ -190,23 +198,35 @@
 
 @media  screen and (max-width: 1160px) {
   .industry-solutions__back {
-    display: none;
+    position: absolute;
 
+
+    display: none;
+    top: 0;
 
     background-color: $color-grey-background;
     opacity: 1;
+
+    z-index: 1;
   }
 }
 
 @media  screen and (max-width: 1160px) {
   .industry-solutions__item--active .industry-solutions__back {
-    position: static;
+    position: relative;
     display: block;
 
     background-color: $color-grey-background;
     opacity: 1;
+    visibility: visible;
+
+    animation: show 0.6s;
   }
 }
+
+
+
+
 
 .industry-solutions__lists-wrap {
   display: flex;
@@ -284,4 +304,18 @@
 
 .industry-solutions__back ul li a:hover {
   opacity: 1;
+}
+
+
+
+
+@keyframes show {
+  0% {
+  top: -200px;
+  }
+
+
+100% {
+  top: 0;
+  }
 }
