@@ -168,6 +168,62 @@
   color: $color-grey-text;
 }
 
+.oversized-cargo-cost__btn {
+  margin-top: 32px;
+}
+
+.oversized-cargo-cost__btn label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 68px;
+
+  cursor: pointer;
+}
+
+.oversized-cargo-cost__btn label::before {
+  content: "";
+  position: absolute;
+
+  top: -5px;
+  left: 0;
+
+  width: 52px;
+  height: 52px;
+
+  background-image: url(../img/svg/file.svg);
+  background-repeat: no-repeat;
+}
+
+.oversized-cargo-cost__btn label:hover::before {
+
+  background-image: url(../img/svg/file-hover.svg);
+}
+
+.oversized-cargo-cost__btn-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+.oversized-cargo-cost__btn label:hover .oversized-cargo-cost__btn-title {
+  color: $color-general;
+}
+
+.oversized-cargo-cost__btn-text {
+  margin-bottom: 4px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey-text;
+}
+
+.oversized-cargo-cost__btn input {
+  display: none;
+}
+
 .oversized-cargo-cost__wrap {
   max-width: 390px;
 }
