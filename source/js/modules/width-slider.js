@@ -2,25 +2,25 @@ const widthSlider = () => {
 
   const sliderWidth = document.querySelector('.shipping-cost__width');
   const input = document.getElementById('input-width');
-  const arbitraryValuesForSlider = ['0', '2.5', '5', '7.5', '10'];
-  const format = {
-    to: function(value) {
-        return arbitraryValuesForSlider[Math.round(value)];
-    },
-    from: function (value) {
-        return arbitraryValuesForSlider.indexOf(value);
-    }
-};
 
   if (sliderWidth) {
 
     noUiSlider.create(sliderWidth, {
-        start: [2.5],
-        range: { min: 0, max: arbitraryValuesForSlider.length - 1 },
-        connect: [true, false],
-        step: 1,
-        format: format,
-        pips: { mode: 'steps', format: format, density: 5 },
+      start: 5.9,
+      step: 0.1,
+      connect: [true, false],
+      range: {
+        min: [0, 0.1],
+        max: [10]
+      },
+
+      pips: {
+        mode: "values",
+        values: [0, 2.5, 5, 7.5, 10],
+        format: wNumb({
+          decimals: 1,
+      })
+    }
     });
 
     sliderWidth.noUiSlider.on('update', function(value) {

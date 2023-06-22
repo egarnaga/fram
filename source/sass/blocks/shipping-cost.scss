@@ -119,10 +119,11 @@
   width: 16px;
   height: 16px;
 
-  top: -4.5px;
+  top: -5.5px;
   right: -8px;
 
   border-radius: 0;
+  cursor: pointer;
 }
 
 .shipping-cost__range .noUi-pips-horizontal {
@@ -170,13 +171,14 @@
   position: absolute;
 
   top: -5px;
-  right: -8px;
+  right: -8.5px;
 
   width: 16px;
   height: 16px;
 
   background-color: $color-title;
-  z-index: 100;
+  //z-index: 100;
+  z-index: 1;
 }
 
 .shipping-cost__tooltip {
@@ -194,15 +196,15 @@
 }
 
 .shipping-cost__width-wrapper .shipping-cost__tooltip {
-  left: 49%;
+  left: 53.9%;
 }
 
 .shipping-cost__height-wrapper .shipping-cost__tooltip {
-  left: 26%;
+  left: 25%;
 }
 
 .shipping-cost__length-wrapper .shipping-cost__tooltip {
-  left: 59%;
+  left: 58.3%;
 }
 
 .shipping-cost__weight-wrapper .shipping-cost__tooltip {

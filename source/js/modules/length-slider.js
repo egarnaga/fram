@@ -2,25 +2,25 @@ const lengthSlider = () => {
 
   const sliderLength = document.querySelector('.shipping-cost__length');
   const input = document.getElementById('input-length');
-  const arbitraryValuesForSlider = ['0', '7.5', '15', '22.5', '30'];
-  const format = {
-    to: function(value) {
-        return arbitraryValuesForSlider[Math.round(value)];
-    },
-    from: function (value) {
-        return arbitraryValuesForSlider.indexOf(value);
-    }
-};
 
   if (sliderLength) {
 
     noUiSlider.create(sliderLength, {
-        start: [22.5],
-        range: { min: 0, max: arbitraryValuesForSlider.length - 1 },
+        start: 19,
+        step: 0.1,
         connect: [true, false],
-        step: 1,
-        format: format,
-        pips: { mode: 'steps', format: format, density: 5 },
+        range: {
+          min: [0, 0.1],
+          max: [30]
+        },
+
+        pips: {
+          mode: "values",
+          values: [0, 7.5, 15, 22.5, 30],
+          format: wNumb({
+            decimals: 1,
+        })
+      }
     });
 
     sliderLength.noUiSlider.on('update', function(value) {
