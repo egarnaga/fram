@@ -71,34 +71,36 @@
 .transportation ul li a {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
   padding-top: 20px;
 }
 
 
+
+
 .transportation ul svg {
-  width: 100%;
   height: auto;
-  max-width: 118px;
+  width: 118px;
+  height: 86px;
 }
 
-.transportation ul a svg path {
-  fill:#DDDFE7;
+.transportation ul svg {
+  --color-1: #23262d;
 }
 
-.transportation ul a:hover svg path {
-  fill: #E9BC24;
+.transportation ul svg {
+  --color-2: #dddfe7;
 }
 
-.transportation ul a svg path:nth-of-type(1) {
-  fill: #23262D;
+.transportation ul a:hover svg {
+  --color-1: #434233;
 }
 
-.transportation ul a:hover svg path:nth-of-type(1) {
-  fill: #434233;
+.transportation ul a:hover svg {
+  --color-2: #e9bc24;
 }
+
 
 .transportation__title {
   position: relative;
