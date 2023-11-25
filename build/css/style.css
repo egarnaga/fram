@@ -1068,11 +1068,6 @@ button,
 .header__bottom .header__list {
   margin-left: 0; }
 
-/* .header__list-top {
-  margin-right: 24px;
-  margin-left: 22px;
-}
- */
 @media screen and (max-width: 1270px) {
   .header__list {
     -ms-flex-wrap: wrap;
@@ -1081,12 +1076,6 @@ button,
         -ms-flex-align: center;
             align-items: center; } }
 
-/* @media  screen and (max-width: 1100px) {
-  .header__list-wrapper--opened .header__list-top {
-    margin-right: 0;
-    margin-left: 0;
-  }
-} */
 @media screen and (max-width: 1100px) {
   .header__list-wrapper--opened .header__list {
     -webkit-box-orient: vertical;
@@ -1439,9 +1428,13 @@ button,
     position: absolute;
     top: 23px;
     left: -50px;
-    width: 150%;
+    width: calc(100% + 110px);
     height: 1px;
     background-color: #888A96; } }
+
+@media screen and (max-width: 630px) {
+  .header__list-wrapper--opened .header__tablet::before {
+    width: calc(100% + 75px); } }
 
 .header__tablet-btn-wrap {
   display: -webkit-box;
@@ -1829,9 +1822,6 @@ button,
   height: 8px;
   background-image: url(../img/svg/vector-4.svg);
   background-repeat: no-repeat; }
-
-.header__list-wrapper--opened .header__sub-list-wrap-mobile--active a:hover::after {
-  background-image: url(../img/svg/vector-5.svg); }
 
 .main-fram {
   position: relative;
@@ -6052,18 +6042,17 @@ button,
   color: #E52421; }
 
 .faq__text {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow-y: auto;
-  z-index: 5; }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0fr;
+  grid-template-rows: 0fr;
+  -webkit-transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms, -ms-grid-rows 500ms; }
 
 .faq__item--active .faq__text {
-  height: auto;
-  -webkit-animation: show 0.6s;
-          animation: show 0.6s; }
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr; }
 
 .faq__text p {
   max-width: 551px;
@@ -6073,6 +6062,9 @@ button,
   font-size: 14px;
   line-height: 20px;
   color: #313438; }
+
+.faq__container {
+  overflow: hidden; }
 
 @media screen and (max-width: 620px) {
   .faq__text p {
